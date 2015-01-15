@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/*NESTING används när man vill ge komma åt alla element under ett annat. Exempelvis */
+.post {
+  background-color: red; }
+  .post h1 {
+    font-size: 24px; }
+  .post p {
+    color: blue; }
+  .post a {
+    text-decoration: none; }
+
+/*VARIABLER används när man vill definera något, exempelvis en färg, och inte vill upprepa det gång på gång. */
+/* Skapar en variabel för en färg*/
+/* Variabler kan skapas till allt*/
+h1 {
+  font-size: 3em;
+  color: #eee;
+  margin: 5px 0 0 5px; }
+
+a {
+  color: #333; }
+
+/* @MIXIN tillsammans med @INCLUDE används när man vill definera något med en eller flera variabler som man sedan skjuter in. Nyckelordet för att få in det i elementet är @include*/
+.box {
+  border-radius: 2px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px; }
+
+/* EXTEND lägger till en "Silent Class" som inte används förrän den kallas på. Man kan även använda för att ta CSS från något som redan är definerat.*/
+h1 {
+  text-decoration: none; }
+
+.menu, .nav {
+  background: #345; }
+  .menu p, .nav p {
+    color: cyan; }
+
+.nav {
+  font-size: 20px; }
+
+/* FÄRGER */
+/* IMPORT Ibland blir det väldigt rörigt att skriva all SASS i en fil då kan man använda sig av IMPORT.
+Man skriver då SASS för olika delar av sidan i olika filer och importerar in allt till en färdig CSS fil med hjälp av IMPORT. Exempelvis */
+/* Med hjälp av MEDIA QUIERIES SÅ KAN VI MANIPULERA INNEHÅLLET BEROENDE PÅ VILKEN SKÄRMSTORLEK SOM ANVÄNDS. EXEMPELVIS*/
+.content .sidebar {
+  background: #999;
+  color: white;
+  padding: 5px;
+  float: left;
+  width: 100px; }
+  .content .sidebar a {
+    display: block;
+    color: white; }
+.content .main {
+  padding: 5px;
+  background: #bbb;
+  display: inline-block;
+  width: 60%; }
+
+@media (max-width: 480px) {
+  .content .sidebar {
+    width: 95%; }
+    .content .sidebar a {
+      display: inline; }
+  .content .main {
+    width: 95%; } }
+/* INTERPOLATION gör att vi kan programmera innehållet med hjälp av bland annat IF satser.  */
+.red {
+  color: red;
+  background-image: url("images/red.png");
+  background: red;
+  font-size: 100px; }
+  .red > a {
+    color: blue; }
+
+.green {
+  color: green;
+  background-image: url("images/green.png"); }
+
+.blue {
+  color: blue;
+  background-image: url("images/blue.png"); }
+
+.tomato {
+  color: tomato;
+  background-image: url("images/tomato.png"); }
+
+.pink {
+  color: pink;
+  background-image: url("images/pink.png"); }
+
+/*# sourceMappingURL=sammanfattning.css.map */

@@ -1,0 +1,338 @@
+#contact {
+  color: #f3efef;
+  padding-top: 40px; }
+
+a, a:active, a:focus, a:visited {
+  text-decoration: none;
+  outline: none;
+  border: 0; }
+
+#headerNavigation li a, #headerNavigation li a:hover, .round, .red:hover, .green:hover, .orange:hover, .red:active, .green:active, .orange:active, .icons, .icons:hover, .icons a, .icons a:hover, .iconsAdditonalInfo, .iconsAdditonalInfo:hover, .iconsAdditonalInfo a, .iconsAdditonalInfo a:hover, .arrows, .portfolioLayer, .portfolioLayer:hover {
+  -webkit-transition: All 0.2s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.3s ease;
+  cursor: pointer; }
+
+.red:hover, .green:hover, .orange:hover {
+  -moz-box-shadow: 0 0 20px #414141;
+  -webkit-box-shadow: 0 0 20px #414141;
+  box-shadow: 10 10 20px #414141; }
+
+.red:active, .green:active, .orange:active {
+  -moz-box-shadow: inset 0 0 20px #414141;
+  -webkit-box-shadow: inset 0 0 20px #414141;
+  box-shadow: inset 10 10 20px #414141; }
+
+body {
+  font-family: 'Open Sans', "arial", "helvetica neue" sans-serif; }
+
+#headerNavigation li {
+  display: inline-block;
+  font-size: 40px;
+  padding: 20px; }
+
+#headerNavigation li a {
+  color: #f3efef; }
+
+#headerNavigation li a:visited {
+  color: #f3efef; }
+
+#headerNavigation li a:hover {
+  color: #282828; }
+
+h1 {
+  color: #414141;
+  font-size: 2rem; }
+
+h2 {
+  color: #414141;
+  font-size: 2.4rem; }
+
+* {
+  box-sizing: border-box; }
+
+#container {
+  margin: 0 auto;
+  text-align: center; }
+
+#header {
+  background: url(../images/cloudbackground2.jpg) no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 0px;
+  /* Set rules to fill background */
+  height: 1000px;
+  width: 100%;
+  /* Set up proportionate scaling */
+  /*
+*/
+  /* Set up positioning */
+  top: 0;
+  left: 0;
+  /*text-align: center; */
+  /*handles the horizontal centering*/ }
+
+#contactBackground {
+  background: url(../images/mooseBackground.jpeg) no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 1000px;
+  width: 100%;
+  top: 0;
+  left: 0; }
+
+#thankYouBackground {
+  background: url(../images/forestBackground.jpg) no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 1000px;
+  width: 100%;
+  top: 0;
+  left: 0; }
+
+/*
+#portFolioBackground
+{
+  background: url(../images/toolsBackground.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 1000px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+*/
+#logoType {
+  display: block;
+  margin: 0 auto;
+  padding-top: 140px; }
+
+.headerText {
+  padding-top: 260px; }
+
+.content {
+  margin: 0 auto;
+  max-width: 90%; }
+
+/* CIRCLES!
+
+=========================================================== */
+.round {
+  height: 240px;
+  width: 240px;
+  border-radius: 120px;
+  display: inline-block;
+  margin: 40px; }
+
+.round span {
+  position: relative;
+  top: 35%;
+  transform: translateY(-60%);
+  color: #f3efef;
+  font-size: 55px;
+  text-shadow: 1px 1px 3px #707070;
+  font-family: 'Stalemate', cursive !important; }
+
+.red {
+  background-color: #D24D57; }
+
+.green {
+  background-color: #1BBC9B; }
+
+.orange {
+  background-color: #F2784B; }
+
+/* ICONS AND LINKS
+
+=========================================================== */
+.icons, .iconsAdditonalInfo, .arrows, #footer li {
+  cursor: pointer;
+  display: inline-block;
+  width: 160px;
+  vertical-align: top;
+  margin: 60px; }
+
+.icons:before {
+  margin: 0; }
+
+.icons {
+  padding-top: 70px;
+  font-size: 90px;
+  color: #f3efef; }
+
+.icons:hover {
+  color: #414141; }
+
+.icons a {
+  color: #f3efef; }
+
+.icons a:hover {
+  color: #414141; }
+
+.iconsAdditonalInfo {
+  margin-top: 0px !important;
+  font-size: 32px;
+  color: white;
+  text-shadow: 3px 3px 3px #4a4a4a; }
+
+.iconsAdditonalInfo:hover {
+  color: #747474; }
+
+.iconsAdditonalInfo a {
+  color: white; }
+
+.iconsAdditonalInfo a:hover {
+  color: #747474; }
+
+/*
+
+ARROWS
+================================================================== */
+.arrows {
+  font-size: 90px; }
+
+.brightArrow {
+  color: #f3efef; }
+
+.brightArrow:hover {
+  color: #414141; }
+
+.darkArrow {
+  color: #414141; }
+
+.darkArrow:hover {
+  color: grey; }
+
+.portfolioItem {
+  display: inline-block;
+  margin: 50px; }
+
+.square {
+  height: 400px;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.square span {
+  font-size: 20px;
+  color: white;
+  position: relative;
+  top: 25%;
+  transform: translateY(-20%);
+  text-align: center; }
+
+#codeGenerator {
+  background: url(../images/codeGenerator.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+#johannaGame {
+  background: url(../images/codeGenerator.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.portfolioLayer {
+  top: 0px;
+  width: 400px;
+  height: 400px;
+  background: #141414;
+  opacity: 0; }
+
+.portfolioLayer:hover {
+  opacity: 0.7; }
+
+/*
+  Thank You!
+=========================================================== */
+#thankYou {
+  padding-top: 250px; }
+
+#thankYou span {
+  font-family: 'Stalemate', cursive !important;
+  font-size: 230px;
+  color: #f3efef; }
+
+/*
+
+  FOOTER!
+============================================================ */
+#footer li {
+  color: #f3efef;
+  font-size: 20px; }
+
+/* HIDDEN STUFF
+
+=========================================================== */
+#lifeStoryContent {
+  display: none; }
+
+#skillsAndResumeContent {
+  display: none; }
+
+#randomStuffContent {
+  display: none; }
+
+#myServices {
+  display: none; }
+
+@media (min-width: 1000px) and (max-width: 1420px) {
+  .icons {
+    margin: 40px !important;
+    width: 100px !important; }
+
+  .iconsAdditonalInfo {
+    font-size: 25px;
+    margin: 40px !important;
+    width: 100px !important; } }
+@media (min-width: 741px) and (max-width: 999px) {
+  .icons {
+    margin: 20px !important;
+    width: 80px !important; }
+
+  .iconsAdditonalInfo {
+    font-size: 20px;
+    margin: 20px !important;
+    width: 80px !important; } }
+@media (max-width: 740px) {
+  #logoType {
+    margin-top: 0px; }
+
+  #headerNavigation {
+    text-align: center;
+    margin: 0 auto; }
+
+  #lifeStoryContent {
+    display: inline-block; }
+
+  #skillsAndResumeContent {
+    display: inline-block; }
+
+  #randomStuffContent {
+    display: inline-block; }
+
+  .icons {
+    display: none; }
+
+  .iconsAdditonalInfo {
+    font-size: 30px; }
+
+  #myServices {
+    display: block; }
+
+  #thankYou span {
+    font-size: 130px; } }
+
+/*# sourceMappingURL=stylesheet.css.map */

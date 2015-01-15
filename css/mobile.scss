@@ -1,0 +1,87 @@
+@media (min-width: 1000px) and (max-width: 1420px)
+{
+
+
+  .icons
+  {
+    margin: 40px !important;
+    width: 100px !important;
+  }
+
+  .iconsAdditonalInfo
+  {
+    font-size: 25px;
+    margin: 40px !important;
+    width: 100px !important;
+  }
+}
+
+@media (min-width: 741px) and (max-width: 999px)
+{
+
+
+  .icons
+  {
+    margin: 20px !important;
+    width: 80px !important;
+  }
+
+  .iconsAdditonalInfo
+  {
+    font-size: 20px;
+    margin: 20px !important;
+    width: 80px !important;
+  }
+}
+
+
+
+
+@media (max-width: 740px)
+{
+    #logoType
+    {
+      margin-top: 0px;
+    }
+  #headerNavigation
+  {
+    text-align: center;
+
+    margin: 0 auto;
+  }
+
+  #lifeStoryContent
+  {
+    display: inline-block;
+  }
+    #skillsAndResumeContent
+  {
+    display: inline-block;
+  }
+    #randomStuffContent
+  {
+    display: inline-block;
+  }
+
+  .icons
+  {
+    display: none;
+  }
+
+  .iconsAdditonalInfo
+  {
+    font-size: 30px;
+  }
+
+  #myServices
+  {
+    display: block;
+  }
+
+  #thankYou span
+  {
+    font-size: 130px;
+  }
+
+
+}

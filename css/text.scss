@@ -1,0 +1,94 @@
+$darkText: #414141;
+$brightText: #f3efef;
+$red: #D24D57;
+$green: #1BBC9B;
+$orange: #F2784B;
+
+
+#contact
+{
+  color: #f3efef;
+  padding-top: 40px;
+}
+
+a, a:active, a:focus, a:visited
+{
+  text-decoration: none; // Tar bort det understrukna från länkar
+  outline: none; // Tar bort den blå boxen runt länkar och knappar
+  border:0;
+}
+
+
+
+%hovertransition
+{
+  -webkit-transition: All 0.2s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.3s ease;
+ // -webkit-transition-timing-function: linear; /* Safari and Chrome */
+  //transition-timing-function: linear;
+  cursor: pointer;
+}
+%outerShadow
+{
+  -moz-box-shadow:     0 0 20px $darkText;
+  -webkit-box-shadow:  0 0 20px $darkText;
+  box-shadow:          10 10 20px $darkText;
+
+}
+%innerShadow
+{
+  -moz-box-shadow:    inset 0 0 20px $darkText;
+  -webkit-box-shadow: inset 0 0 20px $darkText;
+  box-shadow:         inset 10 10 20px $darkText;
+}
+
+
+body
+{
+  font-family:'Open Sans', "arial", "helvetica neue" sans-serif;
+  //background-color: #22313F;
+
+  // background-color: #34495E;
+ // font-weight: 100;
+ //  background: url(../images/greyBackground.png) repeat fixed center center;
+
+
+
+}
+
+#headerNavigation li
+{
+  display: inline-block;
+  font-size: 40px;
+  padding: 20px;
+
+}
+#headerNavigation li a
+{
+color: $brightText;
+@extend %hovertransition; // Skapar transition out!
+}
+
+#headerNavigation li a:visited
+{
+  color: $brightText;
+}
+#headerNavigation li a:hover
+{
+  color: #282828;
+  @extend %hovertransition;
+}
+
+h1
+{
+  color: $darkText;
+  font-size: 2rem;
+}
+h2
+{
+  color: $darkText;
+  font-size: 2.4rem;
+}

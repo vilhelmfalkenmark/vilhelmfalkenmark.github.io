@@ -1,0 +1,9 @@
+@media (max-width: 480px) {
+  .content .sidebar {
+    width: 95%; }
+    .content .sidebar a {
+      display: inline; }
+  .content .main {
+    width: 95%; } }
+
+/*# sourceMappingURL=mobile.css.map */
