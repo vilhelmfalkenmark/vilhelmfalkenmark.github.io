@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <script src="../js/jquery-1.11.2.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <script src="mainScript.js"></script>
+    <script src="mainJquery.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+<div id="wrapper">
+
+<div id="pointMarker" ><p id="pointCounter">Du har 0 Poäng. Kör!</p></div>
+
+
+<div class="questionWrapper">
+    <!--STARTFRÅGA NIVÅ 1-->
+
+
+    <div class="headerQuestion startQuestion" id="firstQuestion">
+        <h3 id="welcome">Välkommen till Johanna-Spelet!</h3>
+        <h4>Här är dealen:</h4>
+
+        <p>Du heter Vilhelm Falkenmark. En ung man i sina bästa år. Du har en flickvän som heter Johanna Olsson som kommer hem efter en riktigt jobbig dag på sitt arbete.
+            Bland annat så har hennes Chef Person X  sagt att hon kommer få en lönesänkning och hennes andra och mer auktoritära
+            Chef Person Y har anklagat henne för en förlegad kvinnosyn. Lägenheten ni bor i tillsammans är inte städad, du har
+            inte lagat middag trots att du varit hemma hela dagen. Du har även satt upp ett plakat där det står något som du inte riktigt kan komma ihåg varför du skrivit.
+            <br><br>
+            Det är fredag den 22 augusti 2014. Klockan är 18:37 och du behöver lösa situationen. Vad gör du?</p>
+
+    </div>
+
+    <!--NIVÅ 2 HEADER-->
+
+
+    <div class="headerQuestion" id="secondQuestion" style="display:none">
+        Du och många andra tror att du har en diagnos som du ännu inte fått på papper. Antagligen var det något i barndomen som påverkade dig väldigt mycket. Johanna tittar menande på dig
+        som att hon vill säga något men inte vågar i rädsla för dina potentiella humörsvängningar som kan uppstå när du städar. Du stannar upp mitt i allt. Betraktar henne och gör något. Vad?
+    </div>
+
+    <div class="headerQuestion" id="thirdQuestion" style="display:none">Du valde att laga Curry. Inget dumt val alls. Men var du inte lite väl entusiastisk när du hade i Chilin?</div>
+
+    <div class="headerQuestion" id="fourthQuestion" style="display:none">Du valde att ta ned plakatet. Bra val! Vad gör du nu?</div>
+
+
+
+    <!--NIVÅ 3 HEADER-->
+
+
+    <div class="headerQuestion" id="fifthQuestion" style="display:none">Du väljer alltså att fortsätta städa. Ajajaj, inte bra. Det är inte prio nu. Det viktigaste för Johanna är
+        att hennes blodsocker är på en stabil nivå och att lägenheten känns lika mycket som hennes. inte att lägenheten alltid är 100 % städad. Hur väljer du att fortsätta i din destruktiva beteendespiral?</div>
+
+    <div class="headerQuestion" id="sixthQuestion" style="display:none">Bra val att sluta städa! Du vet att du lider av svåra tvångstankar när det kommer till städning. Det
+        viktigaste för Johanna är inte att lägenheten är städad hela tiden utan att den känns lika mycket hennes. Ni beställer Pizza från Ibolina så att hennes blodsocker kommer upp lite. Hon säger vilken pizza hon vill ha men du ignorerar henne och bestämmer själv vilken pizza hon ska ha. Vilken Pizza beställer du till henne?</div>
+
+
+    <div class="headerQuestion" id="seventhQuestion" style="display:none">Du öste alltså i Chili i den som att det inte fanns en morgondag. Inte bra! Nu kommer Johannas mage
+        inte må bra. Hur löser du det här?</div>
+
+
+    <div class="headerQuestion" id="tenthQuestion" style="display:none">Att vara försiktig med kryddningen kan vara bra ibland men inte alltid... Den viktigaste frågan är dock:
+        När du var och köpte glass tidigare, vilken glass köpte du? </div>
+
+
+    <div class="headerQuestion" id="eleventhQuestion" style="display:none">Du var nog allt lite slarvig när du satte upp plakatet tidigare. Nu är det dock uppe igen. Skönt! Vad exakt står du på plakatet?</div>
+
+
+    <div class="headerQuestion" id="twelvthQuestion" style="display:none">Du har nu motvilligt och under högljudda protester tagit ned plakatet. Beställt och avnjutit en Curry-
+        och Bananpizza Family size Pizza med Johanna som hon knappt rört. Hon tittar på dig som att hon tänker något du inte riktigt kan lista ut. Vad säger du för att försöka lätta upp stämningen lite grann?</div>
+
+    <div class="headerQuestion" id="thirteenthQuestion" style="display:none">Du har nu motvilligt och under högljudda protester tagit ned plakatet som du enligt konstitutionen
+        har all rätt att ha uppe. Jag menar lever vi i en kommunistdiktatur där man inte får uttrycka vad man tycker? Du har även tvingat Johanna att laga middag medan du suttit
+        med armarna i kors och kommenterat matlagningen. Ni har precis under tystnad ätit upp. Hon tittar på dig med sorgsna ögon. Vad händer nu?
+    </div>
+
+
+    <div class="headerQuestion" id="fourteenthQeustion" style="display:none">Du misstänker att du befinner dig i The Matrix. Det har du länge trott. Du har anat
+        lite grön kod flimra förbi lite i Johannas ansikte när hon berättat om varför hon tycker att den nionde insikten är den bästa boken och varför den är applicerbar på den
+        så kallade "Verkligheten" som hon formulerar det. Vad gör du?
+    </div>
+
+    <div class="headerQuestion" id="fifteenthQeustion" style="display:none">Ah, du drar det gamla "Paradise-lost-kortet". Det är ett högt spel du spelar. Johanna har
+        många gånger sagt att det är hennes favoritdokumentär men vid middagsbjudningar och liknande festivitas har du varit den som berättat om den med stor entusiasm. Har du verkligen sett den?
+    </div>
+
+    <div class="headerQuestion" id="sixteenthQeustion" style="display:none">Du har nu kommit fram till telefonkiosken. Du slår maniskt på nummerplattan och
+        väntar på att Morpheus ska ringa upp dig. Varför i helvete ringer han inte för? Du hör någon komma mot dig och lugnande försöker uppmana dig till att
+        sluta med vad det nu är du håller på med. Vem är det som kommer?</div>
+
+    <div class="headerQuestion" id="seventeenthQeustion" style="display:none">Vad är det för fel på dig? Det är ju absolut inte det den handlar om.
+        Den handlar om tre unga pojkar som blir dömda till döden på väldigt svag bevisgrund (bland annat eftersom de lyssnade på Marilyn Manson). Johanna har
+        berättat om den för dig flera gånger. Vad gör du nu?</div>
+
+
+
+    <!--NIVÅ 4 HEADER-->
+
+    <div class="headerQuestion" id="eightQuestion" style="display:none">Bra där. Köper du glass kan du fortfarande rädda den här kvällen men du måste tyvärr räkna kallt med att hon kommer sova med
+        ryggen mot dig. Vilken sorts glass köper du åt henne?</div>
+
+    <div class="headerQuestion" id="ninthQuestion" style="display:none">Bra val att svälja din stolthet och beställa Pizza. Du vet att du lider av
+        svåra komplex när det kommer till överkryddad mat. Det viktigaste för Johanna är att man kan känna currysmaken. Inte att det är grova-hävdelsebehov-starkt.
+        Du beställer Pizza från Ibolina så att hennes blodsocker kommer upp. Vilken Pizza beställer du till henne?</div>
+
+
+</div>
+
+
+<div id="startaOm"><a href="file:///Users/vilhelmfalkenmark/Desktop/HTML:CSS/PORTFOLIO%203.0/johannaSpelet/johannaGame.html">Starta Om</a></div>
+
+<!--
+
+============================================================================================================================================================
+
+                                    ALTERNATIV BÖRJAR!
+
+
+=======================================================================================================================================================================
+
+-->
+
+<div class="alternativesWrapper">
+
+
+    <!-- ALternativ NIVÅ 1 -->
+
+    <div class="questionDivRound1" id="q1" onclick="updateScore(0)">Jag börjar städa omgående. Lägenheten måste bli städad och det finns ingen tid att förlora!</div> <!--ANDVÄNDS-->
+    <div class="questionDivRound1" id="q2" onclick="updateScore(1)">Jag börjar laga min patenterade Curry</div> <!--ANDVÄNDS-->
+    <div class="questionDivRound1" id="q3" onclick="updateScore(2)">Jag tar ner det tvivelaktiga plakatet</div> <!--ANDVÄNDS-->
+
+
+
+    <!-- ALternativ NIVÅ 2 -->
+
+    <div class="questionDivRound2" id="q4" onclick="updateScore(3)"style="display:none">Fortsätter Städa såklart! Ingen säger åt mig vad jag ska göra. Varken telepatiskt, skriftligt eller verbalt</div> <!--ANDVÄNDS-->
+
+    <div class="questionDivRound2" id="q5" onclick="updateScore(4)"style="display:none">Slutar städa, tar ett djupt andetag och beställer Pizza</div>  <!--ANDVÄNDS-->
+    <div class="questionDivRound2" id="q6" onclick="updateScore(5)"style="display:none">Slutar städa men jag tänker inte beställa Pizza. Istället tänker jag laga Johannas favoriträtt: Curry!</div>  <!--ANDVÄNDS-->
+
+
+
+
+    <div class="questionDivRound3"id="q7" onclick="updateScore(6)" style="display:none">Jag hade i Jättemycket chili. Man kommer inte känna några smaker. Det kommer bränna utav bara den.
+        Johanna gillar när man inte känner något annat än smärta.</div> <!--ANDVÄNDS-->
+    <div class="questionDivRound3" id="q8" onclick="updateScore(7)" style="display:none">Precis lagom mycket chili</div> <!--ANDVÄNDS-->
+    <div class="questionDivRound3" id="q9" onclick="updateScore(8)" style="display:none">Jag hade inte i någon chili alls. Jag tog det också väldigt försiktigt med alla andra kryddorna.
+        Johanna tycker inte om hur hon eller andra luktar när för mycket Curry intagits.</div> <!--ANDVÄNDS-->
+
+
+    <div class="questionDivRound4" id="q10" onclick="updateScore(9)" style="display:none">Jag tar ner Plakatet bara för att förstärka stommen och fylla i bokstäverna</div> <!--ANDVÄNDS-->
+    <div class="questionDivRound4"  id="q11" onclick="updateScore(10)" style="display:none">Jag tar ner motvilligt ned plakatet och ringer Ibolina för att beställa en Pizza till Johanna</div> <!--ANDVÄNDS-->
+    <div class="questionDivRound4"  id="q12" onclick="updateScore(11)"  style="display:none">Jag tar ner plakatet men vägrar laga middag!</div> <!--	ANDVÄNDS-->
+
+
+
+
+
+
+
+    <!--Alternativ FORTSÄTTER STÄDA NIVÅ 3-->
+
+    <div class="questionDivRound5" id="q13" onclick="updateScore(12)" style="display:none">Jag städar i fullständig tunnelseende mani medan min flickvän svälter</div> <!--ANDVÄNDS-->
+    <div class="questionDivRound5"  id="q14" onclick="updateScore(13)" style="display:none">Jag städar tills jag får jättelågt blodsocker. Johanna blir argare och argare.
+        Det slutar med att jag får sova på soffan. Men i en städad lägenhet.</div>  <!--ANDVÄNDS-->
+    <div class="questionDivRound5"  id="q15" onclick="updateScore(14)" style="display:none">Är det här The Matrix?</div>  <!--ANDVÄNDS-->
+
+    <!--SLUT-->
+
+
+
+    <!--Alternativ SLUTAR STÄDA OCH BESTÄLLER PIZZA NIVÅ 3-->
+
+    <div class="questionDivRound6" id="q16" onclick="updateScore(15)" style="display:none">Spinaci Con Prusciotto</div> <!--ANDVÄNDS-->
+    <div class="questionDivRound6" id="q17" onclick="updateScore(16)" style="display:none">Banan och Curry Pizza</div>  <!--ANDVÄNDS-->
+    <div class="questionDivRound6" id="q18" onclick="updateScore(17)" style="display:none">Kebabpizza med extra Kebab och vitsås</div>  <!--ANDVÄNDS-->
+
+    <!--SLUT-->
+
+
+
+    <!--Alternativ CURRY OCH JÄTTEMYCKET CHILI NIVÅ 3-->
+
+    <div class="questionDivRound7"  id="q19" onclick="updateScore(18)" style="display:none">Köper glass åt henne!</div> <!--ANDVÄNDS-->
+    <div class="questionDivRound7" id="q20" onclick="updateScore(19)" style="display:none">Beställer en pizza istället.</div>  <!--ANDVÄNDS-->
+    <div class="questionDivRound7" id="q21" onclick="updateScore(20)" style="display:none">Tvingar henne att äta upp. Hon får finna i sig stark mat när hon bor med mig det är ju trots allt Currykväll!</div> <!--ANDVÄNDS-->
+
+
+
+
+    <!--Alternativ TA NED PLAKATET OCH FÖRSTÄRKA BOKSTÄVERNA NIVÅ 3-->
+
+    <div class="questionDivRound9"  id="q22" onclick="updateScore(21)" style="display:none">Femte Elementet är den mest överskattade filmen på IMDB.</div> <!--ANDVÄNDS-->
+    <div class="questionDivRound9"  id="q23" onclick="updateScore(22)" style="display:none">Du får inte dricka äppeljuice när du är törstig. Drick vatten istället som normala människor!</div>  <!--ANDVÄNDS-->
+    <div class="questionDivRound9"  id="q24" onclick="updateScore(23)" style="display:none">"Marcus Birro skulle vara en bra representant för det här landet!"</div>
+
+    <!--Alternativ TA NED PLAKATET OCH RINGA IBOLINA 3-->
+
+    <div class="questionDivRound10"  id="q25" onclick="updateScore(24)" style="display:none">"Nu ska jag berätta om en sjukt bra dokumentär jag sett. Den heter Paradise Lost!"</div> <!--ANDVÄNDS-->
+    <div class="questionDivRound10"  id="q26" onclick="updateScore(25)" style="display:none">"Ska vi se Femte Elementet i kväll?"</div>  <!--ANDVÄNDS-->
+    <div class="questionDivRound10"  id="q27" onclick="updateScore(26)" style="display:none">"Jimmie Åkesson skulle vara en bra representant för det här landet!"</div>
+
+
+
+    <!--Alternativ TA NED PLAKATET OCH TVINGA JOHANNA LAGA MAT 3-->
+
+
+
+    <div class="questionDivRound11"  id="q28" onclick="updateScore(27)" style="display:none">Du säger "Nu ska jag berätta om en sjukt bra dokumentär jag sett. Den heter Paradise Lost!"</div> <!--ANDVÄNDS-->
+    <div class="questionDivRound11" id="q29" onclick="updateScore(28)" style="display:none">Du väljer att sätta upp plakatet igen</div>  <!--ANDVÄNDS-->
+    <div class="questionDivRound11"  id="q30" onclick="updateScore(29)" style="display:none">Du tror inte att Johanna älskar dig längre. Du tänker att du ska imponera på henne med lite miljömedvetenhet.
+        Du säger "Det är bra om du dricker vatten istället för äppeljuice när du är törstig. Det är billigare och mer energieffektivt"</div>
+
+
+
+
+    <!--Alternativ TA NED PLAKATET OCH TVINGA JOHANNA LAGA MAT OCH SÄTTA UPP PLAKATET IGEN NIVÅ 4-->
+
+
+
+
+
+
+
+
+
+
+    <!--Alternativ CURRY, JÄTTEMYCKET CHILI, KÖPA GLASS NIVÅ 4-->
+
+    <div class="questionDivRound8"  id="q31" onclick="updateScore(30)" style="display:none">Ben & Jerrys Chunky Monkey</div> <!--ANDVÄNDS-->
+    <div class="questionDivRound8"  id="q32" onclick="updateScore(31)" style="display:none">Mövenpick Äppel och Kanelglass.</div>  <!--ANDVÄNDS-->
+    <div class="questionDivRound8" id="q33" onclick="updateScore(32)" style="display:none">Big Pack Vaniljglass</div>  <!--ANDVÄNDS-->
+
+
+
+    <!--Alternativ STÄDA, FORTSÄTTA STÄDA, THE MATRIX 4-->
+
+    <div class="questionDivRound12" id="q34" onclick="updateScore(33)" style="display:none">Du ställer dig upp skriker att ingen maskin kan kontrollera dig och springer ut för att hitta närmaste telefonkiosk!</div> <!--ANDVÄNDS-->
+
+    <div class="questionDivRound12" id="q35" onclick="updateScore(34)" style="display:none">Du accepterar ditt öde som instängd i ett dataprogram</div>  <!--ANDVÄNDS-->
+
+    <div class="questionDivRound12" id="q36" onclick="updateScore(35)" style="display:none">Du tänker att The Matrix ändå är en rätt bra film och det tycker även Johanna som har sett hela filmen vid flera tillfällen.</div>
+
+
+
+
+
+
+    <!--Alternativ PARADISE LOST NIVÅ 4-->
+
+
+
+
+    <div class="questionDivRound13" id="q37" onclick="updateScore(36)" style="display:none">Absolut har jag sett Paradise Lost! Den handlar om kristna extremhögern som oskyldigt dömer Marilyn Manson till döden. Eller något sådant i allafall.</div> <!--ANDVÄNDS-->
+
+    <div class="questionDivRound13" id="q38" onclick="updateScore(37)" style="display:none">Just det, fan jag har ju inte sett den dokumentären. Skamset erkänner jag det till slut.</div>  <!--ANDVÄNDS-->
+
+    <div class="questionDivRound13" id="q39" onclick="updateScore(38)" style="display:none">Är det här The Matrix?</div>
+
+
+
+    <!--Alternativ MATRIX  NIVÅ 4-->
+
+
+    <div class="questionDivRound14" id="q40" onclick="updateScore(39)" style="display:none">Det är en Polis med draget vapen. Du har blivit sinnessjuk och för att värna om samhällets bästa är det nog hög tid att du bli inlåst.</div> <!--ANDVÄNDS-->
+
+    <div class="questionDivRound14" id="q41" onclick="updateScore(40)" style="display:none">Det är Johanna. Hon tycker att du ska sluta med vad det nu än är du håller på med. Ibland drar du skämt alldeles för långt och det är uttröttande för din omgivning.</div>  <!--ANDVÄNDS-->
+
+    <div class="questionDivRound14" id="q42" onclick="updateScore(41)" style="display:none">Det är Agent Smith. Han säger "We´ve been expecting you Mr Falkenmark". Sanningens ögonblick är här</div>
+
+
+
+
+
+    <!--Alternativ Sett Paradise Lost Beskrivit Handling  NIVÅ 5-->
+
+
+    <div class="questionDivRound15" id="q43" onclick="updateScore(42)" style="display:none">Erkänner att jag inte sett den och ber om ursäkt</div> <!--ANDVÄNDS-->
+
+    <div class="questionDivRound15"  id="q44" onclick="updateScore(43)" style="display:none">Står på mig och börjar argumentera om att handlingen visst handlar om det du sa tidigare. När Johanna drar fram IMDB så låtsas du som att du
+        "tänkte på en annan dokumentär som är bättre som hon verkligen borde se" och börjar raljera om den istället. Väldigt högt.</div>  <!--ANDVÄNDS-->
+
+    <div class="questionDivRound15"  id="q45" onclick="updateScore(44)" style="display:none">När Johanna börjar konfrontera mig så börjar jag nästan misstänka att jag befinner mig i The Matrix. Var det inte lite grön Kod där?</div>
+
+
+</div>
+
+
+<br>
+
+<div id="resultat" style="display:none"></div>
+
+</div>
+
+</body>
+</html>

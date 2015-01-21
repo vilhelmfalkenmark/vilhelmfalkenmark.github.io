@@ -1,0 +1,157 @@
+$green: #4DAF7C;
+$greenHover: #5cca6f;
+
+body
+{
+  font-family:'Open Sans', "arial", "helvetica neue" sans-serif;
+
+}
+#wrapper
+{
+  margin: 0 auto;
+ // width: 960px;
+  text-align: center;
+  display: none;
+}
+
+.wrapper:after {
+  clear: both;
+}
+
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+a:hover
+{
+  color: black;
+}
+
+#welcome
+{
+  font-size: 22px !important;
+}
+
+.headerQuestion
+{
+  display: inline-block;
+  color: #ffffff;
+  height: 230px;
+  width: 890px;
+  background-color: #C0392B;
+  line-height: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 130px;
+ // font-style: italic;
+  //font-family: georgia;
+  //box-shadow: 10px 10px 5px #515151;
+}
+
+#pointMarker
+{
+  height: 125px;
+  width: 125px;
+  border-radius: 75px;
+  text-align: center;
+  font-size: 20px;
+  background-color: $green; // Hej hej
+  //line-height: 50px;
+ // padding: 10px;
+  //float: left;
+  position: fixed;
+}
+#pointMarker p
+{
+padding-top: 8px;
+}
+
+#startaOm
+{
+  margin-top: 20px;
+  display: inline-block;
+  height: 35px;
+  width: 100px; // Hej
+  text-align: center;
+  font-size: 20px;
+  background-color: $green;
+  //line-height: 20px;
+  padding: 10px;
+}
+#startaOm:hover // Hej!
+{
+  background-color: $greenHover;
+  transition: all .3s ease-in ease-out;
+  -webkit-transition: all .1s ease-in;
+}
+
+
+
+%questionDiv
+{
+  cursor: pointer;
+  padding-top: 40px;
+  display: inline-block;
+  color: #ffffff;
+  height: 250px;
+  width: 200px;
+  background-color: $green;
+  vertical-align: middle;
+  border: #7d7d7d 2px solid;
+  //padding: 7px;
+  margin: 20px;
+  //margin-top: 5%;
+  text-align: center;
+  //font-style: italic;
+ // font-family: "georgia";
+  box-shadow: 10px 10px 5px #888888;
+  -webkit-transition: all .2s;
+}
+%questionDiv:hover
+{
+  color: #313131;
+  background-color: $greenHover;
+  transition: all .3s ease-in ease-out;
+  -webkit-transition: all .1s ease-in;
+  box-shadow: 10px 10px 5px black;
+
+}
+
+.questionDivRound1,
+.questionDivRound2,
+.questionDivRound3,
+.questionDivRound4,
+.questionDivRound5,
+.questionDivRound6,
+.questionDivRound7,
+.questionDivRound8,
+.questionDivRound9,
+.questionDivRound10,
+.questionDivRound11,
+.questionDivRound12,
+.questionDivRound13,
+.questionDivRound14,
+.questionDivRound15
+{
+  @extend %questionDiv;
+}
+
+
+
+
+#resultat
+{
+
+  background-color: $green;
+  display: inline-block;
+  color: white;
+  height: 150px;
+  width: 790px;
+  line-height: 20px;
+  padding: 100px;
+  box-shadow: 10px 10px 5px #888888;
+}

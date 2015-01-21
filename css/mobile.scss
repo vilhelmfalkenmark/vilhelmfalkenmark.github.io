@@ -1,7 +1,12 @@
+
+/*
+
+Desktop!
+======================================
+**/
+
 @media (min-width: 1000px) and (max-width: 1420px)
 {
-
-
   .icons
   {
     margin: 40px !important;
@@ -16,10 +21,18 @@
   }
 }
 
+
+
+
+/*
+
+Tablet!
+======================================
+
+*/
+
 @media (min-width: 741px) and (max-width: 999px)
 {
-
-
   .icons
   {
     margin: 20px !important;
@@ -35,53 +48,170 @@
 }
 
 
+/*
+
+Phone!
+======================================
+
+*/
+
+@media (max-width: 740px) {
 
 
-@media (max-width: 740px)
-{
-    #logoType
-    {
-      margin-top: 0px;
-    }
-  #headerNavigation
-  {
+
+
+
+  #logoType {
+    margin-top: 0px;
+  }
+  #headerNavigation {
     text-align: center;
 
     margin: 0 auto;
   }
 
-  #lifeStoryContent
-  {
-    display: inline-block;
+  .mobileHeader {
+    margin-top: -30px;
+    visibility: visible;
   }
-    #skillsAndResumeContent
-  {
-    display: inline-block;
-  }
-    #randomStuffContent
-  {
-    display: inline-block;
+  #topMenu {
+    visibility: hidden;
   }
 
-  .icons
-  {
+  #desktopHeader {
     display: none;
   }
 
-  .iconsAdditonalInfo
+  #mobileMenuWrapper {
+    display: block;
+    padding-top: 10px;
+    // background-color: rgba(0, 0, 0, 0.50);
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+
+  }
+
+  #mobileMenuWrapper + ol > li {
+    //float: left;
+  }
+
+  .mobilemenulistItem {
+    visibility: hidden;
+  }
+
+  #mobileMenuWrapper:hover #headerMobileNavigation .mobilemenulistItem {
+    visibility: visible;
+    // position: absolute;
+    top: 20px;
+    left: 0;
+    width: 200px;
+  }
+  #mobileMenuWrapper:active #headerMobileNavigation .mobilemenulistItem {
+    visibility: visible;
+    // position: absolute;
+    top: 20px;
+    left: 0;
+    width: 200px;
+  }
+
+  #mobileMenuWrapper:hover .mobilemenulistItem {
+    visibility: visible;
+    // position: absolute;
+  }
+
+  .headerMobileNavigation
   {
+    width: 200px;
+    margin-top: -40px;
+  }
+  .mobilemenulistItem
+  {
+    background-color: #373737;
+  }
+
+
+  .mobilemenulistItem a
+  {
+    color: white;
+    font-size: 30px;
+    margin: 6px;
+  }
+  .mobilemenulistItem a:hover
+  {
+    color: $hoverText;
+  }
+  .mobilemenulistItem a:active
+  {
+    color: $hoverText;
+
+  }
+
+
+  /* About section */
+
+  #lifeStoryContent {
+    display: inline-block;
+  }
+  #skillsAndResumeContent {
+    display: inline-block;
+  }
+  #randomStuffContent {
+    display: inline-block;
+  }
+
+
+
+/* Contact me Section*/
+
+  .icons {
+    display: none;
+  }
+
+  .iconsAdditonalInfo {
     font-size: 30px;
   }
 
-  #myServices
-  {
+  #myServices {
     display: block;
   }
 
-  #thankYou span
-  {
+  #thankYou span {
     font-size: 130px;
   }
+
+  .portfolio-content // Wrapper of the portfolio Stuff
+ {
+    max-width: 100%;
+  }
+
+  .lines {
+    // border-bottom: 67px double white;
+    border-top: 26px solid white;
+    content: "";
+    height: 15px;
+    width: 200px;
+    padding-top: 15px;
+    cursor: pointer;
+  }
+
+
+/* Portfolio Section */
+
+$portFolioMargin: 20px;
+
+  .portfolioItemBackground // The image of macbooks, Iphones, etc.
+   {
+    margin: $portFolioMargin; // The distance between the computers in all directions
+
+  }
+
+  .portfolioItem // Position of the div inside the macbook
+ {
+    margin-left: $portFolioMargin; // Hej hej
+    margin-right: $portFolioMargin; // Hej hej
+  }
+
 
 
 }

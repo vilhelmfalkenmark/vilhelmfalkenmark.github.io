@@ -21,12 +21,32 @@ $( document ).ready(function() {
 
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top
-        }, 900, 'swing', function () {
+        }, 1000, 'swing', function () {
             window.location.hash = target;
         });
     });
 
- $('#lifeStoryButton').click(function() {
+
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= $('#header').height())
+          {
+            $(".menulistItem").css({"display":"block"});
+          }
+        else {
+
+            $(".menulistItem").css({"display":"inline-block"});
+
+        }
+    });
+
+
+
+
+
+
+    $('#lifeStoryButton').click(function() {
 
         $('#skillsAndResumeContent').hide("slow");
         $('#randomStuffContent').hide("slow");
@@ -55,5 +75,11 @@ $( document ).ready(function() {
     $("#handShake").click(function() {
         $("#myServices").fadeIn("slow");
     });
+
+
+
+
+
+
 
 });
