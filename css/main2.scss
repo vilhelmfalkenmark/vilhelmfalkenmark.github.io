@@ -2,15 +2,31 @@
 
 General Styling
 =========================================*/
+%hovertransition
+{
+  -webkit-transition: All 0.2s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.3s ease;
+  // -webkit-transition-timing-function: linear; // Safari and Chrome
+  //transition-timing-function: linear;
+  cursor: pointer;
+}
 
-* {
+
+  * {
   box-sizing: border-box;
 }
 
 body
 {
   font-family:'Open Sans', "arial", "helvetica neue" sans-serif;
-  font-weight: 200;
+  font-size: 34px;
+
+
+
+ // font-weight: 200;
   //background-color: #2dd078;
 
 
@@ -25,11 +41,11 @@ body
   text-align: center;
 }
 
-
 .content
 {
+
   margin: $centerMargin;
-  max-width: 90%;
+  max-width: 100%;
 
 }
 .main-content
@@ -69,8 +85,6 @@ body
 {
   color: grey;
 }
-
-
 a
 {
   color: inherit;
@@ -107,8 +121,10 @@ h2
 */
 
 #header{
+   background: url(../images/citybackground.jpg) no-repeat fixed center center;
 
-  background: url(../images/leavesBackground.jpg) no-repeat fixed center center;
+  //background-color: #182231;
+  //background-color: rgba(0,0,0,0.8);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -136,40 +152,66 @@ h1
 {
   font-family: 'Stalemate', cursive !important;
   color: $brightText;
-  font-size: 6rem;
+  font-size: 7rem;
 }
 
 
-#topMenu
+#mobileMenuWrapper {
+  display: block;
+  //padding-top: 10px;
+   //background-color: rgba(0, 0, 0, 0.50);
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+
+}
+
+#mobileMenuWrapper:hover #headerMobileNavigation .mobilemenulistItem {
+  visibility: visible;
+  // position: absolute;
+  top: 20px;
+  left: 0;
+  //width: 200px;
+}
+#mobileMenuWrapper:active #headerMobileNavigation .mobilemenulistItem {
+  visibility: visible;
+  // position: absolute;
+  top: 20px;
+  left: 0;
+ // width: 200px;
+}
+
+#mobileMenuWrapper:hover .mobilemenulistItem {
+  visibility: visible;
+  // position: absolute;
+}
+
+.headerMobileNavigation
 {
-  text-align: left;
+  //width: 200px;
+  margin-top: -40px;
 }
-
-#headerNavigation li
+.mobilemenulistItem
 {
-
-  // position: relative; Hej hej
-  margin-right: 20px;
-  display: inline-block;
-  font-size: 20px;
-  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.650);
 }
-#headerNavigation li a
+
+
+.mobilemenulistItem a
 {
   color: white;
-  @extend %hovertransition; // Creates transition out!
-
+  font-size: 40px;
+  margin: 6px;
 }
-
-#headerNavigation li a:visited
-{
-  color: white;
-}
-#headerNavigation li a:hover
+.mobilemenulistItem a:hover
 {
   color: $hoverText;
 }
+.mobilemenulistItem a:active
+{
+  color: $hoverText;
 
+}
 
 .headerText
 {
@@ -178,30 +220,11 @@ h1
   color: white !important;
 }
 
-
-svg path {
-  shadow: black; // hej
-  fill: white;
-  stroke: white; // Hej
-  stroke-width: 1.5;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-dasharray: 1900;
-  stroke-dashoffset: 1900;
-  -webkit-animation: dash 35s linear forwards;
-  animation: dash 35s linear forwards;
+.mobile-tablet-Header
+{
+  //padding-top: 30px;
+  display: block;
 }
-@-webkit-keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
 
 /*
 
@@ -210,9 +233,9 @@ About Vilhelm Falkenmark
 
 .round
 {
-  height: $circleSize;
-  width: $circleSize;
-  border-radius: $circleSize/2;
+  height: $circleSize*1.5;
+  width: $circleSize*1.5;
+  border-radius: $circleSize;
   display: inline-block;
   margin: 40px;
   @extend %hovertransition;
@@ -225,7 +248,7 @@ About Vilhelm Falkenmark
   top: 35%;
   transform: translateY(-60%);
   color: $brightText;
-  font-size: 55px;
+  font-size: 75px;
   text-shadow: 1px 1px 3px $hoverText;
   font-family: 'Stalemate', cursive !important;
 }
@@ -293,6 +316,19 @@ About Vilhelm Falkenmark
   color: #f3efef;
 }
 
+
+.contactMe a
+{
+  font-size: 24px;
+  color: white;
+  @extend %hovertransition;
+}
+.contactMe a:hover
+{
+  @extend %hovertransition;
+  color: $hoverText;
+}
+
 .icons:before
 {
   margin: 0;
@@ -300,12 +336,18 @@ About Vilhelm Falkenmark
 
 .icons
 {
+  margin: 20px; //!important;
+  width: 80px; //!important;
   padding-top: 70px;
   @extend %inline-contactInfo;
   font-size: 90px;
   color: $brightText;
   @extend %hovertransition;
-
+}
+#handShake{
+  //margin-top: 20px;
+font-size: 80px;
+  margin-right: 35px;
 }
 
 .icons:hover
@@ -327,11 +369,13 @@ About Vilhelm Falkenmark
 
 .iconsAdditonalInfo
 {
+  display:none;
   @extend %inline-contactInfo;
-  margin-top: 0px !important;
-  font-size:32px;
+ // margin-top: 0px !important;
+  font-size: 20px;
   color: white;
-  text-shadow: 3px 3px 3px $hoverText;
+  margin: 20px;
+  width: 80px;
   @extend %hovertransition;
 }
 .iconsAdditonalInfo:hover
@@ -361,13 +405,13 @@ Portfolio!
 
 .portfolio-content // Wrapper of the portfolio Stuff
 {
-  max-width: 100%;
+  //max-width: 100%;
   margin: 0 auto;
 }
 
 .portfolioItemBackground // The image of macbooks, Iphones, etc.
 {
-  margin: 60px; // The distance between the computers in all directions!
+  margin: 10px; // The distance between the computers in all directions!
   background: url(../images/macbook.png) no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -375,20 +419,15 @@ Portfolio!
   background-size: cover;
   padding-top: 0px;
 
-  /*max-width: 100%;
-  height: auto;
-  width: auto\9;
-*/
   height: 354px;
   width: 600px;
   display: inline-block;
 }
 
-
 .portfolioItem // Position of the div inside the macbook
 {
-  margin-left: 60px; // Hej hej
-  margin-right: 60px; // Hej hej
+  margin-left: 60px;
+  margin-right: 60px;
   padding-top: 20px;
   padding-right: 2px;
   display: inline-block;
@@ -398,7 +437,7 @@ Portfolio!
   font-size: 20px;
   color: white;
   position: relative;
-  top: 25%; // Adjust the text to the top. The more you increase, the further it will go
+  top: 15%; // Adjust the text to the top. The more you increase, the further it will go
   transform: translateY(-20%);
   text-align: center;
 }
@@ -465,33 +504,27 @@ My Services!
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
-  height: 1000px;
-  width: 100%;
+  height: 100%;
+  width: 100%; //hej
   top: 0;
   left: 0;
 }
 
 #myServices
 {
+  font-size: 24px;
   width: 100%;
   background-color: rgba(0,0,0,0.7);
   color: $brightText;
-  margin-top: 200px;
+  //margin-top: 200px;
+  margin: 0 auto;
   //padding-top: 200px;
 }
-.contactMe a
-{
- font-size: 24px;
-  color: white;
-  @extend %hovertransition;
-}
-.contactMe a:hover
-{
-  @extend %hovertransition;
-  color: $hoverText;
-}
 
+#myServicesArrow
+{
+  //display: none;
+}
 
 
 /*
@@ -507,7 +540,7 @@ My Services!
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 1000px;
+  height: 100%;
   width: 100%;
   top: 0;
   left: 0;
@@ -524,25 +557,12 @@ My Services!
   font-size: 230px;
   color: $brightText;
 }
-#hello
-{
-  padding-top: 250px;
-
-}
-#hello span
-{
-  font-family: 'Stalemate', cursive !important;
-  font-size: 130px;
-  color: $brightText;
-}
-
 
 
 #myServices h2, ul
 {
   color: $brightText; //hej
 }
-
 
 
 
@@ -558,8 +578,7 @@ My Services!
 #footer li
 {
   color: $darkText;
-  font-size: 20px;
-  display: inline-block;
+  font-size: 40px;
   margin: 20px;
 }
 #footer li a
@@ -579,35 +598,52 @@ My Services!
 
 =========================================================== */
 
-/*
-#lifeStoryContent
+
+.tabletHeader
 {
   display: none;
 }
-#skillsAndResumeContent
-{
-  display: none;
-}
-#randomStuffContent
+
+/*#mobileMenuWrapper
 {
   display: none;
 }
 */
 
-.mobile-tablet-Header
+
+#topMenu
+{
+  display: none;
+}
+#desktopHeader
+{
+  display: none;
+}
+#portrait
 {
   display: none;
 }
 
-.mobileHeader
-{
-  visibility: hidden;
+
+
+
+
+
+
+/*
+
+Google Maps
+====================================================*/
+#map-canvas {
+  width: 100%;
+  height: 600px;
 }
-.tabletHeader
-{
-  visibility: hidden;
-}
-#mobileMenuWrapper
-{
-  display: none;
-}
+
+
+
+
+
+
+
+
+

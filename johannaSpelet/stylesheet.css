@@ -34,6 +34,7 @@ a:hover {
   padding-top: 130px; }
 
 #pointMarker {
+  margin: 10px;
   height: 125px;
   width: 125px;
   border-radius: 75px;

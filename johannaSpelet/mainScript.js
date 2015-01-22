@@ -91,7 +91,7 @@ function updateScore(updateScore)
     }
     else if(gettotalScore()<=0 && gettotalScore()>=-10)
     {
-        resultat.innerHTML = "Du fick mellan -10 &  0 poäng vilket är riktigt dåligt. Alltså riktigt  uruselt. Sannolikt så komme du inte överleva natten."+ "<br>"+"För att vara exakt så fick du "+gettotalScore()+ " värdelösa poäng! Asså, vad dålig du är. Johanna gör slut och blir ihop med Tim igen. Hur känns det?";
+        resultat.innerHTML = "Du fick "+gettotalScore()+ " poäng vilket är riktigt dåligt. Sannolikt så kommer du inte överleva natten."+ "<br>"+"Johanna gör slut och blir ihop med Tim igen. Hur känns det?";
     }
     else if(gettotalScore()<=-10)
     {

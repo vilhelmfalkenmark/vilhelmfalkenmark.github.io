@@ -1,30 +1,58 @@
+<!DOCTYPE html>
 <!--
 HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except for normalize.css and jquery!
 -->
-<!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="description" content="Vilhelm Falkenmark frilansande Front end utvecklare stockholm, Freelancing front end developer Stockholm">
+    <meta name="keywords" content="Vilhelm Falkenmark,HTML,CSS,JavaScript,Front-End Utvecklare, Front-End Developer,Bygga hemsida, Bygga Webbsida, Hemsida, Stockholm">
+    <meta name="author" content="Vilhelm Falkenmark">
     <title>Vilhelm Falkenmark Front-End Developer</title>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Stalemate' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/icons/flaticon.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
-
     <link rel="stylesheet" href="css/stylesheet.css">
-    <script src="js/jquery-1.11.2.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6_rInsv9YWvF9-lCvjAlvnNTrICDVv-c"></script>
+
+    <script type="text/javascript">
+        function initialize() {
+            var myLatlng = new google.maps.LatLng(59.349063,18.064843);
+
+            var mapOptions = {
+                    center: myLatlng,
+                    zoom: 12,
+                    styles:  [ { "elementType": "labels.text", "stylers": [ { "visibility": "simplified" }, { "invert_lightness": true }, { "color": "#fffbfe" } ] },{ "featureType": "landscape", "stylers": [ { "color": "#414141" } ] },{ "featureType": "road", "stylers": [ { "color": "#000000" } ] },{ "featureType": "water", "stylers": [ { "color": "#726e6e" } ] },{ "featureType": "road", "elementType": "labels.text", "stylers": [ { "color": "#fffffb" } ] },{ "featureType": "poi", "stylers": [ { "visibility": "off" } ] },{ "featureType": "transit", "stylers": [ { "visibility": "off" } ] } ]};
+
+                var map = new google.maps.Map(document.getElementById('map-canvas'),
+                        mapOptions);
+
+            var marker = new google.maps.Marker({
+                //color: "#ffffff",
+                position: myLatlng,
+                map: map,
+                title: 'Hello World!'
+            });
+
+
+
+
+        }
+            google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 
 </head>
 <body>
 <div id="container">
 <header>
 <div id="header">
+
 <div id="mobileMenuWrapper">
-    <div class="lines"></div>
-    <div class="lines"></div>
-    <div class="lines"></div>
+
     <nav>
         <ol id="headerMobileNavigation">
             <li class= "mobilemenulistItem"><a href="#about">About</a></li>
@@ -35,6 +63,7 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
     </nav>
 
 </div>
+<div id="portrait"></div>
 
 
 <!--<img id="logoType" src="images/vilhelmfalkenmarklogga.png">-->
@@ -45,22 +74,22 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
             <li class="menulistItem"><a href="#contact">Contact</a></li>
             <li class="menulistItem"><a href="#portfolio">Portfolio</a></li>
             <li class="menulistItem"><a href="#myServices">My Services</a></li>
-
         </ol>
     </nav>
 </div>
 
 
 
-
-
 <div class="headerText">
 
-
-<h1 class="mobileHeader">Vilhelm Falkenmark</h1>
+<h1 class="mobile-tablet-Header">Vilhelm Falkenmark</h1>
+<span class="tabletHeader">Tablet Version</span>
 <span class="mobileHeader">Mobil Version</span>
 
 <div id="desktopHeader">
+
+
+
 <svg version="1.1"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
 	 x="0px" y="0px" width="1000.5px" height="145.6px" viewBox="0 0 320.5 59.6" enable-background="new 0 0 320.5 59.6"
@@ -287,11 +316,9 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 		c-0.4,1.1-0.7,2.3-1,3.8c-0.3,1.5-0.5,3-0.7,4.7c-0.2,1.7-0.3,3.5-0.4,5.4C308.9,32.9,308.9,34.8,308.9,36.7z"/>
 </g>
 </svg>
-</div>
-
 <h2>Front-End Developer</h2>
-
 <p>Based in Stockholm, Sweden with a passion for design, user-availability and simplicity. Thanks for peeking in!</p>
+</div>
 </div>
 </div>
 </header>
@@ -309,11 +336,10 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 
             <div id="target">
 
-                <div id="lifeStoryContent">
+                <div id="lifeStoryContent" class="hide">
                     <h2 id="lifeStory">My name is Vilhelm Falkenmark and I am currently 28 years old</h2>
 
-                    <p>I was born In Stockholm, Sweden on the 22nd of june 1986 (<a href="http://www.chinahighlights.com/travelguide/chinese-zodiac/tiger.asp>year of the" target="_blank">
-                        In the year of the tiger</a>) as the second-eldest sibling among four.
+                    <p>I was born In Stockholm, Sweden on the 22nd of june 1986 as the second-eldest sibling among four.
 
                         <br><br> When I was a kid I was obsessed with Lego, Turtles and Batman. When I turned 10 I discovered Kiss (the band) and my life changed forever to come.
                         I started playing guitar when I was 13 and it has been my main hobby since then. During my youth I spent my free-time playing in various bands and music projects.
@@ -335,7 +361,7 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
                     </p>
                 </div>
 
-                <div id="skillsAndResumeContent">
+                <div id="skillsAndResumeContent" class="hide">
                     <!--<h2 id="skillsAndResume">Skills and Resume!</h2>-->
 
                     <h2>Education</h2>
@@ -378,10 +404,10 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
                 </div>
 
 
-                <div id="randomStuffContent">
+                <div id="randomStuffContent" class="hide">
 
                       <h3>The Playlist that has been on repeat during the development of this site</h3>
-                    <iframe src="https://embed.spotify.com/?uri=spotify:user:vilhelmfalkenmark:playlist:6odBOt412rWQUjeQdk4CmF" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+                   <!--<iframe src="https://embed.spotify.com/?uri=spotify:user:vilhelmfalkenmark:playlist:6odBOt412rWQUjeQdk4CmF" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>-->
 
                     <h3>The Five Best Movies of all time (That I can come to think of right now)</h3>
                     <ul>
@@ -438,32 +464,34 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 
             <div class="content">
                 <h2 id="contact" class="secondHeader">Contact</h2>
+                <nav>
+
                 <ul>
-                    <nav>
                     <li class="icons" id="emailLogo"><a href="mailto:vilhelmfalkenmark@gmail.com?"><i class="flaticon-mail59"></i></a></li>
-                    <li class="icons"><i class="flaticon-iphone26"></i></li>
+                    <li class="icons"><a href="#footer"><i class="flaticon-iphone26"></i></a></li>
                     <li class="icons"><a href="https://www.facebook.com/ville.falkenmark" target="_blank"><i class="flaticon-facebook29"></i></a></li>
                     <li class="icons" id="handShake"><a href="#myServices"><i class="flaticon-handshake1"></i></a></li>
                     <li class="icons"><a href="https://www.linkedin.com/hp/?dnr=imMPcqK9gJcQP8xvipIrB9S5l_wiHx3Mk5-f&trk=nav_responsive_tab_home" target="_blank"><i class="flaticon-linkedin22"></i></a></li>
-                    </nav>
                 </ul>
+                </nav>
+                <nav>
 
                 <ul id="iconsAdditonalInfoList">
-                    <nav>
                     <li class="iconsAdditonalInfo" id="emailMe"><a href="mailto:vilhelmfalkenmark@gmail.com?">Send me an Email!</a></li>
                     <li class="iconsAdditonalInfo" id="callMe">0705580198</li>
                     <li class="iconsAdditonalInfo" id="facebookMe">
                         <a href="https://www.facebook.com/ville.falkenmark" target="_blank">Add me on Facebook!</a></li>
                     <li class="iconsAdditonalInfo" id="hireMe"><a href="#myServices">My Services</a></li>
-                    <li class="iconsAdditonalInfo" id="linkedInMe"><a href="https://www.linkedin.com/hp/?dnr=imMPcqK9gJcQP8xvipIrB9S5l_wiHx3Mk5-f&trk=nav_responsive_tab_home"
-                                                                    target="_blank">Add me on LinkedIn!</a></li>
-                    </nav>
+                    <li class="iconsAdditonalInfo" id="linkedInMe"><a href="https://www.linkedin.com/hp/?dnr=imMPcqK9gJcQP8xvipIrB9S5l_wiHx3Mk5-f&trk=nav_responsive_tab_home" target="_blank">Add me on LinkedIn!</a></li>
+
                 </ul>
+                </nav>
 
 
 
                 <a href="#contactBackground"><i class="brightArrow arrows flaticon-arrow103"></i></a>
             </div>
+        </div>
     </section>
 
     <section>
@@ -477,20 +505,22 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
                     large batches of discountcodes for campaigns and übersafe Passwords for your Home Network etc.</span>
                         </div>
 
-                    </div>
                     </a>
                 </div>
+
+                </div>
+
             </div>
             <div class="portfolioItemBackground">
                 <div class="portfolioItem">
-                    <div id="johannaGame"><a href="johannaSpelet/johannaGame.html" target="_blank">
+                    <div id="johannaGame"><a href="http://vilhelmfalkenmark.github.io/johannaSpelet/johannaGame.html" target="_blank">
                         <div class="portfolioLayer"><span>This is the Johanna Point and Click Survivalgame<br><br>A simple game that I designed mainly to practice Javascript but also to practice nested HTML and basic Sass. Don´t take it to seriously.
                         </span>
                         </div>
+                    </a>
 
                     </div>
                 </div>
-                </a>
             </div>
         </div>
     </section>
@@ -513,8 +543,7 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
                     <p><strong>Please send me an email or call me if you want to discuss your project!</strong></p>
 
                                              <p class="contactMe"><a href="#contact">My contact Info</a></p>
-
-                    <a href="#header"><i class="brightArrow arrows flaticon-arrow103"></i></a>
+                    <a href="#header" id="myServicesArrow"><i class="brightArrow arrows flaticon-arrow103"></i></a>
 
                 </div>
             </div>
@@ -525,25 +554,21 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 
         <div class="content">
 
+            <div id="finalWords">
+                <h2>Hire me to do your website! </h2>
+                    <p>I will make it shine.</p>
+                <div id="map-canvas">
+                </div>
 
-            <a href="#header"><i class="darkArrow arrows flaticon-arrow103"></i></a>
-            <a href="#header"><i class="darkArrow arrows flaticon-arrow103"></i></a>
-            <a href="#header"><i class="darkArrow arrows flaticon-arrow103"></i></a>
-            <a href="#header"><i class="darkArrow arrows flaticon-arrow103"></i></a>
+            </div>
+
+
+
+
 
         </div>
     </section>
-    <!--
-        <section>
-            <div id="myNameIsVille">
-                <div class="content">
-                    <div id="hello"><h2>Hello!</h2><span> My name is Vilhelm Falkenmark and I Code Front-End stuff!</span></div>
-                </div>
-                <a href="#header"><i class="brightArrow arrows flaticon-arrow103"></i></a>
-            </div>
 
-        </section>
-    -->
     <section>
         <div id="thankYouBackground">
             <div class="content">
@@ -559,9 +584,9 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 
 <footer>
 <section>
-<div id="footer">
-<div class="content">
+    <div class="content">
 
+    <div id="footer">
 
 <ul class="footerList">
     <li><a href="http://vilhelmfalkenmark.github.io/">vilhelmfalkenmark.github.com</a></li>
@@ -569,6 +594,8 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
     <li><a href="mailto:vilhelmfalkenmark@gmail.com?">vilhelmfalkenmark@gmail.com</a></li>
     <li>&copy; All rights reserved</li>
 </ul>
+
+
 </div>
 
 </div>
@@ -576,6 +603,27 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 </footer>
 
 </div>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/main.js"></script>
+
+<script type="text/javascript">
+    /*    function initialize() {
+        var mapOptions = {
+            center: { lat: 59.349063, lng: 18.064843},
+            zoom: 12,
+            styles:  [ { "elementType": "labels.text", "stylers": [ { "visibility": "simplified" }, { "invert_lightness": true }, { "color": "#fffbfe" } ] },{ "featureType": "landscape", "stylers": [ { "color": "#414141" } ] },{ "featureType": "road", "stylers": [ { "color": "#000000" } ] },{ "featureType": "water", "stylers": [ { "color": "#726e6e" } ] },{ "featureType": "road", "elementType": "labels.text", "stylers": [ { "color": "#fffffb" } ] },{ "featureType": "poi", "stylers": [ { "color": "#ffffff" } ] },{ "featureType": "transit", "stylers": [ { "visibility": "off" } ] } ]};
+
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+                mapOptions);
+
+
+
+
+
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);*/
+</script>
 
 
 

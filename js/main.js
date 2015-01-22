@@ -2,8 +2,13 @@
  * Created by vilhelmfalkenmark on 15-01-13.
  */
 
-$( document ).ready(function() {
+$(document).ready(function() {
 
+
+
+    $(".hide").css({
+        "display": "none"
+    });
 
    /* $(window).resize(function(){
         if ($(".lifeStoryContent").css("display") == "inline-block" ){
@@ -12,6 +17,9 @@ $( document ).ready(function() {
     });
 
     */
+
+
+
 
     $('a[href^="#"]').on('click',function (e) {
         e.preventDefault();
@@ -68,6 +76,8 @@ $( document ).ready(function() {
       });
 
 
+    /*
+
     $("#hireMe").click(function() {
         $("#myServices").fadeIn("slow");
     });
@@ -76,7 +86,7 @@ $( document ).ready(function() {
         $("#myServices").fadeIn("slow");
     });
 
-
+*/
 
 
 

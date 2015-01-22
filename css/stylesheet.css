@@ -5,14 +5,18 @@
   vertical-align: top;
   margin: 40px; }
 
-.arrows, a, a:active, a:focus, a:visited, a:hover, #headerNavigation li a, .round, .red:hover, .green:hover, .orange:hover, .red:active, .green:active, .orange:active, .icons, .icons:hover, .icons a, .icons a:hover, .iconsAdditonalInfo, .iconsAdditonalInfo:hover, .iconsAdditonalInfo a, .iconsAdditonalInfo a:hover, .portfolioLayer, .portfolioLayer:hover, .contactMe a, .contactMe a:hover {
+/*%hovertransition
+{
   -webkit-transition: All 0.2s ease;
   -moz-transition: All 0.5s ease;
   -o-transition: All 0.5s ease;
   -ms-transition: All 0.5s ease;
   transition: All 0.3s ease;
-  cursor: pointer; }
-
+  // -webkit-transition-timing-function: linear; // Safari and Chrome
+  //transition-timing-function: linear;
+  cursor: pointer;
+}
+*/
 .red:hover, .green:hover, .orange:hover {
   -moz-box-shadow: 0 0 20px #414141;
   -webkit-box-shadow: 0 0 20px #414141;
@@ -27,12 +31,20 @@
 
 General Styling
 =========================================*/
+.arrows, a, a:active, a:focus, a:visited, a:hover, .round, .red:hover, .green:hover, .orange:hover, .red:active, .green:active, .orange:active, .contactMe a, .contactMe a:hover, .icons, .icons:hover, .icons a, .icons a:hover, .iconsAdditonalInfo, .iconsAdditonalInfo:hover, .iconsAdditonalInfo a, .iconsAdditonalInfo a:hover, .portfolioLayer, .portfolioLayer:hover {
+  -webkit-transition: All 0.2s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.3s ease;
+  cursor: pointer; }
+
 * {
   box-sizing: border-box; }
 
 body {
   font-family: 'Open Sans', "arial", "helvetica neue" sans-serif;
-  font-weight: 200; }
+  font-size: 34px; }
 
 #container {
   margin: 0 auto;
@@ -40,7 +52,7 @@ body {
 
 .content {
   margin: 0 auto;
-  max-width: 90%; }
+  max-width: 100%; }
 
 .main-content {
   margin: 0 auto;
@@ -81,7 +93,7 @@ h2 {
 ===========================================================
 */
 #header {
-  background: url(../images/leavesBackground.jpg) no-repeat fixed center center;
+  background: url(../images/citybackground.jpg) no-repeat fixed center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -102,56 +114,59 @@ h2 {
 h1 {
   font-family: 'Stalemate', cursive !important;
   color: #f3efef;
-  font-size: 6rem; }
+  font-size: 7rem; }
 
-#topMenu {
-  text-align: left; }
+#mobileMenuWrapper {
+  display: block;
+  width: 100%;
+  height: 100px;
+  margin: 0 auto; }
 
-#headerNavigation li {
-  margin-right: 20px;
-  display: inline-block;
-  font-size: 20px;
-  padding: 20px; }
+#mobileMenuWrapper:hover #headerMobileNavigation .mobilemenulistItem {
+  visibility: visible;
+  top: 20px;
+  left: 0; }
 
-#headerNavigation li a {
-  color: white; }
+#mobileMenuWrapper:active #headerMobileNavigation .mobilemenulistItem {
+  visibility: visible;
+  top: 20px;
+  left: 0; }
 
-#headerNavigation li a:visited {
-  color: white; }
+#mobileMenuWrapper:hover .mobilemenulistItem {
+  visibility: visible; }
 
-#headerNavigation li a:hover {
+.headerMobileNavigation {
+  margin-top: -40px; }
+
+.mobilemenulistItem {
+  background-color: rgba(0, 0, 0, 0.65); }
+
+.mobilemenulistItem a {
+  color: white;
+  font-size: 40px;
+  margin: 6px; }
+
+.mobilemenulistItem a:hover {
+  color: #747474; }
+
+.mobilemenulistItem a:active {
   color: #747474; }
 
 .headerText {
   padding-top: 170px;
   color: white !important; }
 
-svg path {
-  shadow: black;
-  fill: white;
-  stroke: white;
-  stroke-width: 1.5;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-dasharray: 1900;
-  stroke-dashoffset: 1900;
-  -webkit-animation: dash 35s linear forwards;
-  animation: dash 35s linear forwards; }
+.mobile-tablet-Header {
+  display: block; }
 
-@-webkit-keyframes dash {
-  to {
-    stroke-dashoffset: 0; } }
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0; } }
 /*
 
 About Vilhelm Falkenmark
 ========================================= */
 .round {
-  height: 240px;
-  width: 240px;
-  border-radius: 120px;
+  height: 360px;
+  width: 360px;
+  border-radius: 240px;
   display: inline-block;
   margin: 40px; }
 
@@ -160,7 +175,7 @@ About Vilhelm Falkenmark
   top: 35%;
   transform: translateY(-60%);
   color: #f3efef;
-  font-size: 55px;
+  font-size: 75px;
   text-shadow: 1px 1px 3px #747474;
   font-family: 'Stalemate', cursive !important; }
 
@@ -198,13 +213,26 @@ About Vilhelm Falkenmark
 #contact {
   color: #f3efef; }
 
+.contactMe a {
+  font-size: 24px;
+  color: white; }
+
+.contactMe a:hover {
+  color: #747474; }
+
 .icons:before {
   margin: 0; }
 
 .icons {
+  margin: 20px;
+  width: 80px;
   padding-top: 70px;
   font-size: 90px;
   color: #f3efef; }
+
+#handShake {
+  font-size: 80px;
+  margin-right: 35px; }
 
 .icons:hover {
   color: #414141; }
@@ -216,10 +244,11 @@ About Vilhelm Falkenmark
   color: #414141; }
 
 .iconsAdditonalInfo {
-  margin-top: 0px !important;
-  font-size: 32px;
+  display: none;
+  font-size: 20px;
   color: white;
-  text-shadow: 3px 3px 3px #747474; }
+  margin: 20px;
+  width: 80px; }
 
 .iconsAdditonalInfo:hover {
   color: #747474; }
@@ -235,21 +264,16 @@ About Vilhelm Falkenmark
 Portfolio!
 ================================================================== */
 .portfolio-content {
-  max-width: 100%;
   margin: 0 auto; }
 
 .portfolioItemBackground {
-  margin: 60px;
+  margin: 10px;
   background: url(../images/macbook.png) no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   padding-top: 0px;
-  /*max-width: 100%;
-  height: auto;
-  width: auto\9;
-*/
   height: 354px;
   width: 600px;
   display: inline-block; }
@@ -265,7 +289,7 @@ Portfolio!
   font-size: 20px;
   color: white;
   position: relative;
-  top: 25%;
+  top: 15%;
   transform: translateY(-20%);
   text-align: center; }
 
@@ -308,23 +332,17 @@ My Services!
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 1000px;
+  height: 100%;
   width: 100%;
   top: 0;
   left: 0; }
 
 #myServices {
+  font-size: 24px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   color: #f3efef;
-  margin-top: 200px; }
-
-.contactMe a {
-  font-size: 24px;
-  color: white; }
-
-.contactMe a:hover {
-  color: #747474; }
+  margin: 0 auto; }
 
 /*
   Thank You!
@@ -335,7 +353,7 @@ My Services!
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 1000px;
+  height: 100%;
   width: 100%;
   top: 0;
   left: 0; }
@@ -348,14 +366,6 @@ My Services!
   font-size: 230px;
   color: #f3efef; }
 
-#hello {
-  padding-top: 250px; }
-
-#hello span {
-  font-family: 'Stalemate', cursive !important;
-  font-size: 130px;
-  color: #f3efef; }
-
 #myServices h2, ul {
   color: #f3efef; }
 
@@ -365,8 +375,7 @@ My Services!
 ============================================================ */
 #footer li {
   color: #414141;
-  font-size: 20px;
-  display: inline-block;
+  font-size: 40px;
   margin: 20px; }
 
 #footer li a {
@@ -378,157 +387,210 @@ My Services!
 /* HIDDEN STUFF
 
 =========================================================== */
-#lifeStoryContent {
+.tabletHeader {
   display: none; }
 
-#skillsAndResumeContent {
-  display: none; }
-
-#randomStuffContent {
-  display: none; }
-
-.mobileHeader {
-  visibility: hidden; }
-
-#mobileMenuWrapper {
-  display: none; }
-
-/*
-
-Desktop!
-======================================
-**/
-@media (min-width: 1000px) and (max-width: 1420px) {
-  .icons {
-    margin: 40px !important;
-    width: 100px !important; }
-
-  .iconsAdditonalInfo {
-    font-size: 25px;
-    margin: 40px !important;
-    width: 100px !important; } }
-/*
-
-Tablet!
-======================================
-
+/*#mobileMenuWrapper
+{
+  display: none;
+}
 */
-@media (min-width: 741px) and (max-width: 999px) {
-  .icons {
-    margin: 20px !important;
-    width: 80px !important; }
+#topMenu {
+  display: none; }
 
-  .iconsAdditonalInfo {
-    font-size: 20px;
-    margin: 20px !important;
-    width: 80px !important; } }
+#desktopHeader {
+  display: none; }
+
+#portrait {
+  display: none; }
+
 /*
 
-Phone!
-======================================
+Google Maps
+====================================================*/
+#map-canvas {
+  width: 100%;
+  height: 600px; }
 
-*/
-@media (max-width: 740px) {
-  #logoType {
-    margin-top: 0px; }
+@media (min-width: 1000px) {
+  /*
+  General Styling
+  ==================================================================================================================================
+  */
+  .arrows, a, a:active, a:focus, a:visited, a:hover, .round, .red:hover, .green:hover, .orange:hover, .red:active, .green:active, .orange:active, .contactMe a, .contactMe a:hover, .icons, .icons:hover, .icons a, .icons a:hover, .iconsAdditonalInfo, .iconsAdditonalInfo:hover, .iconsAdditonalInfo a, .iconsAdditonalInfo a:hover, .portfolioLayer, .portfolioLayer:hover {
+    -webkit-transition: All 0.2s ease;
+    -moz-transition: All 0.5s ease;
+    -o-transition: All 0.5s ease;
+    -ms-transition: All 0.5s ease;
+    transition: All 0.3s ease;
+    cursor: pointer; }
 
-  #headerNavigation {
-    text-align: center;
-    margin: 0 auto; }
+  body {
+    font-size: 16px; }
 
-  .mobileHeader {
-    margin-top: -30px;
-    visibility: visible; }
+  .content {
+    max-width: 90%; }
 
+  /*
+    Header!
+  ===================================================================================================================================
+  */
   #topMenu {
-    visibility: hidden; }
+    text-align: left;
+    display: block; }
+
+  #headerNavigation li {
+    margin-right: 20px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px; }
+
+  #headerNavigation li a {
+    color: white; }
+
+  #headerNavigation li a:visited {
+    color: white; }
+
+  #headerNavigation li a:hover {
+    color: #747474; }
+
+  #portrait {
+    float: right;
+    margin: 20px;
+    display: block;
+    height: 240px;
+    width: 240px;
+    border-radius: 120px;
+    background: url(../images/villePortrait.jpg) center; }
+
+  #portrait:after {
+    overflow: auto; }
 
   #desktopHeader {
+    padding-top: 160px;
+    display: block; }
+
+  .headerText {
+    padding-top: 70px;
+    color: white !important; }
+
+  svg path {
+    fill: white;
+    stroke: white;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1900;
+    stroke-dashoffset: 1900;
+    -webkit-animation: dash 35s linear forwards;
+    animation: dash 35s linear forwards; }
+
+  @-webkit-keyframes dash {
+    to {
+      stroke-dashoffset: 0; } }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0; } }
+ /*
+About me!
+===============================================================================================================================
+*/
+  .round {
+    height: 240px;
+    width: 240px;
+    border-radius: 120px;
+    margin: 40px; }
+
+  .round span {
+    font-size: 55px;
+    top: 35%; }
+
+  .icons {
+    margin: 40px; }
+
+  .iconsAdditonalInfo {
+    display: inline-block;
+    margin: 40px; }
+
+  /*
+  Portfolio!
+  ===============================================================================================================================
+  */
+  .portfolioItemBackground {
+    margin: 30px; }
+
+  .portfolioLayer span {
+    top: 25%; }
+
+  /*
+  My Services!
+  ===============================================================================================================================
+  */
+  #myServices {
+    font-size: 16px;
+    width: 90%; }
+
+  #myServicesArrow {
+    display: block; }
+
+  /*
+
+    FOOTER!
+  ============================================================ */
+  #footer li {
+    display: inline-block;
+    font-size: 20px; }
+
+  /* Stuff to hide
+===============================================================================================================================
+ */
+  #mobileMenuWrapper {
     display: none; }
 
-  #mobileMenuWrapper {
-    display: block;
-    padding-top: 10px;
-    width: 200px;
-    height: 100px;
-    margin: 0 auto; }
+  .mobile-tablet-Header, .tabletHeader, .mobileHeader {
+    display: none; } }
+@media (min-width: 740px) and (max-width: 999px) {
+  .arrows, a, a:active, a:focus, a:visited, a:hover, .round, .red:hover, .green:hover, .orange:hover, .red:active, .green:active, .orange:active, .contactMe a, .contactMe a:hover, .icons, .icons:hover, .icons a, .icons a:hover, .iconsAdditonalInfo, .iconsAdditonalInfo:hover, .iconsAdditonalInfo a, .iconsAdditonalInfo a:hover, .portfolioLayer, .portfolioLayer:hover {
+    -webkit-transition: All 0.2s ease;
+    -moz-transition: All 0.5s ease;
+    -o-transition: All 0.5s ease;
+    -ms-transition: All 0.5s ease;
+    transition: All 0.3s ease;
+    cursor: pointer; }
 
-  .mobilemenulistItem {
-    visibility: hidden; }
-
-  #mobileMenuWrapper:hover #headerMobileNavigation .mobilemenulistItem {
-    visibility: visible;
-    top: 20px;
-    left: 0;
-    width: 200px; }
-
-  #mobileMenuWrapper:active #headerMobileNavigation .mobilemenulistItem {
-    visibility: visible;
-    top: 20px;
-    left: 0;
-    width: 200px; }
-
-  #mobileMenuWrapper:hover .mobilemenulistItem {
-    visibility: visible; }
-
-  .headerMobileNavigation {
-    width: 200px;
-    margin-top: -40px; }
-
-  .mobilemenulistItem {
-    background-color: #373737; }
-
+  /*
+  Header!
+===================================================================================================================================
+ */
   .mobilemenulistItem a {
     color: white;
     font-size: 30px;
     margin: 6px; }
 
-  .mobilemenulistItem a:hover {
-    color: #747474; }
+  h1 {
+    font-size: 6rem; }
 
-  .mobilemenulistItem a:active {
-    color: #747474; }
-
-  /* About section */
-  #lifeStoryContent {
-    display: inline-block; }
-
-  #skillsAndResumeContent {
-    display: inline-block; }
-
-  #randomStuffContent {
-    display: inline-block; }
-
-  /* Contact me Section*/
-  .icons {
+  .mobileHeader {
     display: none; }
 
-  .iconsAdditonalInfo {
-    font-size: 30px; }
-
-  #myServices {
+  .tabletHeader {
     display: block; }
 
-  #thankYou span {
-    font-size: 130px; }
+  .iconsAdditonalInfo {
+    display: inline-block; }
 
-  .portfolio-content {
-    max-width: 100%; }
-
-  .lines {
-    border-top: 26px solid white;
-    content: "";
-    height: 15px;
-    width: 200px;
-    padding-top: 15px;
-    cursor: pointer; }
-
-  /* Portfolio Section */
+ /*
+Portfolio!
+===============================================================================================================================
+*/
   .portfolioItemBackground {
     margin: 20px; }
 
-  .portfolioItem {
-    margin-left: 20px;
-    margin-right: 20px; } }
+  /*
+    My Services!
+    ===============================================================================================================================
+    */
+  #myServices {
+    font-size: 20px; } }
 
 /*# sourceMappingURL=stylesheet.css.map */

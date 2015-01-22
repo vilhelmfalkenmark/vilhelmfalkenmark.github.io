@@ -1,0 +1,69 @@
+@media (min-width: 740px) and (max-width: 999px)
+{
+  %hovertransition
+  {
+  -webkit-transition: All 0.2s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.3s ease;
+  // -webkit-transition-timing-function: linear; // Safari and Chrome
+  //transition-timing-function: linear;
+  cursor: pointer;
+  }
+
+  /*
+  Header!
+===================================================================================================================================
+ */
+
+  .mobilemenulistItem a
+  {
+    color: white;
+    font-size: 30px;
+    margin: 6px;
+  }
+
+
+
+  h1
+  {
+
+    font-size: 6rem;
+  }
+
+ .mobileHeader
+  {
+    display: none;
+  }
+  .tabletHeader
+  {
+    display: block;
+  }
+
+  .iconsAdditonalInfo {
+    display: inline-block;
+  }
+
+  /*
+ Portfolio!
+ ===============================================================================================================================
+ */
+  .portfolioItemBackground // The image of macbooks, Iphones, etc.
+ {
+    margin: 20px;
+  }
+
+  /*
+    My Services!
+    ===============================================================================================================================
+    */
+
+  #myServices {
+    font-size: 20px;
+  }
+
+
+
+
+}
