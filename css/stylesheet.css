@@ -54,9 +54,16 @@ body {
   margin: 0 auto;
   max-width: 100%; }
 
+.footer-content {
+  margin: 0 auto;
+  max-width: 100%; }
+
 .main-content {
   margin: 0 auto;
   max-width: 80%; }
+
+.map-content {
+  background-color: grey; }
 
 .secondHeader {
   padding-top: 40px; }
@@ -200,7 +207,7 @@ About Vilhelm Falkenmark
 
 =========================================================== */
 #contactBackground {
-  background: url(../images/mooseBackground.jpeg) no-repeat fixed center center;
+  background: url(../images/cloudbackground.jpg) no-repeat fixed center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -409,6 +416,7 @@ My Services!
 Google Maps
 ====================================================*/
 #map-canvas {
+  padding-top: 20px;
   width: 100%;
   height: 600px; }
 

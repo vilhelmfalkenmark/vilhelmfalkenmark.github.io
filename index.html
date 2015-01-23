@@ -4,9 +4,10 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 -->
 <html>
 <head lang="en">
+    <link rel="icon" href="images/villePortrait.ico" type="image/icon">
     <meta charset="UTF-8">
-    <meta name="description" content="Vilhelm Falkenmark frilansande Front end utvecklare stockholm, Freelancing front end developer Stockholm">
-    <meta name="keywords" content="Vilhelm Falkenmark,HTML,CSS,JavaScript,Front-End Utvecklare, Front-End Developer,Bygga hemsida, Bygga Webbsida, Hemsida, Stockholm">
+    <meta name="description" content="Vilhelm Falkenmark frilansande Front End utvecklare stockholm, Freelancing Front End developer Stockholm">
+    <meta name="keywords" content="Vilhelm Falkenmark,HTML,CSS,JavaScript,Front End Utvecklare, Front End Developer, Stockholm">
     <meta name="author" content="Vilhelm Falkenmark">
     <title>Vilhelm Falkenmark Front-End Developer</title>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
@@ -19,32 +20,54 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
     <script type="text/javascript"
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6_rInsv9YWvF9-lCvjAlvnNTrICDVv-c"></script>
 
+    <!--Google maps Script!-->
     <script type="text/javascript">
         function initialize() {
             var myLatlng = new google.maps.LatLng(59.349063,18.064843);
 
             var mapOptions = {
-                    center: myLatlng,
-                    zoom: 12,
-                    styles:  [ { "elementType": "labels.text", "stylers": [ { "visibility": "simplified" }, { "invert_lightness": true }, { "color": "#fffbfe" } ] },{ "featureType": "landscape", "stylers": [ { "color": "#414141" } ] },{ "featureType": "road", "stylers": [ { "color": "#000000" } ] },{ "featureType": "water", "stylers": [ { "color": "#726e6e" } ] },{ "featureType": "road", "elementType": "labels.text", "stylers": [ { "color": "#fffffb" } ] },{ "featureType": "poi", "stylers": [ { "visibility": "off" } ] },{ "featureType": "transit", "stylers": [ { "visibility": "off" } ] } ]};
+                zoom: 13,
+                //zoomControl: false,
+               // zoomControl: false,
+                //scaleControl: false,
+                scrollwheel: false,
+                streetViewControl: false,
+
+                center: myLatlng,
+
+                //
+                styles:  [ { "elementType": "labels.text", "stylers": [ { "visibility": "simplified" }, { "invert_lightness": true }, { "color": "#ffffff" } ] }
+                        ,{ "featureType": "landscape", "stylers": [ { "color": "#646464" } ] },{ "featureType": "road", "stylers": [ { "color": "#000000" } ] }
+                        ,{ "featureType": "water", "stylers": [ { "color": "#BDC3C7" } ] }
+                        ,{ "featureType": "road", "elementType": "labels.text", "stylers": [ { "color": "#ffffff" } ] }
+                        ,{ "featureType": "poi", "stylers": [ { "visibility": "off" } ] }
+                        ,{ "featureType": "transit", "stylers": [ { "visibility": "off" } ] } ]};
 
                 var map = new google.maps.Map(document.getElementById('map-canvas'),
                         mapOptions);
 
+
+            var image = "images/myMarker.png";
+            //var myLatLng = new google.maps.LatLng(-33.890542, 151.274856);
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                icon: image
+            });
+
+
+/*
             var marker = new google.maps.Marker({
                 //color: "#ffffff",
                 position: myLatlng,
                 map: map,
                 title: 'Hello World!'
-            });
-
-
-
+            });*/
 
         }
             google.maps.event.addDomListener(window, 'load', initialize);
     </script>
-
+    <!--End Google Maps-->
 </head>
 <body>
 <div id="container">
@@ -66,7 +89,6 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 <div id="portrait"></div>
 
 
-<!--<img id="logoType" src="images/vilhelmfalkenmarklogga.png">-->
 <div id="topMenu">
     <nav>
         <ol id="headerNavigation">
@@ -87,7 +109,6 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 <span class="mobileHeader">Mobil Version</span>
 
 <div id="desktopHeader">
-
 
 
 <svg version="1.1"
@@ -354,15 +375,10 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
                        <br><br>
                         After I "graduated" the course I was sure what I wanted to be when I grew up, A feeling I unfortunately never felt during my time in Uppsala. I applied in the last minute for the
                         2-year long education in Front-End Development and got in.
-
-
-
-
                     </p>
                 </div>
 
                 <div id="skillsAndResumeContent" class="hide">
-                    <!--<h2 id="skillsAndResume">Skills and Resume!</h2>-->
 
                     <h2>Education</h2>
                     <ul>
@@ -379,12 +395,13 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
                                 <li>Various Graphical software such as Adobe Photoshop, After Effects and Illustrator</li>
                                 <li>CMS-Systems, Wordpress and Joomla</li>
                                 <li>Microsoft Office Package, Especially Excel.</li>
-                                <li>Search Engine Optimization</li>
+                                <li>E-Commerce</li>
                             </ul>
                         </li>
                         <li><h3>Experience in</h3>
                             <ul>
                                 <li>PHP, Ruby and C#</li>
+                                <li>Search Engine Optimization</li>
                                 <li>Various Business software, Mamut Visma, Specter, Askås, Fortnox.</li>
                             </ul>
                         </li>
@@ -495,35 +512,15 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
     </section>
 
     <section>
-        <div class="portfolio-content">
-            <h2 id="portfolio" class="secondHeader">Portfolio</h2>
+<div class="content">
+    <h2>Front-End Developer looking for work!</h2>
+</div>
 
-            <div class="portfolioItemBackground">
-                <div class="portfolioItem">
-                    <div id="codeGenerator"><a href="Rabattkodsgenerator/index.html" target="_blank">
-                        <div class="portfolioLayer"><span>This is the Project Codegenerator<br><br> A Service which generates
-                    large batches of discountcodes for campaigns and übersafe Passwords for your Home Network etc.</span>
-                        </div>
 
-                    </a>
-                </div>
 
-                </div>
-
-            </div>
-            <div class="portfolioItemBackground">
-                <div class="portfolioItem">
-                    <div id="johannaGame"><a href="http://vilhelmfalkenmark.github.io/johannaSpelet/johannaGame.html" target="_blank">
-                        <div class="portfolioLayer"><span>This is the Johanna Point and Click Survivalgame<br><br>A simple game that I designed mainly to practice Javascript but also to practice nested HTML and basic Sass. Don´t take it to seriously.
-                        </span>
-                        </div>
-                    </a>
-
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
+
+
 
     <section>
         <div id="myServicesBackground">
@@ -549,25 +546,37 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
             </div>
         </div>
     </section>
-
     <section>
+        <div class="portfolio-content">
+            <h2 id="portfolio" class="secondHeader">Portfolio</h2>
 
-        <div class="content">
+            <div class="portfolioItemBackground">
+                <div class="portfolioItem">
+                    <div id="codeGenerator"><a href="Rabattkodsgenerator/index.html" target="_blank">
+                        <div class="portfolioLayer"><span>This is the Project Codegenerator<br><br> A Service which generates
+                    large batches of discountcodes for campaigns and übersafe Passwords for your Home Network etc.</span>
+                        </div>
 
-            <div id="finalWords">
-                <h2>Hire me to do your website! </h2>
-                    <p>I will make it shine.</p>
-                <div id="map-canvas">
+                    </a>
+                    </div>
+
                 </div>
 
             </div>
+            <div class="portfolioItemBackground">
+                <div class="portfolioItem">
+                    <div id="johannaGame"><a href="http://vilhelmfalkenmark.github.io/johannaSpelet/johannaGame.html" target="_blank">
+                        <div class="portfolioLayer"><span>This is the Johanna Point and Click Survivalgame<br><br>A simple game that I designed mainly to practice Javascript but also to practice nested HTML and basic Sass. Don´t take it to seriously.
+                        </span>
+                        </div>
+                    </a>
 
-
-
-
-
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
 
     <section>
         <div id="thankYouBackground">
@@ -584,7 +593,7 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 
 <footer>
 <section>
-    <div class="content">
+    <div class="footer-content">
 
     <div id="footer">
 
@@ -595,9 +604,10 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
     <li>&copy; All rights reserved</li>
 </ul>
 
-
-</div>
-
+    </div>
+        <div class="map-content">
+            <div id="map-canvas"></div>
+        </div>
 </div>
 </section>
 </footer>
@@ -606,26 +616,6 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/main.js"></script>
-
-<script type="text/javascript">
-    /*    function initialize() {
-        var mapOptions = {
-            center: { lat: 59.349063, lng: 18.064843},
-            zoom: 12,
-            styles:  [ { "elementType": "labels.text", "stylers": [ { "visibility": "simplified" }, { "invert_lightness": true }, { "color": "#fffbfe" } ] },{ "featureType": "landscape", "stylers": [ { "color": "#414141" } ] },{ "featureType": "road", "stylers": [ { "color": "#000000" } ] },{ "featureType": "water", "stylers": [ { "color": "#726e6e" } ] },{ "featureType": "road", "elementType": "labels.text", "stylers": [ { "color": "#fffffb" } ] },{ "featureType": "poi", "stylers": [ { "color": "#ffffff" } ] },{ "featureType": "transit", "stylers": [ { "visibility": "off" } ] } ]};
-
-        var map = new google.maps.Map(document.getElementById('map-canvas'),
-                mapOptions);
-
-
-
-
-
-    }
-    google.maps.event.addDomListener(window, 'load', initialize);*/
-</script>
-
-
 
 </body>
 </html>
