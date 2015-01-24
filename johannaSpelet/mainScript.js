@@ -95,7 +95,7 @@ function updateScore(updateScore)
     }
     else if(gettotalScore()<=-10)
     {
-        resultat.innerHTML = "Du är en självmordsbenägen ung man verkar det som. Johanna avskedar dig från förhållandet och du förlorar. Du förlorar som bara den. Riktigt riktigt riktigt dåligt resultat"+"<br>"+ "För att vara exakt så fick du "+gettotalScore()+ " sjukt låga poäng! Asså, vi upprepar... DU FICK "+gettotalScore()+ " POÄNG!!! Rekorddåligt. Verkligen verkligen dåligt.";
+        resultat.innerHTML = "Du är en självmordsbenägen ung man verkar det som. Johanna avskedar dig från förhållandet och du förlorar. Du förlorar som bara den. Riktigt riktigt riktigt dåligt resultat"+"<br>"+ "För att vara exakt så fick du "+gettotalScore()+ " låga poäng! Verkligen dåligt.";
     }
     else if(gettotalScore()>=0 && gettotalScore()<=10)
     {
@@ -107,7 +107,7 @@ function updateScore(updateScore)
     }
     else if(gettotalScore()>=20 && gettotalScore()<=30)
     {
-        resultat.innerHTML = "Du fick "+gettotalScore()+ " poäng! Det är ett bra resultat. Du har räddat Johannas kväll. Det blir en trevlig kväll för Johanna trots allt.";
+        resultat.innerHTML = "Du fick "+gettotalScore()+ " poäng! Det är ett bra resultat. Det blir en trevlig kväll för Johanna trots allt.";
     }
     else if(gettotalScore()>=30)
     {
