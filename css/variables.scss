@@ -6,7 +6,11 @@ $centerMargin: 0 auto;
 $darkText: #414141;
 $brightText: #f3efef;
 $red: #D24D57;
+<<<<<<< HEAD
 $green: #1BBC9B;
+=======
+$green: #26A65B;
+>>>>>>> Imac--Branch
 $orange: #F2784B;
 $hoverText: lighten($darkText, 20%);
 
@@ -20,9 +24,15 @@ $portfolioItemWidth: 458px;
   cursor: pointer;
   display: inline-block;
   //font-style: normal;
+<<<<<<< HEAD
   width: 140px;
   vertical-align: top;
   margin: 40px;
+=======
+ // width: 140px;
+  vertical-align: top;
+ // margin: 40px;
+>>>>>>> Imac--Branch
 }
 
 /*%hovertransition
