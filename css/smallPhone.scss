@@ -1,0 +1,93 @@
+@media (min-width: 1px) and (max-width: 739px) {
+  .mobilemenulistItem a {
+    font-size: 50px;
+  }
+  .mobile-tablet-Header {
+    font-size: 60px;
+  }
+
+  #tablet-mobile-presentation {
+    font-size: 30px;
+  }
+
+  .portfolio-content // Wrapper of the portfolio Stuff
+ {
+    //max-width: 100%;
+  }
+  .portfolioItemBackground // The image of macbooks, Iphones, etc.
+ {
+    background-image: none;
+    margin: 0 auto;
+    max-width: 450px;
+    display: block;
+    height: auto;
+  }
+
+  .portfolioItem // Position of the div inside the macbook
+ {
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-right: 2px;
+  }
+  .portfolioLayer span // The text on hover over portfolio items
+ {
+    font-size: 20px;
+    color: white;
+    //position: relative; Hej
+    top: 15%; // Adjust the text to the top. The more you increase, the further it will go
+    transform: translateY(-20%);
+    text-align: center;
+  }
+
+  #codeGenerator // The image of the code generator!
+ {
+
+    background: url(../images/codeGen2.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #johannaGame  // The image of the Johannagame!
+  {
+    background: url(../images/johannaGame.jpg) no-repeat; // Hej hej
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    //max-width:240px; /* you can use % */
+  }
+  .portfolioLayer // The dark that appears when you hover over the computer!
+ {
+    top: 0px;
+    height: $portfolioItemHeight;
+    width: $portfolioItemWidth;
+    // background: rgba(0,0,0, 0.5);
+    background: #141414;
+    opacity: 0;
+  }
+
+  .round {
+    height: $circleSize;
+    width: $circleSize;
+    border-radius: $circleSize/2;
+    margin: 20px;
+  }
+  .round span
+  {
+    font: 52px Stalemate, sans-serif;
+
+  }
+
+
+  #footerList li
+  {
+    font-size: 20px;
+  }
+
+
+
+}
+
+
+

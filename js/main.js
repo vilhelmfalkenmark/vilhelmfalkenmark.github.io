@@ -2,8 +2,13 @@
  * Created by vilhelmfalkenmark on 15-01-13.
  */
 
-$( document ).ready(function() {
+$(document).ready(function() {
 
+
+
+    $(".hide").css({
+        "display": "none"
+    });
 
    /* $(window).resize(function(){
         if ($(".lifeStoryContent").css("display") == "inline-block" ){
@@ -13,6 +18,9 @@ $( document ).ready(function() {
 
     */
 
+
+
+
     $('a[href^="#"]').on('click',function (e) {
         e.preventDefault();
 
@@ -21,12 +29,32 @@ $( document ).ready(function() {
 
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top
-        }, 900, 'swing', function () {
+        }, 1000, 'swing', function () {
             window.location.hash = target;
         });
     });
 
- $('#lifeStoryButton').click(function() {
+
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= $('#header').height())
+          {
+            $(".menulistItem").css({"display":"block"});
+          }
+        else {
+
+            $(".menulistItem").css({"display":"inline-block"});
+
+        }
+    });
+
+
+
+
+
+
+    $('#lifeStoryButton').click(function() {
 
         $('#skillsAndResumeContent').hide("slow");
         $('#randomStuffContent').hide("slow");
@@ -48,6 +76,8 @@ $( document ).ready(function() {
       });
 
 
+    /*
+
     $("#hireMe").click(function() {
         $("#myServices").fadeIn("slow");
     });
@@ -55,5 +85,11 @@ $( document ).ready(function() {
     $("#handShake").click(function() {
         $("#myServices").fadeIn("slow");
     });
+
+*/
+
+
+
+
 
 });
