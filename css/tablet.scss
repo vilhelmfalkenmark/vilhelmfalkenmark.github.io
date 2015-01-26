@@ -24,12 +24,10 @@
     margin: 6px;
   }
 
-
-  h1
-  {
-
-    font-size: 6rem;
+  .mobile-tablet-Header {
+    font-size: 70px;
   }
+
   #tablet-mobile-presentation {
     font-size: 40px;
   }
@@ -66,6 +64,10 @@
   #thankYou span
   {
     font-size: 230px;
+  }
+  #myServicesArrow
+  {
+    display: none;
   }
 
 

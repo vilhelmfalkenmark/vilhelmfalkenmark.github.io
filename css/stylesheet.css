@@ -389,6 +389,18 @@ Google Maps
   #tablet-mobile-presentation {
     font-size: 30px; }
 
+  #header {
+    background: url(../images/citybackground.jpg) no-repeat scroll center center; }
+
+  #myServicesBackground {
+    background: none white; }
+
+  #thankYouBackground {
+    background: url(../images/forestBackground.jpg) no-repeat scroll center center; }
+
+  #myServicesArrow {
+    display: none; }
+
   .portfolioItemBackground {
     background-image: none;
     margin: 0 auto;
@@ -437,6 +449,9 @@ Google Maps
 
   .round span {
     font: 52px Stalemate, sans-serif; }
+
+  .hide {
+    font-size: 18px; }
 
   #footerList li {
     font-size: 20px; } }
@@ -495,7 +510,7 @@ Google Maps
     overflow: auto; }
 
   #desktopHeader {
-    padding-top: 100px;
+    padding-top: 50px;
     display: block;
     color: white; }
 
@@ -599,8 +614,8 @@ About me!
     font-size: 60px;
     margin: 6px; }
 
-  h1 {
-    font-size: 6rem; }
+  .mobile-tablet-Header {
+    font-size: 70px; }
 
   #tablet-mobile-presentation {
     font-size: 40px; }
@@ -626,7 +641,10 @@ Portfolio!
     font-size: 20px; }
 
   #thankYou span {
-    font-size: 230px; } }
+    font-size: 230px; }
+
+  #myServicesArrow {
+    display: none; } }
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions

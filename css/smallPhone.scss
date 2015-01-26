@@ -10,6 +10,31 @@
     font-size: 30px;
   }
 
+
+
+  //* Background on mobile devices */
+  #header{
+    background: url(../images/citybackground.jpg) no-repeat scroll center center;
+  }
+
+
+  #myServicesBackground
+  {
+   background: none white;
+    //background-color: white;
+  }
+
+  #thankYouBackground
+  {
+    background: url(../images/forestBackground.jpg) no-repeat scroll center center;
+  }
+
+#myServicesArrow
+{
+  display: none;
+}
+
+
   .portfolio-content // Wrapper of the portfolio Stuff
  {
     //max-width: 100%;
@@ -76,9 +101,12 @@
   .round span
   {
     font: 52px Stalemate, sans-serif;
-
   }
 
+  .hide
+  {
+    font-size: 18px;
+  }
 
   #footerList li
   {

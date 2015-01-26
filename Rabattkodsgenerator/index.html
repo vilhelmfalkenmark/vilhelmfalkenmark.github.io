@@ -1,62 +1,52 @@
-<!--Hand-coded in Stockholm, Sweden with help of the fantastic kickstarter framework from 99lime.com-->
-
 <!DOCTYPE html>
+<!--Hand-coded in Stockholm, Sweden with help of the fantastic kickstarter framework from 99lime.com-->
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="description" content="Create randomized set of characters. batch of discount codes to send to a number of customers, create safe passwords ">
+    <meta name="keywords" content="randomized set of characters.create discount codes, create safe passwords ">
+    <meta name="author" content="Vilhelm Falkenmark">
     <title>Code Generator</title>
 
-<link rel ="stylesheet" href="css/kickstart.css">
+    <link rel ="stylesheet" href="css/kickstart.css">
     <link rel="stylesheet" type="text/css" href="style.css" media="all" />
-
     <link rel ="stylesheet" href="css/stylesheet.css">
-
     <link href='http://fonts.googleapis.com/css?family=Stalemate' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
-
-
-<script src="main.js"></script>
-
-
 </head>
 <body>
-
-<div class="grid">
-
+<div id="upperContainer">
     <div class="grid">
-        <div class="col_12" style="margin-top:5px;"><h1 class="center">{Code Generator}</h1></div>
         <div class="grid">
-               <div class="col_4 center"> <i class="icon-laptop icon-4x" style="color: #d8d8d8;"></i></div>
+            <div class="col_12" style="margin-top:5px;"><h1 class="center">{Code Generator}</h1></div>
+            <div class="grid">
+                <div class="col_4 center"> <i class="icon-laptop icon-4x" style="color: #d8d8d8;"></i></div>
                 <div class="col_4 center"> <i class="icon-lock icon-4x center" style="color: #d8d8d8;"></i></div>
                 <div class="col_4 center"> <i class="icon-shopping-cart icon-4x " style="color: #d8d8d8;"></i></div>
-    </div>
-    </div>
-
             </div>
-            <div class="grid">
-            <div class="col_12"<h3 style="color:#47a876;margin-top:0px;text-align: center;">Welcome to Code Generator! </h3>Create your absolutely randomized set of characters.
-                Whether you want to create a batch of discount codes to send to a number of customers, create über-safe passwords for your wifi-network or
-                e-mail account or such, create it here. It is absolutely all this website does and is 100% free. Nothing else. Thanks for peeking in!
-            </div>
-</div>
-            <hr class="alt1" style="color: #c94140 !important;"/>
+        </div>
 
-
-<div class="grid" >
-    <div class="col_6 center">
-        <input type="checkbox" id="capitals">
-        <label for="capitals">Capitals</label>
-        <br>
-         <input type="checkbox" id="minuscule">
-        <label for="minuscule">Minuscule</label>
-        <br>
-        <input type="checkbox" id="numbers">
-        <label for="numbers">Numbers</label>
-        <br>
-        <input type="checkbox" id="specials">
-        <label for="specials">Specials</label>
-     </div>
+    </div>
+    <div class="grid">
+        <div class="col_12"<h3 style="color:#47a876;margin-top:0px;text-align: center;">Welcome to Code Generator! </h3>Create your absolutely randomized set of characters.
+        Whether you want to create a batch of discount codes to send to a number of customers, create über-safe passwords for your wifi-network or
+        e-mail account or such, create it here. It is absolutely all this website does and is 100% free. Nothing else.
+    </div>
+    <hr class="alt1" style="color: #c94140 !important;"/>
+    <div class="grid" >
+        <div class="col_6 center">
+            <input type="checkbox" id="capitals">
+            <label for="capitals">Capitals</label>
+            <br>
+            <input type="checkbox" id="minuscule">
+            <label for="minuscule">Minuscule</label>
+            <br>
+            <input type="checkbox" id="numbers">
+            <label for="numbers">Numbers</label>
+            <br>
+            <input type="checkbox" id="specials">
+            <label for="specials">Specials</label>
+        </div>
         <div class="col_6 center">
             <p class="numberLabel">I want the following amount of characters:</p>
             <input id="codeLength" class="inputNumber" type="number"min="0" value="12"/>
@@ -64,38 +54,38 @@
             <input id="numberofCodes" class="inputNumber" type="number" min="0" value="1"/>
         </div>
 
-</div>
+    </div>
     <div class="clear"></div>
 
-<!--<button onclick="makeCode()">Skapa min kod</button>-->
-<div class="grid" style="margin-top: 25px;">
-     <div class="col_12 center">
-        <!--<div id="codeButton" onclick="makeCode()">Create my code(s)</div>-->
-        <button id="codeButton" onclick="makeCode()">Create Codes!</button>
+    <!--<button onclick="makeCode()">Skapa min kod</button>-->
+    <div class="grid" style="margin-top: 25px;">
+        <div class="col_12 center">
+            <!--<div id="codeButton" onclick="makeCode()">Create my code(s)</div>-->
+            <button id="codeButton" onclick="makeCode()">Create Codes!</button>
 
-   </div>
+        </div>
 
+    </div>
+
+
+    <div class="clear"></div>
 </div>
-
-<div class="clear"></div>
-
-<div class="grid" style="margin-top: 20px;">
-<div class="col_12">
-    <div id="codeContainer">
-        <table id="codeTable" cellspacing="0" cellpadding="0">
-            <thead>
-            <tr>
-                <th>Your Code(s)</th></tr></thead>
-            <tbody>
-            </tbody>
-        </table>
-
-
+<div id="bottomContainer">
+    <div class="grid" style="margin-top: 20px;">
+        <div class="col_12">
+            <div id="codeContainer">
+                <table id="codeTable" cellspacing="0" cellpadding="0">
+                    <thead>
+                    <tr>
+                        <th>Your Code(s)</th></tr></thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
     </div>
 </div>
-
-</div>
-
+<script src="main.js"></script>
 </body>
 </html>

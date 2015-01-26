@@ -12,10 +12,14 @@ body
     margin:0;
     padding:0 0 0 0;
     color:#000;
-    background:#efefef url(background.png);
-    font:normal 0.9em/150% 'Arimo', arial, verdana, sans-serif;
     text-shadow: 0 0 1px transparent; /* google font pixelation fix */
 }
+
+#upperContainer
+{
+    background:#efefef url(background.png);
+}
+
 
 .inputNumber /*Change The number input boxes*/
 {   height: 20px;
@@ -153,8 +157,13 @@ input[type=checkbox]:checked + label:before
     box-shadow: inset 0px 10px 8px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px #000000;
     border: solid #c94140;
 }
+
 #codeTable
 {
-    color: #ede3dc;
-
+    color: black;
 }
+#bottomContainer
+{
+    background-color: white !important;
+}
+
