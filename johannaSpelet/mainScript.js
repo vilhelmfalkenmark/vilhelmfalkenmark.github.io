@@ -33,7 +33,7 @@ function updateScore(updateScore)
     }
     else if(gettotalScore()<=0 && gettotalScore()>=-10)
     {
-        resultat.innerHTML = "Du fick "+gettotalScore()+ " poäng vilket är riktigt dåligt. Sannolikt så kommer du inte överleva natten."+ "<br>"+"Johanna gör slut och blir ihop med Tim igen. Hur känns det?";
+        resultat.innerHTML = "Du fick "+gettotalScore()+ " poäng vilket är riktigt dåligt. Sannolikt så kommer du inte överleva natten."+ "<br>"+"Johanna gör slut och blir ihop med person Z igen. Hur känns det?";
     }
     else if(gettotalScore()<=-10)
     {

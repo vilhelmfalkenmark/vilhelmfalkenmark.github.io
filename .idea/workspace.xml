@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="79fe1cea-f59a-40f6-b332-b2296f1ec630" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/johannaSpelet/mainScript.js" afterPath="$PROJECT_DIR$/johannaSpelet/mainScript.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vilhelmfalkenmark.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,13 +30,23 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30440098" vertical-offset="651" max-vertical-offset="4215">
-              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+            <state vertical-scroll-proportion="3.6491442" vertical-offset="0" max-vertical-offset="4215">
+              <caret line="433" column="58" selection-start-line="433" selection-start-column="58" selection-end-line="433" selection-end-column="58" />
               <folding>
                 <element signature="tag#script#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#svg#0;tag#div#4;tag#div#0;tag#header#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="e#40812#42541#0" expanded="false" />
+                <element signature="e#40702#42431#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mainScript.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/johannaSpelet/mainScript.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="163" max-vertical-offset="1005">
+              <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -55,11 +67,11 @@
         <option value="$PROJECT_DIR$/stylesheet.css" />
         <option value="$PROJECT_DIR$/johannaSpelet/stylesheet.css" />
         <option value="$PROJECT_DIR$/johannaSpelet/stylesheet.scss" />
-        <option value="$PROJECT_DIR$/johannaSpelet/mainScript.js" />
         <option value="$PROJECT_DIR$/css/main2.scss" />
         <option value="$PROJECT_DIR$/css/smallPhone.scss" />
         <option value="$PROJECT_DIR$/css/tablet.scss" />
         <option value="$PROJECT_DIR$/css/desktop.scss" />
+        <option value="$PROJECT_DIR$/johannaSpelet/mainScript.js" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -96,7 +108,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -115,8 +126,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vilhelmfalkenmark.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vilhelmfalkenmark.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="johannaSpelet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -187,12 +213,24 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="651" max-vertical-offset="4215">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding>
+            <element signature="tag#script#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#svg#0;tag#div#4;tag#div#0;tag#header#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="e#40702#42431#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="8955">
           <caret line="9" column="72" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
           <folding>
             <element signature="tag#script#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#svg#0;tag#div#4;tag#div#0;tag#header#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="e#40812#42541#0" expanded="false" />
+            <element signature="e#40702#42431#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -204,7 +242,7 @@
           <folding>
             <element signature="tag#script#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#svg#0;tag#div#4;tag#div#0;tag#header#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="e#40812#42541#0" expanded="false" />
+            <element signature="e#40702#42431#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -216,7 +254,7 @@
           <folding>
             <element signature="tag#script#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#svg#0;tag#div#4;tag#div#0;tag#header#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="e#40812#42541#0" expanded="false" />
+            <element signature="e#40702#42431#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -232,13 +270,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.50541514" vertical-offset="210" max-vertical-offset="2445">
           <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/johannaSpelet/mainScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40973872" vertical-offset="0" max-vertical-offset="1005">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -284,14 +315,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/johannaSpelet/mainScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="163" max-vertical-offset="1005">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30440098" vertical-offset="651" max-vertical-offset="4215">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        <state vertical-scroll-proportion="3.6491442" vertical-offset="0" max-vertical-offset="4215">
+          <caret line="433" column="58" selection-start-line="433" selection-start-column="58" selection-end-line="433" selection-end-column="58" />
           <folding>
             <element signature="tag#script#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#svg#0;tag#div#4;tag#div#0;tag#header#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="e#40812#42541#0" expanded="false" />
+            <element signature="e#40702#42431#0" expanded="false" />
           </folding>
         </state>
       </provider>
