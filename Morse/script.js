@@ -1,7 +1,4 @@
 /**
- * Created by vilhelmfalkenmark on 2015-01-27.
- */
-/**
  * Created by Fredrik Löfgren and Vilhelm Falkenmark on 15-01-27.
  */
 
@@ -19,12 +16,13 @@ function createMorseCode()
 
     var myinputField = document.getElementById("inputField").value;
 
-    var splittedInput = myinputField.split('');
+    var smallChars = myinputField.toLowerCase(); // Konvertera Strängen till små bokstäver eftersom det är det som finns i Arrayen.
+
+    var splittedInput = smallChars.split('');
 
     var translatedMorse = document.getElementById("translatedMorse");
 
     var userText = document.getElementById("userText");
-
 
     var wordPosition = [];
     var wordIndex =[];
@@ -61,7 +59,6 @@ function createMorseCode()
      console.log(morseIndex);
      console.log(wordPosition);
      console.log(splittedInput);
-
      console.log(morseLetter.length);
      console.log(normalLetters.length);
      */
@@ -70,7 +67,11 @@ function createMorseCode()
 function showChars()
 {
     document.getElementById('charList').style.display = "block";
+
 }
+function hideChars()
+{
+    document.getElementById('charList').style.display = "none";
 
-
+}
 

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79fe1cea-f59a-40f6-b332-b2296f1ec630" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Morse/index.html" afterPath="$PROJECT_DIR$/Morse/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Morse/script.js" afterPath="$PROJECT_DIR$/Morse/script.js" />
-    </list>
+    <list default="true" id="79fe1cea-f59a-40f6-b332-b2296f1ec630" name="Default" comment="" />
     <ignored path="vilhelmfalkenmark.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
