@@ -15,7 +15,7 @@ function createMorseCode()
 {
     var normalLetters=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","."," "];
 
-    var morseLetter=[". ━━━","━━━ . . .","━━━ . ━━━ .","━━━ . .",".",". . ━━━ .","━━━ ━━━ .",". . . .",". .",". ━━━ ━━━ ━━━","━━━ . ━━━",". ━━━ . .","━━━ ━━━","━━━ .","━━━ ━━━ ━━━",". ━━━ ━━━ ━","━━━ ━━━ . ━━━",". ━━━ .",". . .","━━━",". . ━━━",". . . ━━━",". ━━━ ━━━","━━━ . . ━━━","━━━ . ━━━ ━━━","━━━ ━━━ . .",". ━━━ ━━━ ━━━ ━━━ ",". . ━━━ ━━━ ━━━",". . . ━━━ ━━━",". . . . ━━━",". . . . .","━━ . . . .","━━━ ━━━ . . .","━━━ ━━━ ━━━ . .","━━━ ━━━ ━━━ ━━━ .","STOPP!","/"];
+    var morseLetter=[". ━━━","━━━ . . .","━━━ . ━━━ .","━━━ . .",".",". . ━━━ .","━━━ ━━━ .",". . . .",". .",". ━━━ ━━━ ━━━","━━━ . ━━━",". ━━━ . .","━━━ ━━━","━━━ .","━━━ ━━━ ━━━",". ━━━ ━━━ ━","━━━ ━━━ . ━━━",". ━━━ .",". . .","━━━",". . ━━━",". . . ━━━",". ━━━ ━━━","━━━ . . ━━━","━━━ . ━━━ ━━━","━━━ ━━━ . .",". ━━━ ━━━ ━━━ ━━━ ",". . ━━━ ━━━ ━━━",". . . ━━━ ━━━",". . . . ━━━",". . . . .","━━ . . . .","━━━ ━━━ . . .","━━━ ━━━ ━━━ . .","━━━ ━━━ ━━━ ━━━ .","STOPP","/"];
 
     var myinputField = document.getElementById("inputField").value;
 
@@ -48,8 +48,15 @@ function createMorseCode()
     var morseCode = morseIndex.join(" ");
     var outputMorsecode = morseCode;
 
-    translatedMorse.innerHTML = outputMorsecode;
-    userText.innerHTML = "Du skrev "+" ' "+myinputField+" ' "+"<br><br>"+"Vilket översatt till Morse 4.0 blir";
+    if (outputMorsecode == "")
+    {
+        translatedMorse.innerHTML = "Du måste skriva något i rutan ovanför för att få en Morsekod"
+    }
+    else
+    {
+        userText.innerHTML = "Du skrev "+" ' "+myinputField+" ' "+"<br><br>"+"Vilket översatt till Morse 4.0 blir";
+        translatedMorse.innerHTML = outputMorsecode;
+    }
     /*
      console.log(morseIndex);
      console.log(wordPosition);
@@ -62,9 +69,7 @@ function createMorseCode()
 
 function showChars()
 {
-
     document.getElementById('charList').style.display = "block";
-
 }
 
 
