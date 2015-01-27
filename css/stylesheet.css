@@ -299,6 +299,10 @@ My Services!
   color: #f3efef;
   margin: 0 auto; }
 
+#myServicesInner {
+  width: 80%;
+  margin: 0 auto; }
+
 #contactMe-Services {
   font-size: 24px; }
 
