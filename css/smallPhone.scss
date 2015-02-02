@@ -1,4 +1,9 @@
 @media (min-width: 1px) and (max-width: 739px) {
+  @import "variables.scss"; // hej
+  $computerWidth: 600px;
+  $computerHeight: 354px;
+
+
   .mobilemenulistItem a {
     font-size: 50px;
   }
@@ -20,7 +25,7 @@
 
   #myServicesBackground
   {
-   background: none white;
+   background: none grey;
     //background-color: white;
   }
 
@@ -33,63 +38,76 @@
 {
   display: none;
 }
+  #myServicesInner
+  {
+    width: 90%;
+
+  }
+  .portfolioItemBackground // The image of macbooks, Iphones, etc.
+ {
+    height: $computerHeight/1.9;
+    width:$computerWidth/1.9;
+  }
 
 
   .portfolio-content // Wrapper of the portfolio Stuff
  {
-    //max-width: 100%;
+    max-width: 100%;
   }
-  .portfolioItemBackground // The image of macbooks, Iphones, etc.
- {
-    background-image: none;
-    margin: 0 auto;
-    max-width: 450px;
-    display: block;
-    height: auto;
-  }
+
 
   .portfolioItem // Position of the div inside the macbook
  {
     margin: 0 auto;
-    padding-top: 20px;
-    padding-right: 2px;
+    padding-top: 10px;
+    //padding-right: 2px;
   }
   .portfolioLayer span // The text on hover over portfolio items
  {
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     //position: relative; Hej
-    top: 15%; // Adjust the text to the top. The more you increase, the further it will go
-    transform: translateY(-20%);
+    top: 1%; // Adjust the text to the top. The more you increase, the further it will go hej
+    transform: translateY(-10%);
     text-align: center;
   }
+
+ /* $portfolioItemHeight: 286px;
+  $portfolioItemWidth: 458px;*/
+
 
   #codeGenerator // The image of the code generator!
  {
 
-    background: url(../images/codeGen2.jpg) no-repeat;
+    background: url(../images/codeGen.jpg) center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size:cover;
+    height: $portfolioItemHeight/1.9;
+    width: $portfolioItemWidth/1.9;
+    margin-bottom: 20px;
+
   }
   #johannaGame  // The image of the Johannagame!
   {
-    background: url(../images/johannaGame.jpg) no-repeat; // Hej hej
+    background: url(../images/johannaGame.jpg) center center; // Hej hej
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    //max-width:240px; /* you can use % */
+    height: $portfolioItemHeight/1.9;
+    width: $portfolioItemWidth/1.9;
+    margin-bottom: 40px;
+
   }
+
   .portfolioLayer // The dark that appears when you hover over the computer!
  {
     top: 0px;
-    height: $portfolioItemHeight;
-    width: $portfolioItemWidth;
-    // background: rgba(0,0,0, 0.5);
-    background: #141414;
-    opacity: 0;
+
+    width: 100%;
+    height: 100%;
   }
 
   .round {
@@ -112,6 +130,12 @@
   {
     font-size: 20px;
   }
+  #thankYou span
+  {
+    font-size: 65px;
+  }
+
+
 
 
 

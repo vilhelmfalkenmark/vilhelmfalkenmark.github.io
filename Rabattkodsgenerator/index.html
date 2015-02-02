@@ -19,27 +19,23 @@
     <div class="grid">
         <div class="grid">
             <div class="col_12" style="margin-top:5px;"><h1 class="center">{Code Generator}</h1></div>
-            <div class="grid">
-                <div class="col_4 center"> <i class="icon-laptop icon-4x" style="color: #d8d8d8;"></i></div>
-                <div class="col_4 center"> <i class="icon-lock icon-4x center" style="color: #d8d8d8;"></i></div>
-                <div class="col_4 center"> <i class="icon-shopping-cart icon-4x " style="color: #d8d8d8;"></i></div>
-            </div>
+
         </div>
 
     </div>
     <div class="grid">
-        <div class="col_12"<h3 style="color:#47a876;margin-top:0px;text-align: center;">Welcome to Code Generator! </h3>Create your absolutely randomized set of characters.
+        <div class="col_12"><p style="color:#47a876;text-align: center;">Welcome to Code Generator! Create your absolutely randomized set of characters.
         Whether you want to create a batch of discount codes to send to a number of customers, create über-safe passwords for your wifi-network or
-        e-mail account or such, create it here. It is absolutely all this website does and is 100% free. Nothing else.
+        e-mail account or such, create it here. It is absolutely all this website does and its 100% free. Nothing else.</p>
     </div>
     <hr class="alt1" style="color: #c94140 !important;"/>
     <div class="grid" >
         <div class="col_6 center">
             <input type="checkbox" id="capitals">
-            <label for="capitals">Capitals</label>
+            <label for="capitals">Upper Case</label>
             <br>
             <input type="checkbox" id="minuscule">
-            <label for="minuscule">Minuscule</label>
+            <label for="minuscule">Lower Case</label>
             <br>
             <input type="checkbox" id="numbers">
             <label for="numbers">Numbers</label>
@@ -52,6 +48,10 @@
             <input id="codeLength" class="inputNumber" type="number"min="0" value="12"/>
             <p class="numberLabel">I want the following amount of codes:</p>
             <input id="numberofCodes" class="inputNumber" type="number" min="0" value="1"/>
+            <p class="numberLabel">I want my codes to start with:</p>
+            <input id="startCode" class="inputNumber" type="text"/>
+            <p class="numberLabel">I want my codes to end with:</p>
+            <input id="endCode" class="inputNumber" type="text"/>
         </div>
 
     </div>
@@ -86,6 +86,6 @@
 
     </div>
 </div>
-<script src="main.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

@@ -21,6 +21,7 @@ $(document).ready(function() {
 
 
 
+
     $('a[href^="#"]').on('click',function (e) {
         e.preventDefault();
 
@@ -74,22 +75,5 @@ $(document).ready(function() {
         $('#lifeStoryContent').hide("slow");
         $("#randomStuffContent").show("slow");
       });
-
-
-    /*
-
-    $("#hireMe").click(function() {
-        $("#myServices").fadeIn("slow");
-    });
-
-    $("#handShake").click(function() {
-        $("#myServices").fadeIn("slow");
-    });
-
-*/
-
-
-
-
 
 });

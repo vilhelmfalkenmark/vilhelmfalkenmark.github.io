@@ -1,3 +1,6 @@
+/**
+ * Created by vilhelmfalkenmark on 2015-01-29.
+ */
 /* CODEGENERATOR FTW! Created by vilhelmfalkenmark on 2014-10-17.*/
 
 function makeCode() {
@@ -11,8 +14,16 @@ function makeCode() {
     var numberofCodes = document.getElementById("numberofCodes").value;
     var codeLength = document.getElementById("codeLength").value;
     var codeTable = document.getElementById("codeTable");
+    var startCode = document.getElementById("startCode").value;
+    var endCode = document.getElementById("endCode").value;
 
+    var startLength = startCode.length;
+    var endLength = endCode.length;
 
+    //console.log(startLength);
+   // console.log(endLength);
+
+    var totalCodeLength = codeLength-endLength-startLength;
 
     var codeCharacthers = "";
 
@@ -80,19 +91,19 @@ function makeCode() {
         codeCharacthers = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!#€%&/()=+*"
     }
 
-    function generateCode(codeLength) {
+    function generateCode(totalCodeLength) {
         var code = "";
 
-        for (var i = 0; i < codeLength; i++) {
+        for (var i = 0; i < totalCodeLength; i++) {
             code += codeCharacthers.charAt(Math.floor(Math.random() * codeCharacthers.length));
         }
-        return "<tr> <td>"+code+"</td></tr>";
+        return "<tr> <td>"+startCode+code+endCode+"</td></tr>";
     }
 
     for (var j = 0; j < numberofCodes; j++) {
         //add generated code to div
 
-        codeTable.innerHTML += generateCode(codeLength);
+        codeTable.innerHTML += generateCode(totalCodeLength);
     }
 
 

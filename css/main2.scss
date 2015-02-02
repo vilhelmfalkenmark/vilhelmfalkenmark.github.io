@@ -13,7 +13,7 @@ General Styling
 body
 {
   font-family:'Open Sans', "arial", "helvetica neue" sans-serif;
- // font-size: 34px;
+ // font-size: 34px; //
 }
 
 #container
@@ -21,6 +21,7 @@ body
   margin: $centerMargin;
   text-align: center;
 }
+
 
 .content
 {
@@ -33,17 +34,11 @@ body
   margin: $centerMargin;
   max-width: 100%;
 }
-.main-content
-{
-  margin: $centerMargin;
-  max-width: 90%;
-}
+
 .map-content
 {
   background-color: grey;
 }
-
-
 
 .secondHeader
 {
@@ -61,6 +56,8 @@ body
 .brightArrow
 {
   color: $brightText;
+  margin-bottom: 40px; // hej
+
 }
 .brightArrow:hover
 {
@@ -124,6 +121,8 @@ h2
   width: 100%;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
 }
 h1
 {
@@ -316,7 +315,7 @@ Portfolio!
   background:
     //rgba(0,0,0, 0.9),
     //linear-gradient(4deg,#ffffff, transparent 49%),
-  url(../images/codeGen2.jpg) no-repeat ;
+  url(../images/codeGen.jpg) no-repeat; // Hehwu
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -352,7 +351,6 @@ Portfolio!
 .portfolioLayer:hover
 {
   display: block;
-
   @extend %hovertransition;
   opacity:0.8;
 }
@@ -366,7 +364,7 @@ My Services!
 #myServicesBackground
 {
   // background-color: black;
-  background: url(../images/forestBackground2.jpg) no-repeat fixed center center;
+  background: url(../images/forestBackground2copy.jpg) no-repeat fixed center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -381,21 +379,22 @@ My Services!
 {
   font-size: 24px;
   width: 100%;
-  background-color: rgba(0,0,0,0.7);
   color: $brightText;
-  //margin-top: 200px;
   margin: 0 auto;
-  //padding-top: 200px;
 }
 #myServicesInner
 {
-  width: 80%;
-//  margin: 0 auto;
+  width: 60%;
+  margin: 0 auto;
 
 }
 #contactMe-Services
 {
-  font-size: 24px;
+  font-size: 28px;
+  border: 2px solid white;
+  width: 220px;
+  margin: 30px auto 30px auto;
+  border-radius: 8px;
 }
 #contactMe-Services:hover
 {
@@ -436,7 +435,7 @@ My Services!
 
 #myServices h2, ul
 {
-  color: $brightText; //hej
+  color: $brightText;
 }
 
 
@@ -486,11 +485,6 @@ My Services!
   display: none;
 }
 
-/*#mobileMenuWrapper
-{
-  display: none;
-}
-*/
 
 
 #desktopMenuWrapper
