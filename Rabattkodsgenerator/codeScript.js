@@ -1,4 +1,7 @@
 /**
+ * Created by vilhelmfalkenmark on 2015-02-02.
+ */
+/**
  * Created by vilhelmfalkenmark on 2015-01-29.
  */
 /* CODEGENERATOR FTW! Created by vilhelmfalkenmark on 2014-10-17.*/
@@ -21,7 +24,7 @@ function makeCode() {
     var endLength = endCode.length;
 
     //console.log(startLength);
-   // console.log(endLength);
+    // console.log(endLength);
 
     var totalCodeLength = codeLength-endLength-startLength;
 
