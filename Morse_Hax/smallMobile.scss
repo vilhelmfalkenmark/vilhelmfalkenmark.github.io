@@ -1,0 +1,63 @@
+
+@media (min-width: 1px) and (max-width: 500px)
+{
+  #header,#morseContainer,#haxContainer
+
+  {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height:auto;
+  }
+
+  #header li
+  {
+    margin: 20px;
+  }
+
+  #header
+  {
+    min-height: 550px;
+  }
+
+  #haxContainer
+  {
+    padding-top: 0;
+  }
+
+
+
+  .info
+  {
+    font-size: 20px;
+    padding-top: 100px; // hek
+  }
+  .choiceButton
+  {
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  #aboutUs,#aboutTheProject
+
+  {
+    margin-left: 5%;
+    width: 90%;
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 1px) and (max-width: 620px)
+{
+  #aboutTheProject
+  {
+    visibility: hidden;
+  }
+  #aboutTheProjectList
+  {
+    display: none;
+  }
+}
+

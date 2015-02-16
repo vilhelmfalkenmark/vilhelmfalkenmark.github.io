@@ -1,0 +1,48 @@
+@media (min-width: 1001px)
+{
+  #header
+  {
+    position: fixed;
+    top:0;
+  }
+
+  .info
+  {
+    font-size: 40px;
+  }
+  .choiceButton
+  {
+  padding-top: 60px;
+  }
+
+  #morseContainer
+  {
+    margin-top:80%;
+  }
+
+  #morseContainer, #haxContainer
+  {
+    height: 1000px;
+  }
+
+  .panels {
+    position:relative;
+    height:100%;
+    min-height:100%;
+    width:100%;
+  }
+  .Content {
+    max-width: 70%; // hej
+  }
+  #aboutUs,#aboutTheProject
+
+  {
+
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+
+  }
+
+
+}

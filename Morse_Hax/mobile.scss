@@ -1,0 +1,53 @@
+/*Mobile and tablet version */
+
+@media (min-width: 501px) and (max-width: 1000px)
+{
+  #header,#morseContainer,#haxContainer
+
+  {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height:auto;
+  }
+
+  #header
+  {
+    min-height: 950px;
+    padding-bottom: 0;
+  }
+
+  #haxContainer
+  {
+    padding-top: 0;
+  }
+
+
+  #header li
+  {
+    text-decoration: none;
+    margin: 20px;
+  }
+
+  .info
+  {
+    font-size: 20px;
+    padding-top: 30px;
+  }
+  .choiceButton
+  {
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  #aboutUs,#aboutTheProject
+
+  {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 0;
+
+  }
+}

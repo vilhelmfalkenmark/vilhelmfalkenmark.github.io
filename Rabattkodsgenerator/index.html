@@ -1,21 +1,32 @@
 <!DOCTYPE html>
-<!--Hand-coded in Stockholm, Sweden with help of the fantastic kickstarter framework from 99lime.com-->
+<!--Hand-coded in Stockholm, Sweden By Vilhelm Falkenmark with help of the fantastic kickstarter framework from 99lime.com-->
 <html>
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="description" content="Create randomized set of characters. batch of discount codes to send to a number of customers, create safe passwords ">
-    <meta name="keywords" content="randomized set of characters.create discount codes, create safe passwords ">
     <meta name="author" content="Vilhelm Falkenmark">
     <title>Code Generator</title>
-
     <link rel ="stylesheet" href="css/kickstart.css">
     <link rel="stylesheet" type="text/css" href="style.css" media="all" />
     <link rel ="stylesheet" href="css/stylesheet.css">
     <link href='http://fonts.googleapis.com/css?family=Stalemate' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <script src="codeScript.js"></script>
+
 </head>
 <body>
+<!--Start Google Analytics!-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-49166471-2', 'auto');
+    ga('send', 'pageview');
+
+</script>
+<!--End Google Analytics!-->
+
 <div id="upperContainer">
     <div class="grid">
         <div class="grid">
@@ -62,7 +73,7 @@
     <div class="grid" style="margin-top: 25px;">
         <div class="col_12 center">
             <!--<div id="codeButton" onclick="makeCode()">Create my code(s)</div>-->
-            <button id="codeButton" onclick="makeCode()">Create Codes!</button>
+            <a href="#codeTable"><button id="codeButton" onclick="makeCode()">Create Codes!</button></a>
 
         </div>
 
@@ -78,7 +89,7 @@
                 <table id="codeTable" cellspacing="0" cellpadding="0">
                     <thead>
                     <tr>
-                        <th>Your Code(s)</th></tr></thead>
+                        <th id="codeHeader">Your Code</th></tr></thead>
                     <tbody>
                     </tbody>
                 </table>
@@ -87,5 +98,26 @@
 
     </div>
 </div>
+</div>
+    <script src="codeScript.js"></script>
+    <script src="../js/jquery-1.11.2.min.js"></script>
+    <!-- Jquery-->
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $('a[href^="#"]').on('click',function (e) {
+            e.preventDefault();
+
+            var target = this.hash;
+            var $target = $(target);
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 1000, 'swing', function () {
+                window.location.hash = target;
+            });
+        });
+        });
+    </script>
 </body>
 </html>

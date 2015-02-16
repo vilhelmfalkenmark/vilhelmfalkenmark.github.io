@@ -1,0 +1,285 @@
+/*Mobile and tablet version */
+@media (min-width: 1px) and (max-width: 700px) {
+  #header {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 1200px; }
+
+  #header li {
+    text-decoration: none;
+    margin: 20px; }
+
+  h1 {
+    font-size: 150px; } }
+#header li a, #header li, #header li:hover, #header li a:hover, .button, .button:hover, .keyButton, .keyButton:hover, .howDoesItWork, .howDoesItWork:hover {
+  -webkit-transition: All 0.2s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.3s ease;
+  cursor: pointer; }
+
+body {
+  font-family: 'Open Sans', "arial", "helvetica neue" sans-serif;
+  background-color: #e75b4c;
+  text-align: center;
+  color: #ECF0F1;
+  padding-top: 0px;
+  width: 100%; }
+
+body, html {
+  height: 200%; }
+
+#header, #morseContainer, #haxContainer {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 1000px;
+  position: absolute; }
+
+a, a:visited {
+  text-decoration: none;
+  color: white; }
+
+#container {
+  margin: 0 auto;
+  width: 100%; }
+
+.panels {
+  position: relative; }
+
+#header {
+  display: block;
+  width: 100%;
+  top: 0%;
+  background-color: #e75b4c;
+  text-align: center;
+  margin: 0 auto;
+  font-style: bold;
+  min-height: 800px; }
+
+#showHideMenu {
+  margin-left: 150px; }
+
+.menu-toggle-btn {
+  padding: 30px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px; }
+  .menu-toggle-btn span {
+    background: #ECF0F1;
+    display: block;
+    width: 30px;
+    height: 4px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.3s linear; }
+  .menu-toggle-btn.open span:nth-child(1), .menu-toggle-btn.open span:nth-child(3) {
+    transform: translate(0px, 13px) rotate(-45deg) scalex(1.3);
+    margin: 0; }
+  .menu-toggle-btn.open span:nth-child(2) {
+    height: 0;
+    margin: 0; }
+  .menu-toggle-btn.open span:nth-child(3) {
+    transform: translate(0px, 9px) rotate(45deg) scalex(1.3); }
+
+#topMenu {
+  padding: 1px;
+  display: none;
+  height: 70px;
+  position: relative; }
+
+#aboutUs, #aboutTheProject {
+  margin-top: 40px;
+  display: none;
+  height: auto;
+  position: absolute;
+  text-align: center;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%; }
+
+h2 {
+  padding-top: 60px; }
+
+ul li {
+  display: inline-block; }
+
+#header li a {
+  text-decoration: none; }
+
+#header li {
+  text-decoration: none;
+  margin-right: 30px; }
+
+#header li:hover, #header li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #3f3f3f; }
+
+.info {
+  display: block;
+  text-align: center; }
+
+h1 {
+  font-size: 200px; }
+
+.choiceButton {
+  display: inline-block;
+  padding-top: 60px;
+  padding-left: 40px;
+  padding-right: 40px; }
+
+.inputContainer {
+  padding-top: 30px;
+  display: inline-block; }
+
+.keyinputContainer {
+  padding-top: 30px;
+  display: inline-block; }
+
+.userInput {
+  color: black;
+  margin: 0 auto;
+  outline: none;
+  font-size: 16px;
+  display: block;
+  width: 400px;
+  max-width: 700px;
+  height: 50px;
+  max-height: 100px; }
+
+.keyInput {
+  color: black;
+  margin: 0 auto;
+  outline: none;
+  font-size: 16px;
+  display: block;
+  width: 200px; }
+
+::-webkit-input-placeholder {
+  color: darkgrey;
+  text-align: center; }
+
+.button {
+  margin: 20px;
+  width: 250px;
+  height: 60px;
+  background-color: transparent;
+  border: solid #525252;
+  color: white;
+  font-size: 18px;
+  outline: none;
+  /*REMOVES THE ANNOYING BLUE BOX ROUND THE BUTTON WHEN CLICKED*/ }
+
+.button:hover {
+  cursor: pointer;
+  background: #e65748;
+  -webkit-box-shadow: 7px 3px 30px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 7px 3px 30px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 7px 3px 30px 0px rgba(50, 50, 50, 0.5); }
+
+.button:active {
+  cursor: pointer;
+  width: 250px;
+  height: 60px;
+  color: #ede3dc;
+  background: #e54f3f;
+  box-shadow: inset 0px 10px 8px 0px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px #000000; }
+
+.keyButton {
+  margin: 20px;
+  width: 210px;
+  height: 50px;
+  background-color: transparent;
+  border: solid #525252;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  /*REMOVES THE ANNOYING BLUE BOX ROUND THE BUTTON WHEN CLICKED*/ }
+
+.keyButton:hover {
+  cursor: pointer;
+  background: #e65748;
+  -webkit-box-shadow: 7px 3px 30px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 7px 3px 30px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 7px 3px 30px 0px rgba(50, 50, 50, 0.5); }
+
+.keyButton:active {
+  cursor: pointer;
+  color: #ede3dc;
+  background: #e54f3f;
+  box-shadow: inset 0px 10px 8px 0px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px #000000; }
+
+#warning {
+  color: #525252;
+  font-size: 30px;
+  display: none; }
+
+#morseContainer {
+  top: 1000px;
+  min-height: 800px;
+  background-color: #26A65B;
+  font-style: bold;
+  text-align: center;
+  width: 100%;
+  display: block; }
+
+.howDoesItWork:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #3f3f3f; }
+
+.howDoesItWork:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #3f3f3f; }
+
+#howMorseWorks, #howHaxWorks {
+  display: none; }
+
+/*.upArrow
+{
+margin: 20px;
+position: fixed;
+//bottom: 0;
+//float: left; Hej
+text-align: center;
+}
+*/
+#morsecharList {
+  display: none; }
+
+#morsecharList li {
+  text-decoration: none;
+  display: inline-block; }
+
+.Content {
+  margin: 0 auto;
+  max-width: 70%;
+  word-wrap: break-word; }
+
+#haxContainer {
+  top: 2000px;
+  min-height: 800px;
+  background-color: #e75b4c;
+  font-style: bold;
+  text-align: center; }
+
+ /* #haxOutPutContainer
+  {
+    margin: 0 auto;
+    width: 70%;
+
+    word-wrap: break-word;
+
+  }
+
+  #haxOutPutContainer p {
+    text-align: center;
+
+  }*/
+
+/*# sourceMappingURL=stylesheet.css.map */

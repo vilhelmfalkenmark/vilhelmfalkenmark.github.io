@@ -1,0 +1,362 @@
+$redColor: #e75b4c;
+$blackColor: #525252;
+$whiteColor: #ECF0F1;
+$morseColor: #22313F;
+$haxColor: #4DAF7C;
+//$containerHeight: 800px;
+
+%hovertransition
+{
+  -webkit-transition: All 0.2s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.3s ease;
+  // -webkit-transition-timing-function: linear; // Safari and Chrome
+  //transition-timing-function: linear;
+  cursor: pointer;
+}
+
+body
+{
+  font-family:'Open Sans', "arial", "helvetica neue" sans-serif;
+  text-align: center;
+  color: $whiteColor;
+  padding-top: 0px;
+  width: 100%;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+    padding:0;
+  }
+
+
+a, a:visited
+{
+  text-decoration: none;
+  color: white;
+}
+
+#container
+{
+margin: 0 auto;
+}
+
+#header
+{
+  display:block;
+  background-color: $redColor ;
+  text-align: center;
+  bottom: 0;
+}
+
+#header, #morseContainer
+{
+  margin-bottom: -20px;
+
+}
+
+
+
+
+#aboutTheProjectMobile
+{
+  display: none;
+}
+
+
+
+#showHideMenu
+{
+  margin-left: 150px;
+}
+
+.menu-toggle-btn{
+
+  //top: 123px;
+ // position: absolute;
+  //float: right; // jhej
+  padding: 30px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+
+  span{
+    background: $whiteColor;
+    display: block;
+    width: 30px;
+    height: 4px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.3s linear;
+  }
+  &.open{
+    span{
+      &:nth-child(1),
+      &:nth-child(3){
+        transform: translate(0px, 13px) rotate(-45deg) scalex(1.3);
+        margin: 0;
+      }
+      &:nth-child(2){
+        height: 0;
+        margin: 0;
+      }
+      &:nth-child(3){
+        transform: translate(0px, 9px) rotate(45deg) scalex(1.3);
+      }
+    }
+  }
+}
+
+
+#topMenu
+{
+  padding: 1px; // Fixar buggen så att h1 inte hoppar! Ta inte bort den här css-regeln
+  display: none;
+  height: 70px;
+  position: relative;
+}
+
+.centerContent
+{
+  width: 100%;
+  margin: 0 auto;
+}
+
+#aboutUs,#aboutTheProject
+
+{
+  margin-top: 40px;
+  display: none;
+  height: auto;
+  position: absolute;
+  text-align: center;
+  //width: 70%;
+  //margin-left: 15%;
+  //margin-right: 15%;
+
+}
+
+
+h2
+{
+  padding-top: 60px; //hej
+}
+
+ul li
+{
+ //position: relative;
+display: inline-block;
+ // overflow: hidden;
+// margin-bottom: 1px;
+}
+#header li a
+{
+  text-decoration: none;
+  @extend %hovertransition;
+
+}
+#header li
+{
+  text-decoration: none;
+   margin-right: 60px;
+  @extend %hovertransition;
+}
+#header li:hover, #header li a:hover,
+{
+  @extend %hovertransition;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #3f3f3f;
+}
+
+.info
+{
+  display: block;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.choiceButton
+{
+display: inline-block;
+padding-left: 40px;
+padding-right: 40px;
+}
+
+.inputContainer
+{
+  padding-top: 30px;
+  display: inline-block;
+}
+
+.keyinputContainer
+{
+  padding-top: 30px;
+  display: inline-block;
+}
+
+
+.userInput // hej
+{
+  color: black; // hej
+  margin: 0 auto;
+  outline:none;
+  font-size: 16px;
+  //background-color:#ABB7B7;
+  display:block;
+  width: 400px;
+  max-width: 700px;
+  height: 50px;
+  max-height: 100px;
+}
+.keyInput
+{
+  color: black; // hej
+  margin: 0 auto;
+  outline:none;
+  font-size: 16px;
+  display:block;
+  width: 200px;
+  //height: 30px;
+}
+
+
+
+::-webkit-input-placeholder {
+  color: darkgrey;
+  text-align: center;
+}
+
+.button // Hej
+{
+  margin: 20px;
+  width: 250px;
+  height: 60px;
+  background-color: rgba(0,0,0,0);
+  border: solid #525252;
+  color: white;
+  font-size: 18px;
+  outline:none; /*REMOVES THE ANNOYING BLUE BOX ROUND THE BUTTON WHEN CLICKED*/
+  @extend %hovertransition;
+
+}
+
+.button:hover {
+  cursor: pointer;
+  background: darken($redColor, 1%);
+  -webkit-box-shadow: 7px 3px 30px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 7px 3px 30px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 7px 3px 30px 0px rgba(50, 50, 50, 0.5);
+  @extend %hovertransition;
+}
+  .button:active {
+    cursor: pointer;
+    width: 250px;
+    height: 60px;
+    color: #ede3dc;
+    background: darken($redColor, 3%);
+    // border-radius: 10px;
+    box-shadow: inset 0px 10px 8px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px #000000;
+    //border: solid #c94140;
+  }
+
+  .keyButton
+  {
+    margin: 20px;
+    width: 210px;
+    height: 50px; //hej
+    background-color: rgba(0,0,0,0);
+    border: solid #525252;
+    color: white;
+    font-size: 14px;
+    outline:none; /*REMOVES THE ANNOYING BLUE BOX ROUND THE BUTTON WHEN CLICKED*/
+    @extend %hovertransition;
+  }
+.keyButton:hover {
+  cursor: pointer;
+  background: darken($redColor, 1%);
+  -webkit-box-shadow: 7px 3px 30px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 7px 3px 30px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 7px 3px 30px 0px rgba(50, 50, 50, 0.5);
+  @extend %hovertransition;
+}
+.keyButton:active {
+  cursor: pointer;
+  color: #ede3dc;
+  background: darken($redColor, 3%);
+  // border-radius: 10px;
+  box-shadow: inset 0px 10px 8px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px #000000;
+  //border: solid #c94140;
+}
+
+
+  #warning {
+    font-size: 30px;
+    display: none;
+  }
+
+
+  #morseContainer
+ {
+    background-color: $morseColor;
+    text-align: center;
+    display:block;
+
+  }
+  .howDoesItWork
+  {
+    @extend %hovertransition;
+  }
+  .howDoesItWork:hover
+  {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #3f3f3f;
+    @extend %hovertransition;
+  }
+.howDoesItWork:hover
+{
+  text-decoration: underline;
+  cursor: pointer;
+  color: #3f3f3f;
+  @extend %hovertransition;
+}
+
+#howMorseWorks, #howHaxWorks
+
+{
+  display: none;
+}
+
+  #morsecharList {
+    display: none;
+  }
+
+  #morsecharList li {
+    text-decoration: none;
+    display: inline-block;
+  }
+
+.Content
+{
+  margin: 0 auto;
+ // max-width: 70%;
+  word-wrap: break-word;
+}
+
+  #haxContainer {
+    background-color: $haxColor;
+    font-style: bold;
+    text-align: center;
+  }
+
+
+  #morseOutPutContainer, #haxOutPutContainer
+  {
+    padding-bottom: 30px;
+  }

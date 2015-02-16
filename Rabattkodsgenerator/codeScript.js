@@ -6,7 +6,13 @@
  */
 /* CODEGENERATOR FTW! Created by vilhelmfalkenmark on 2014-10-17.*/
 
+var clickCount = 0;
+
+
 function makeCode() {
+    clickCount++;
+
+    var codeHeader = document.getElementById("codeHeader");
 
     var capitals = document.getElementById("capitals");
     var minuscule = document.getElementById("minuscule");
@@ -22,6 +28,12 @@ function makeCode() {
 
     var startLength = startCode.length;
     var endLength = endCode.length;
+
+
+    if (numberofCodes > 1 || clickCount>1)
+    {
+        codeHeader.innerHTML = "Your Codes";
+    }
 
     //console.log(startLength);
     // console.log(endLength);
@@ -108,8 +120,6 @@ function makeCode() {
 
         codeTable.innerHTML += generateCode(totalCodeLength);
     }
-
-
 }
 
 

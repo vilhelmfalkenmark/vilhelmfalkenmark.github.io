@@ -4,22 +4,9 @@
 
 $(document).ready(function() {
 
-
-
     $(".hide").css({
         "display": "none"
     });
-
-   /* $(window).resize(function(){
-        if ($(".lifeStoryContent").css("display") == "inline-block" ){
-            // your code here
-        }
-    });
-
-    */
-
-
-
 
 
     $('a[href^="#"]').on('click',function (e) {

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Morse & Hax Översättaren</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Morse & Haxöversättaren. Översätt vad du vill från text till Morsekod eller Haxspråket.">
+    <meta name="author" content="Fredrik Löfgren & Vilhelm Falkenmark">
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!--Start Google Analytics!-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-49166471-2', 'auto');
+    ga('send', 'pageview');
+
+</script>
+<!--End Google Analytics!-->
+
+<div id="target"></div>
+
+<div id="container">
+<header>
+
+<div id="header" class="panels">
+
+    <div class="menu-toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div id="topMenu">
+        <nav>
+            <ul>
+                <!--<li onclick="showChars()" id="allowedChars">Tillåtna tecken</li>-->
+                <!--<li><a href="http://sv.wikipedia.org/wiki/Morsealfabetet" target="_blank">Mer om Morse</a></li>-->
+                <li><a href="http://lofgrenfredrik.github.io" target="_blank">Fredriks Github</a></li>
+                <li><a href="http://vilhelmfalkenmark.github.io" target="_blank">Vilhelms Github</a></li>
+                <li id="aboutUsList">Om oss</li>
+                <li id="aboutTheProjectList">Om projektet</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="centerContent">
+        <p id="aboutUs" class="Content">Vi går första året på Nackademins Yrkeshögskolas program Front-End Utveckling.<br><br> Vilhelm älskar att cykla och tycker att Van She är ett underskattat band.
+            <br>Kodstyrkor: Loopar och validering<br>Kodsvagheter: Inga.<br><br>
+            Fredrik har ett respektingivande skägg
+            och tycker köttbullar med potatismos är den bästa maträtten.<br> Kodstyrkor: Manipulera Arrayer.<br> Kodsvagheter: Inga här heller.</p>
+        <p id="aboutTheProject" class="Content">Vi bestämde oss för att vi ville undersöka exakt hur svårt det var att översätta text till morse. Det tog cirka en timme att formulera problemet och
+            strukturera upp den grundläggande logiken. Sen tog det cirka en halv-dag att åstadkomma översättningsfunktionen från vanlig text till morse. När vi var klara med det så bestämde vi oss för att
+            det hade varit ännu mer utmanande att försöka översätta Morse tillbaka till vanlig text. Detta skulle visa sig något mer komplicerat. Mycket hår slets och en ansenlig mängd nikotin förtärdes. Det stora
+            genomslaget kom när Fredrik knäckte följande javascriptrader: <br>
+            <br>
+            var morseArray = [];
+            var x = 0;
+            var y = 1;
+            for(i = 1; i <= breakPoint.length; i++)
+            {
+            if(i == 1){
+            morseArray.push(morseInputField.substring(0,breakPoint[x]));
+            }
+            else
+            {
+            morseArray.push(morseInputField.substring(((breakPoint[x])+ 1), ((breakPoint[y]))));
+            x++;
+            y++;
+            }
+            <br> <br>
+            Hade ovanstående kod varit en facebook-status hade den fått mer likes än en annonsering om nalkande barnafödande.
+            <br>
+            I vilket fall. När vi var färdiga med ovanstående funktion så kom vi på att det hade varit ännu mer spännande att skapa ett eget "krypteringspråk". Som tur var kunde många av principerna  återåteranvändas
+            från Morseprojektet. Dock så krävdes några modikationer. Bland annat eftersom det som illustrerar mellanslag och ny bokstav varierar i stränglängd och teckensammansättning eftersom användaren själv anger
+            en siffra för respektive strängsammansättning. Det stora genomslaget i det här projektet var när Vilhelm löste problemet med hur programmet ska kunna identifiera vad som är en ny bokstav med hjälp av
+            följande javascript rader:
+            <br> <br>
+            var breakPoint = [];
+
+            for (var j = 0; j < haxToText.length; j++) {
+            if (haxToText[j] == breakPointToString.charAt(0)) {
+            for (var h = 0; h < breakPointToString.length; h++) {
+            if (haxToText[j] == breakPointToString[h] && haxToText[j + 1] == breakPointToString[h + 1]
+            && haxToText[j + 2] == breakPointToString[h + 2] ) {
+            breakPoint.push(j);
+            }
+            }
+            }
+            }
+            <br>
+            <br>
+            När programmet till slut fungerade som det skulle var tårarna inte långt borta.
+        </p>
+        <p id="aboutTheProjectMobile">Det var svårt och genererade mycket frustration men det löste sig!</p>
+    </div>
+    <div class="info">
+        <h1>Morse & Haxöversättaren</h1>
+        <p>Välkommen till Morse & Haxöversättaren</p>
+        <p>Av Fredrik Löfgren & Vilhelm Falkenmark</p>
+    </div>
+
+    <div id="headerButtons">
+        <div class="choiceButton"><a href="#morseContainer"><button id=showTranslateMorse class="button">Morse</button></a></div>
+        <div class="choiceButton"><a href="#haxContainer"><button id="showTranslateHax" class="button">Hax</button></a></div>
+    </div>
+</div>
+</header>
+
+
+<section>
+
+<div id="morseContainer" class="panels">
+    <h2>Morse översättaren</h2>
+    <p id="howDoesMorseWork" class="howDoesItWork">Hur fungerar det?</p>
+    <div class="inputContainer">
+        <input type="text" id="inputField" class="userInput" placeholder="Skriv det du vill ha översatt till Morse här" color="white">
+        <button id="morseButton" class="button" onclick="createMorseCode()">Skapa min Morse</button>
+    </div>
+
+    <div class="inputContainer">
+        <input type="text" id="morseinputField" class="userInput" placeholder="Skriv det du vill ha översatt från Morse här" color="white">
+        <button id="textButton" class="button" onclick="translateMorseCode()">Översätt Morse</button>
+        <br>
+    </div>
+
+    <div id="howMorseWorks" class="Content">
+
+        <p>Ny bokstav illustreras av |, punkt (.) av STOPP och mellanslag av /. Följande tecken är tillåtna I Morse Språket.</p>
+        <ul>
+            <li>A,</li>
+            <li>B,</li>
+            <li>C,</li>
+            <li>D,</li>
+            <li>E,</li>
+            <li>F,</li>
+            <li>G,</li>
+            <li>H,</li>
+            <li>I,</li>
+            <li>J,</li>
+            <li>K,</li>
+            <li>L,</li>
+            <li>M,</li>
+            <li>N,</li>
+            <li>O,</li>
+            <li>P,</li>
+            <li>Q,</li>
+            <li>R,</li>
+            <li>S,</li>
+            <li>T,</li>
+            <li>U,</li>
+            <li>V,</li>
+            <li>W,</li>
+            <li>X,</li>
+            <li>Y,</li>
+            <li>Z,</li>
+            <li>1,</li>
+            <li>2,</li>
+            <li>3,</li>
+            <li>4,</li>
+            <li>5,</li>
+            <li>6,</li>
+            <li>7,</li>
+            <li>8,</li>
+            <li>9,</li>
+            <li>.,</li>
+        </ul>
+        <p>Observera att det inte görs skillnad på VERSALER och gemener.</p>
+
+
+
+    </div>
+
+
+
+    <div id="morseOutPutContainer">
+        <p id="userText" class="Content"></p>
+        <p id="translatedMorse" class="Content"></p>
+        <p id="userMorse"></p>
+        <p id="translatedText"></p>
+    </div>
+
+</div>
+</section>
+<section>
+<div id="haxContainer" class="panels">
+    <h2>Hax översättaren</h2>
+    <p id="howDoesHaxWork" class="howDoesItWork">Hur fungerar det?</p>
+
+    <div class="inputContainer">
+
+        <input type="text" id="textToHax" class="userInput" placeholder="Skriv det du vill ha översatt till Haxspråket här" color="white">
+        <button id="textToHaxButton" class="button" onclick="createHaxCode()">Skapa min Hax</button>
+    </div>
+    <div class="inputContainer">
+
+        <input type="text" id="haxToText" class="userInput" placeholder="Skriv det du vill ha översatt från Haxspråket här" color="white">
+        <button id="textButton" class="button" onclick="translateHaxCode()">Översätt min Hax</button><br>
+    </div>
+
+
+    <br>
+    <div class="keyinputContainer">
+
+        <input id="randomNewLetter" class="keyInput" placeholder="Nyckel 1">
+        <button onclick="convertLetterNumber()" class="keyButton">Skapa första nyckeln</button><br>
+    </div>
+    <div class="keyinputContainer">
+
+
+
+        <input id="randomNewSpace" class="keyInput" placeholder="Nyckel 2">
+        <button onclick="convertSpaceNumber()" class="keyButton">Skapa andra nyckeln</button>
+    </div>
+    <p id="warning">Du måste fylla i nyckelfälten ovan för att fortsätta!</p>
+
+    <div id="howHaxWorks" class="Content">
+
+        <p>Du börjar med att skriva in nyckel 1 samt nyckel 2 och genererar sedan din Haxkod. OBS! När mottagaren ska översätta det krypterade meddelandet som du genererat måste hen
+            ange samma nycklar som du angav för att hax-meddelandet ska kunna översättas.
+            <br><br>
+            Följande tecken är tillåtna I Hax Språket.</p>
+        <ul>
+            <li>A,</li>
+            <li>B,</li>
+            <li>C,</li>
+            <li>D,</li>
+            <li>E,</li>
+            <li>F,</li>
+            <li>G,</li>
+            <li>H,</li>
+            <li>I,</li>
+            <li>J,</li>
+            <li>K,</li>
+            <li>L,</li>
+            <li>M,</li>
+            <li>N,</li>
+            <li>O,</li>
+            <li>P,</li>
+            <li>Q,</li>
+            <li>R,</li>
+            <li>S,</li>
+            <li>T,</li>
+            <li>U,</li>
+            <li>V,</li>
+            <li>W,</li>
+            <li>X,</li>
+            <li>Y,</li>
+            <li>Z,</li>
+            <li>Å,</li>
+            <li>Ä,</li>
+            <li>Ö,</li>
+            <li>1,</li>
+            <li>2,</li>
+            <li>3,</li>
+            <li>4,</li>
+            <li>5,</li>
+            <li>6,</li>
+            <li>7,</li>
+            <li>8,</li>
+            <li>9,</li>
+            <li>.,</li>
+            <li>!,</li>
+            <li>?,</li>
+        </ul>
+        <p>Observera att det inte görs skillnad på VERSALER och gemener.</p>
+    </div>
+
+    <p id="key1"></p>
+
+    <p id="key2"></p>
+
+    <div id="haxOutPutContainer">
+        <p id="outPutHax" class="Content"></p>
+        <p id="outPutText" class="Content"></p>
+    </div>
+</div>
+</section>
+</div>
+
+<script src="styleScript.js"></script>
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="script.js"></script>
+<script src="hax_morse.jQuery.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+@media (min-width: 1px) and (max-width: 500px) {
+  #header, #morseContainer, #haxContainer {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: auto; }
+
+  #header {
+    height: 1200px; }
+
+  #header li {
+    margin: 60px; }
+
+  #header li a {
+    margin: 60px; }
+
+  .info {
+    font-size: 20px;
+    padding-top: 30px; }
+
+  .choiceButton {
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px; }
+
+  #aboutUs, #aboutTheProject {
+    width: 90%;
+    padding-top: 40px; } }
+
+/*# sourceMappingURL=smallMobile.css.map */

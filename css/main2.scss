@@ -219,7 +219,6 @@ About Vilhelm Falkenmark
   color: $brightText;
   text-shadow: 1px 1px 3px $hoverText;
   font: 72px Stalemate, sans-serif;
-
 }
 
 .red
@@ -271,24 +270,56 @@ Portfolio!
 
 .portfolio-content // Wrapper of the portfolio Stuff
 {
-  width: 100%;
-  margin: 0 auto;
+  //width: 100%;
+  //margin: 0 auto;
 }
+
+.portfolioRow
+{
+  width: 100%;
+}
+
+
 
 .portfolioItemBackground // The image of macbooks, Iphones, etc.
 {
-  margin: 10px; // The distance between the computers in all directions!
+  margin: 20px;
+  top: 0;
   background: url(../images/macbook.png) no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   padding-top: 0px;
-
   height: 354px;
   width: 600px;
   display: inline-block;
+  vertical-align:top // Makes the div place properly inkline glued to the top
 }
+
+.portfolioItemText
+{
+  margin: 20px;
+
+  vertical-align:top; // Makes the div place properly inkline glued to the top
+  height: 354px;
+  width: 600px;
+  display: none;
+  border: solid 2px black;
+}
+.portfolioItemText span
+{
+  width: 50%;
+  position: relative;
+  top: 30%;
+}
+.innerPortfolioText
+{
+  padding-top: 40px;
+  display: block;
+}
+
+
 
 .portfolioItem // Position of the div inside the macbook
 {
@@ -329,6 +360,20 @@ Portfolio!
     //rgba(0,0,0, 0.9),
     //linear-gradient(4deg,#ffffff, transparent 49%),
   url(../images/johannaGame.jpg) no-repeat; // Hej hej
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: $portfolioItemHeight;
+  width: $portfolioItemWidth;
+}
+
+#morseHax  // The image of the  MorseHax!
+{
+  background:
+    //rgba(0,0,0, 0.9),
+    //linear-gradient(4deg,#ffffff, transparent 49%),
+  url(../images/morse_hax) no-repeat; // Hej hej
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -500,9 +545,10 @@ My Services!
   display: none;
 }
 
-
-
-
+.innerPortfolioTextShort
+{
+  display: none;
+}
 
 
 

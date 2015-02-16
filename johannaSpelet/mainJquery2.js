@@ -312,7 +312,6 @@ $(document).ready(function(){
         $('.headerQuestion').fadeOut();
         $(".questionDivRound15").fadeOut();
         $("#pointMarker").fadeOut();
-
         $("#resultat").fadeIn("slow");
     });
 
