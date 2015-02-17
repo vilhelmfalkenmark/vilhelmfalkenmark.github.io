@@ -11,6 +11,7 @@
   //transition-timing-function: linear;
   cursor: pointer;
   }
+  @import "variables.scss";
 
   /*
   Header!
@@ -18,7 +19,7 @@
  */
   #headerMobileNavigation {
 
-    background-color: rgba(0, 0, 0, 0.650);
+    background-color: $menuButtonBackground;
   }
 
   .mobilemenulistItem

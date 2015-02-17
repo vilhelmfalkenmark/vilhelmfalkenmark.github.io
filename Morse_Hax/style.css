@@ -316,7 +316,7 @@ ul li {
   width: 100%;
   bottom: -30px;
   height: 30px;
-  background: linear-gradient(-45deg, transparent 75%, #e75b4c 45%) 0 100%, linear-gradient(45deg, transparent 75%, #e75b4c 45%) 0 50%;
+  background: linear-gradient(-45deg, transparent 75%, #e75b4c 75%) 0 50%, linear-gradient(45deg, transparent 75%, #e75b4c 75%) 0 50%;
   background-repeat: repeat-x;
   background-size: 30px 30px, 30px 30px; }
 
