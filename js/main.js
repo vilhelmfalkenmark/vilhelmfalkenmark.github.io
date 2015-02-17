@@ -38,7 +38,11 @@ $(document).ready(function() {
     });
 
 
-
+ $(".menu-toggle-btn").click(function() {
+        $(this).toggleClass("open");
+        $("#headerMobileNavigation").slideToggle(600);
+        return false;
+    });
 
 
 

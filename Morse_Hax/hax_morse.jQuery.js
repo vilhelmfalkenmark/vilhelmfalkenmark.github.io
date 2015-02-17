@@ -3,6 +3,21 @@
  */
 $(document).ready(function(){
 
+
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 1000, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+
+
    $('#aboutUsList').click( function() {
 
         //$('#showTranslateMorse').fadeOut("slow");
@@ -33,18 +48,6 @@ $(document).ready(function(){
 
 
 
-    $('a[href^="#"]').on('click',function (e) {
-        e.preventDefault();
-
-        var target = this.hash;
-        var $target = $(target);
-
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
-        }, 1000, 'swing', function () {
-            window.location.hash = target;
-        });
-    });
 
 
     $(".menu-toggle-btn").click(function() {
@@ -65,6 +68,9 @@ $(document).ready(function(){
         $("#howHaxWorks").toggle(600);
         return false;
     });
+
+
+
 
 
 });

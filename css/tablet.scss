@@ -16,12 +16,27 @@
   Header!
 ===================================================================================================================================
  */
+  #headerMobileNavigation {
+
+    background-color: rgba(0, 0, 0, 0.650);
+  }
+
+  .mobilemenulistItem
+  {
+    display: inline-block;
+    padding: 20px; // hej
+  }
+
+  .menu-toggle-btn {
+
+    display: block;
+  }
 
   .mobilemenulistItem a
   {
     color: white;
-    font-size: 60px;
-    margin: 6px;
+    font-size: 35px;
+    padding-top: 10px;
   }
 
   .mobile-tablet-Header {

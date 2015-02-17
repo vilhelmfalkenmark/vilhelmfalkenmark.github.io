@@ -33,6 +33,11 @@ General Styling
 ===================================================================================================================================
 */
 
+  .menu-toggle-btn {
+
+    display: none;
+  }
+
 #desktopMenuWrapper
 {
   text-align: left;
@@ -41,8 +46,9 @@ General Styling
 
 #headerNavigation li
 {
-
-  margin-right: 20px;
+  /*margin-top: 20px;
+  margin-right: 20px;*/
+  margin: 20px;
   display: inline-block;
   font-size: 20px;
   padding: 20px;
@@ -206,7 +212,10 @@ Portfolio!
   .innerPortfolioTextShort
   {
     display: block;
-    padding-top: 30px;
+   padding-top: 60px;
+    position: relative;
+   // top: 65%; // Adjust the text to the top. The more you increase, the further it will go
+
 
   }
 

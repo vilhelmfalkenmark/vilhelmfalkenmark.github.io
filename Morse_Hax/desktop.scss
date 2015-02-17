@@ -6,13 +6,20 @@
     top:0;
   }
 
+  .menu-toggle-btn {
+    padding: 50px;
+  }
+
   .info
   {
     font-size: 40px;
   }
   .choiceButton
   {
-  padding-top: 60px;
+
+      padding-top: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
   }
 
   #morseContainer
@@ -41,8 +48,13 @@
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
-
   }
+
+  .userInput // hej
+{
+    width: 420px;
+  }
+
 
 
 }

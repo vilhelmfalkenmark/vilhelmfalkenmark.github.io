@@ -10,9 +10,12 @@
     height:auto;
   }
 
+  .menu-toggle-btn {
+    padding: 20px;
+  }
   #header li
   {
-    margin: 20px;
+    margin: 10px;
   }
 
   #header
@@ -25,19 +28,15 @@
     padding-top: 0;
   }
 
-
-
   .info
   {
     font-size: 20px;
-    padding-top: 100px; // hek
+    padding-top: 40px; // hek
   }
-  .choiceButton
+ #headerButtons
   {
-    display: inline-block;
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+  height: 270px;
+
   }
 
   #aboutUs,#aboutTheProject
@@ -47,6 +46,15 @@
     width: 90%;
     padding-top: 40px;
   }
+
+  .userInput // hej
+{
+    width: 300px;
+  }
+
+
+
+
 }
 
 @media (min-width: 1px) and (max-width: 620px)

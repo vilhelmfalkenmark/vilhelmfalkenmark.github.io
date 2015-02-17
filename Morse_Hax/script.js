@@ -19,7 +19,7 @@ var space = ["=vnQ","jOyN","kG$L","a32G","I$TL","g$TG","pALF","€KBq","L+u#","9
 
 var newLetter = ["bF$f","!yGl","BT&&","9Ov#","EWGF","6RF9","Ezm&","FXul","tLJY","Ul#="];
 
-
+var redColor = "#e75b4c";
 
 //console.log(space.length);
 //console.log(newLetter.length);
@@ -57,12 +57,12 @@ function createMorseCode()
     var inputField = document.getElementById("inputField"); // Så att inputfältet blir rött om användaren inte skrivit något.
     if (outputMorsecode == "")
     {
-        inputField.style.backgroundColor="red";
+        inputField.style.backgroundColor=redColor;
         translatedMorse.innerHTML = "Du måste skriva något i rutan ovanför för att få en Morsekod"
     }
     else
     {
-        userText.innerHTML = "Du skrev "+" '"+myinputField+"' "+"<br><br>"+"Vilket översatt till Morse 4.0 blir";
+        userText.innerHTML = "Du skrev "+" '"+myinputField+"' "+"<br><br>"+"Vilket översatt till Morse 4.0 blir"+"<br><br>";
         translatedMorse.innerHTML = outputMorsecode;
         inputField.style.backgroundColor="white";
     }
@@ -134,8 +134,19 @@ function translateMorseCode() {
     var userMorse = document.getElementById("userMorse");
     var capitalizedOutput = outPutText.charAt(0).toUpperCase() + outPutText.substring(1);
 
+    var inputField = document.getElementById("morseinputField");
+
+    if (capitalizedOutput == "")
+    {
+            inputField.style.backgroundColor=redColor;
+        translatedText.innerHTML = "Du måste skriva något i rutan ovanför för att få en Text!"
+    }
+    else
+    {
     userMorse.innerHTML = "Du skrev "+" '"+morseInputField+"' "+"<br><br>"+"Vilket översatt från Morse 4.0 till Text blir";
     translatedText.innerHTML = capitalizedOutput;
+    inputField.style.backgroundColor="white";
+    }
 }
 
 /*
@@ -223,16 +234,27 @@ function createHaxCode() {
 
     var randomNewLetter = document.getElementById("randomNewLetter").value;
     var randomNewSpace = document.getElementById("randomNewSpace").value;
+    var textInput = document.getElementById("textToHax");
+    var textToHax = document.getElementById("textToHax").value; // Tar emot värdet som användaren skjuter in
+    var outPutHax = document.getElementById("outPutHax"); // Det som skjuts ut till den färdiga morsekoden.
 
 
     if(randomNewLetter == ""|| randomNewSpace== "")
     {
         warning.style.display="block";
+        textInput.style.backgroundColor= redColor;
+
+    }
+    else if(textToHax=="")
+    {
+        outPutHax.innerHTML = "Det verkar som att du inte angett något att översätta till Haxspråket"
+        textInput.style.backgroundColor= redColor;
+
     }
     else {
         warning.style.display="none";
+        textInput.style.backgroundColor= "white";
 
-        var textToHax = document.getElementById("textToHax").value; // Tar emot värdet som användaren skjuter in
         var smallChars = textToHax.toLowerCase(); // Konvertera Strängen till små bokstäver eftersom det är det som finns i Arrayen.
         var splittedInput2 = smallChars.split(''); // splittar upp det till separata tecken.
         var wordPosition = []; // Ordningen som det man nyss skrivit kommer i normalLetters
@@ -254,7 +276,6 @@ function createHaxCode() {
             }
         }
         //   haxIndex.push(haxLetters[wordIndex]+space[newNumber]);
-        var outPutHax = document.getElementById("outPutHax"); // Det som skjuts ut till den färdiga morsekoden.
         //var userText = document.getElementById("userText"); // Där det står vad man skrivit i vanliga bokstäver
         var outputHaxcode = haxIndex.join("").toString(); // Sätter ihop det igen till hela tecken.
 
@@ -267,27 +288,34 @@ function createHaxCode() {
         // console.log(haxLetters.length);
         // console.log(messageLetters.length);
 
-        outPutHax.innerHTML = "Du skrev "+"'"+textToHax+"'"+"<br><br>"+"Vilket översatt till haxspråket blir "+"<br><br>"+outputHaxcode;
+        outPutHax.innerHTML = "Du skrev "+"'"+textToHax+"'"+"<br><br>"+"Vilket översatt till Hax blir "+"<br><br>"+outputHaxcode;
     }
 }
 
 function translateHaxCode() {
 
     var warning = document.getElementById("warning");
-
     var randomNewLetter = document.getElementById("randomNewLetter").value;
     var randomNewSpace = document.getElementById("randomNewSpace").value;
-
+    var haxToText = document.getElementById("haxToText").value.toString(); // Tar emot värdet som //användaren skjuter in
+    var outPutHax = document.getElementById("outPutHax"); // Det som skjuts ut till den färdiga morsekoden.
+    var inputField = document.getElementById("haxToText");
 
     if(randomNewLetter == ""|| randomNewSpace== "")
     {
         warning.style.display="block";
     }
+    else if(haxToText=="")
+    {
+        outPutHax.innerHTML = "Det verkar som att du inte angett något att översätta";
+        inputField.style.backgroundColor= redColor;
+
+    }
     else {
         warning.style.display = "none";
+        inputField.style.backgroundColor= "white";
 
 
-        var haxToText = document.getElementById("haxToText").value.toString(); // Tar emot värdet som //användaren skjuter in
 
         //console.log(haxToText); // Vi får in koden i consollen
         //console.log(typeof(haxToText)); // Vi får in koden i consollen
@@ -358,7 +386,6 @@ function translateHaxCode() {
 
         // console.log("Hej här är vår "+outputText);
 
-        var outPutHax = document.getElementById("outPutHax"); // Det som skjuts ut till den färdiga morsekoden.
 
         var userNewLetter = haxToText.substring(breakPoint[0], ((breakPoint[0] + haxBreakPoint.length))); // VALIDERING ATT ANVÄNDAREN ANGER RÄTT NYCKEL!
 
@@ -370,7 +397,7 @@ function translateHaxCode() {
             outPutHax.innerHTML = "Din kod gick inte att översätta. Antagligen har du skjutit in fel nyckel"
         }
         else {
-            outPutHax.innerHTML = "Du skrev "+"<br><br>"+haxToText+"<br><br>"+" Vilket översätt till Hax språket blir:"+"<br><br>"+capitalizedOutput;
+            outPutHax.innerHTML = "Du skrev "+"<br><br>"+haxToText+"<br><br>"+" Vilket översätt från Hax blir:"+"<br><br>"+capitalizedOutput;
         }
     }
 }

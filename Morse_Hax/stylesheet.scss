@@ -3,6 +3,8 @@ $blackColor: #525252;
 $whiteColor: #ECF0F1;
 $morseColor: #22313F;
 $haxColor: #4DAF7C;
+$transparentColor: rgba(0,0,0,0.0);
+
 //$containerHeight: 800px;
 
 %hovertransition
@@ -49,6 +51,8 @@ margin: 0 auto;
   background-color: $redColor ;
   text-align: center;
   bottom: 0;
+
+
 }
 
 #header, #morseContainer
@@ -65,19 +69,18 @@ margin: 0 auto;
   display: none;
 }
 
-
-
 #showHideMenu
 {
   margin-left: 150px;
 }
 
+
 .menu-toggle-btn{
 
   //top: 123px;
  // position: absolute;
-  //float: right; // jhej
-  padding: 30px;
+  //float: left;
+ // padding: 50px;
   cursor: pointer;
   width: 30px;
   height: 30px;
@@ -184,8 +187,6 @@ display: inline-block;
 .choiceButton
 {
 display: inline-block;
-padding-left: 40px;
-padding-right: 40px;
 }
 
 .inputContainer
@@ -209,8 +210,7 @@ padding-right: 40px;
   font-size: 16px;
   //background-color:#ABB7B7;
   display:block;
-  width: 400px;
-  max-width: 700px;
+  //width: 400px;
   height: 50px;
   max-height: 100px;
 }
@@ -298,6 +298,7 @@ padding-right: 40px;
   #warning {
     font-size: 30px;
     display: none;
+    color: darken($redColor,50%);
   }
 
 
@@ -306,8 +307,41 @@ padding-right: 40px;
     background-color: $morseColor;
     text-align: center;
     display:block;
-
   }
+
+#morseContainer:before
+{
+  content: " ";
+  display:block;
+  // position: relative;
+  width: 100%;
+  bottom:-30px;
+  height:30px;
+  background: linear-gradient(-45deg, transparent 75%,  $redColor 45%) 0 100%,
+  linear-gradient( 45deg, transparent 75%, $redColor 45%) 0 50%;
+  background-repeat: repeat-x;
+  background-size:30px 30px, 30px 30px;
+}
+
+
+
+
+  #haxContainer:before
+{
+      content: " ";
+      display:block;
+     // position: relative;
+      width: 100%;
+      bottom:-30px;
+      height:30px;
+      background: linear-gradient(-45deg, transparent 75%,  $morseColor 75%) 0 50%,
+      linear-gradient( 45deg, transparent 75%, $morseColor 75%) 0 50%;
+      background-repeat: repeat-x;
+      background-size:30px 30px, 30px 30px;
+}
+
+
+
   .howDoesItWork
   {
     @extend %hovertransition;
@@ -328,7 +362,6 @@ padding-right: 40px;
 }
 
 #howMorseWorks, #howHaxWorks
-
 {
   display: none;
 }

@@ -11,71 +11,18 @@
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
 	font-family: Flaticon;
+        font-size: 70px;
 font-style: normal;
-/*margin-left: 20px;*/
-}.flaticon-agreement2:before {
+margin-left: 20px;
+}.flaticon-facebook3:before {
 	content: "\e000";
 }
-.flaticon-arrow103:before {
+.flaticon-github7:before {
 	content: "\e001";
 }
-.flaticon-arrow483:before {
+.flaticon-linkedin1:before {
 	content: "\e002";
 }
-.flaticon-collapse3:before {
+.flaticon-up125:before {
 	content: "\e003";
-}
-.flaticon-down53:before {
-	content: "\e004";
-}
-.flaticon-email103:before {
-	content: "\e005";
-}
-.flaticon-email21:before {
-	content: "\e006";
-}
-.flaticon-expand22:before {
-	content: "\e007";
-}
-.flaticon-facebook29:before {
-	content: "\e008";
-}
-.flaticon-facebook7:before {
-	content: "\e009";
-}
-.flaticon-handshake1:before {
-	content: "\e00a";
-}
-.flaticon-iphone26:before {
-	content: "\e00b";
-}
-.flaticon-linkedin12:before {
-	content: "\e00c";
-}
-.flaticon-linkedin2:before {
-	content: "\e00d";
-}
-.flaticon-linkedin22:before {
-	content: "\e00e";
-}
-.flaticon-mail22:before {
-	content: "\e00f";
-}
-.flaticon-mail59:before {
-	content: "\e010";
-}
-.flaticon-navigate6:before {
-	content: "\e011";
-}
-.flaticon-new48:before {
-	content: "\e012";
-}
-.flaticon-photos12:before {
-	content: "\e013";
-}
-.flaticon-smart:before {
-	content: "\e014";
-}
-.flaticon-smartphone11:before {
-	content: "\e015";
 }

@@ -1,8 +1,19 @@
 @media (min-width: 1px) and (max-width: 739px) {
   @import "variables.scss"; // hej
 
+  #headerMobileNavigation {
+
+    background-color: rgba(0, 0, 0, 0.650);
+  }
+
+  .mobilemenulistItem
+  {
+    display: inline-block;
+    padding: 20px; // hej
+  }
+
   .mobilemenulistItem a {
-    font-size: 50px;
+    font-size: 30px;
   }
   .mobile-tablet-Header {
     font-size: 60px;
@@ -12,6 +23,10 @@
     font-size: 30px;
   }
 
+  .menu-toggle-btn {
+
+    display: block;
+  }
 
 
   //* Background on mobile devices */

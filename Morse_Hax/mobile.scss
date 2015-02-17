@@ -2,6 +2,13 @@
 
 @media (min-width: 501px) and (max-width: 1000px)
 {
+
+  .menu-toggle-btn {
+     padding: 50px;
+
+  }
+
+
   #header,#morseContainer,#haxContainer
 
   {
@@ -36,11 +43,16 @@
   }
   .choiceButton
   {
-    display: inline-block;
     padding-top: 20px;
     padding-left: 40px;
     padding-right: 40px;
   }
+  .userInput // hej
+{
+
+    width: 400px;
+  }
+
 
   #aboutUs,#aboutTheProject
 
@@ -50,4 +62,7 @@
     padding-bottom: 0;
 
   }
+
+
+
 }
