@@ -102,6 +102,11 @@
   $computerWidth: 600px;
   $computerHeight: 354px;
 
+  .mobile-headerText {
+    max-width: 100%;
+  }
+
+
   .portfolioItemBackground // The image of macbooks, Iphones, etc.
   {
     height: $computerHeight/1.9;
@@ -158,7 +163,7 @@
   }
   #morseHax  // The image of the Johannagame!
    {
-    background: url(../images/morse_hax) center center; // Hej hej
+    background: url(../images/morse_hax.jpg) center center; // Hej hej
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

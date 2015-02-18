@@ -1,23 +1,29 @@
 
-h1
-{
-    font-family: 'Stalemate', cursive !important;
-    font-size: 120px;
-    color: #c94140;
-}
+
 
 body
 {
-    font-family: 'Open Sans', sans-serif !important;
+    font-family:'Open Sans', "arial", "helvetica neue" sans-serif;
     margin:0;
     padding:0 0 0 0;
     color:#000;
     text-shadow: 0 0 1px transparent; /* google font pixelation fix */
 }
 
+
+h1
+{
+    font-family: 'Stalemate', cursive;
+    font-size: 120px;
+    color: #c94140;
+}
+
+
+
+
 #upperContainer
 {
-    background:#efefef url(background.png);
+    background: url(background.png);
 }
 
 

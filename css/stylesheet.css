@@ -167,7 +167,6 @@ h1 {
 
 .mobile-headerText {
   margin: 0 auto;
-  max-width: 90%;
   padding-top: 170px;
   color: white !important; }
 
@@ -280,7 +279,7 @@ Portfolio!
   width: 458px; }
 
 #morseHax {
-  background: url(../images/morse_hax) no-repeat;
+  background: url(../images/morse_hax.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -488,6 +487,9 @@ Google Maps
     height: 400px;
     margin: 5%; } }
 @media (min-width: 1px) and (max-width: 600px) {
+  .mobile-headerText {
+    max-width: 100%; }
+
   .portfolioItemBackground {
     height: 186.31579px;
     width: 315.78947px;
@@ -529,7 +531,7 @@ Google Maps
     margin-bottom: 40px; }
 
   #morseHax {
-    background: url(../images/morse_hax) center center;
+    background: url(../images/morse_hax.jpg) center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -737,6 +739,9 @@ About me!
 
   .menu-toggle-btn {
     display: block; }
+
+  .mobile-headerText {
+    max-width: 90%; }
 
   .mobilemenulistItem a {
     color: white;
