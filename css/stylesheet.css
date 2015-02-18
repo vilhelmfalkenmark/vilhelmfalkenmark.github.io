@@ -3,18 +3,6 @@
   display: inline-block;
   vertical-align: top; }
 
-/*%hovertransition
-{
-  -webkit-transition: All 0.2s ease;
-  -moz-transition: All 0.5s ease;
-  -o-transition: All 0.5s ease;
-  -ms-transition: All 0.5s ease;
-  transition: All 0.3s ease;
-  // -webkit-transition-timing-function: linear; // Safari and Chrome
-  //transition-timing-function: linear;
-  cursor: pointer;
-}
-*/
 .red:hover, .green:hover, .orange:hover {
   -moz-box-shadow: 0 0 20px #414141;
   -webkit-box-shadow: 0 0 20px #414141;
@@ -30,18 +18,6 @@
   display: inline-block;
   vertical-align: top; }
 
-/*%hovertransition
-{
-  -webkit-transition: All 0.2s ease;
-  -moz-transition: All 0.5s ease;
-  -o-transition: All 0.5s ease;
-  -ms-transition: All 0.5s ease;
-  transition: All 0.3s ease;
-  // -webkit-transition-timing-function: linear; // Safari and Chrome
-  //transition-timing-function: linear;
-  cursor: pointer;
-}
-*/
 .red:hover, .green:hover, .orange:hover {
   -moz-box-shadow: 0 0 20px #414141;
   -webkit-box-shadow: 0 0 20px #414141;
@@ -74,9 +50,6 @@ body {
 .footer-content {
   margin: 0 auto;
   max-width: 100%; }
-
-.map-content {
-  background-color: grey; }
 
 .secondHeader {
   padding-top: 40px; }
@@ -137,7 +110,7 @@ h1 {
   width: 100%;
   height: 100px;
   margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.25); }
+  background-color: #25292c; }
 
 .menu-toggle-btn {
   display: none;
@@ -177,11 +150,14 @@ h1 {
   visibility: visible; }
 
 #headerMobileNavigation {
-  display: none; }
+  display: none;
+  position: absolute;
+  width: 100%; }
 
 .mobilemenulistItem a {
   color: white;
-  margin: 6px; }
+  margin: 6px;
+  padding: 20px; }
 
 .mobilemenulistItem a:hover {
   color: #747474; }
@@ -242,7 +218,6 @@ Portfolio!
   width: 100%; }
 
 .portfolioItemBackground {
-  margin: 20px;
   top: 0;
   background: url(../images/macbook.png) no-repeat center;
   -webkit-background-size: cover;
@@ -428,7 +403,7 @@ My Services!
 Google Maps
 ====================================================*/
 .map-content {
-  display: none; }
+  display: block; }
 
 @media (min-width: 1px) and (max-width: 739px) {
   .arrows {
@@ -436,18 +411,6 @@ Google Maps
     display: inline-block;
     vertical-align: top; }
 
-  /*%hovertransition
-  {
-    -webkit-transition: All 0.2s ease;
-    -moz-transition: All 0.5s ease;
-    -o-transition: All 0.5s ease;
-    -ms-transition: All 0.5s ease;
-    transition: All 0.3s ease;
-    // -webkit-transition-timing-function: linear; // Safari and Chrome
-    //transition-timing-function: linear;
-    cursor: pointer;
-  }
-  */
   .red:hover, .green:hover, .orange:hover {
     -moz-box-shadow: 0 0 20px #414141;
     -webkit-box-shadow: 0 0 20px #414141;
@@ -459,11 +422,13 @@ Google Maps
     box-shadow: inset 10 10 20px #414141; }
 
   #headerMobileNavigation {
-    background-color: rgba(0, 0, 0, 0.25); }
+    background-color: #25292c;
+    z-index: 1; }
 
   .mobilemenulistItem {
     display: inline-block;
-    padding: 20px; }
+    padding: 20px;
+    text-align: center; }
 
   .mobilemenulistItem a {
     font-size: 30px; }
@@ -479,6 +444,10 @@ Google Maps
 
   #header {
     background: url(../images/citybackground.jpg) no-repeat scroll center center; }
+
+  .portfolioItemBackground {
+    margin-top: 10px;
+    margin-bottom: 15px; }
 
   #myServicesBackground {
     background: none grey; }
@@ -508,11 +477,22 @@ Google Maps
     font-size: 20px; }
 
   #thankYou span {
-    font-size: 65px; } }
+    font-size: 65px; }
+
+  .map-content {
+    display: block; }
+
+  #map-canvas {
+    padding-top: 20px;
+    width: 90%;
+    height: 400px;
+    margin: 5%; } }
 @media (min-width: 1px) and (max-width: 600px) {
   .portfolioItemBackground {
     height: 186.31579px;
-    width: 315.78947px; }
+    width: 315.78947px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
 
   .portfolio-content {
     max-width: 100%; }
@@ -528,8 +508,6 @@ Google Maps
     transform: translateY(-10%);
     text-align: center; }
 
-  /* $portfolioItemHeight: 286px;
-   $portfolioItemWidth: 458px;*/
   #codeGenerator {
     background: url(../images/codeGen.jpg) center center;
     -webkit-background-size: cover;
@@ -666,6 +644,9 @@ About me!
   Portfolio!
   ===============================================================================================================================
   */
+  .portfolioItemBackground {
+    margin: 20px; }
+
   /*
   My Services!
   ===============================================================================================================================
@@ -733,18 +714,6 @@ About me!
     display: inline-block;
     vertical-align: top; }
 
-  /*%hovertransition
-  {
-    -webkit-transition: All 0.2s ease;
-    -moz-transition: All 0.5s ease;
-    -o-transition: All 0.5s ease;
-    -ms-transition: All 0.5s ease;
-    transition: All 0.3s ease;
-    // -webkit-transition-timing-function: linear; // Safari and Chrome
-    //transition-timing-function: linear;
-    cursor: pointer;
-  }
-  */
   .red:hover, .green:hover, .orange:hover {
     -moz-box-shadow: 0 0 20px #414141;
     -webkit-box-shadow: 0 0 20px #414141;
@@ -760,7 +729,7 @@ About me!
 ===================================================================================================================================
  */
   #headerMobileNavigation {
-    background-color: rgba(0, 0, 0, 0.25); }
+    background-color: #25292c; }
 
   .mobilemenulistItem {
     display: inline-block;
@@ -804,7 +773,15 @@ Portfolio!
     font-size: 230px; }
 
   #myServicesArrow {
-    display: none; } }
+    display: none; }
+
+  .map-content {
+    display: block; }
+
+  #map-canvas {
+    padding-top: 20px;
+    width: 100%;
+    height: 500px; } }
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions

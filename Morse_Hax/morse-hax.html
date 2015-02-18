@@ -59,7 +59,6 @@
             strukturera upp den grundläggande logiken. Sen tog det cirka en halv-dag att åstadkomma översättningsfunktionen från vanlig text till morse. När vi var klara med det så bestämde vi oss för att
             det hade varit ännu mer utmanande att försöka översätta Morse tillbaka till vanlig text. Detta skulle visa sig något mer komplicerat. Mycket hår slets och en ansenlig mängd nikotin förtärdes. Det stora
             genomslaget kom när Fredrik knäckte följande javascriptrader: <br>
-            <br>
             var morseArray = [];
             var x = 0;
             var y = 1;
@@ -74,14 +73,13 @@
             x++;
             y++;
             }
-            <br> <br>
-            Hade ovanstående kod varit en facebook-status hade den fått mer likes än en annonsering om nalkande barnafödande.
             <br>
+            Hade ovanstående kod varit en facebook-status hade den fått mer likes än en annonsering om nalkande barnafödande.
             I vilket fall. När vi var färdiga med ovanstående funktion så kom vi på att det hade varit ännu mer spännande att skapa ett eget "krypteringspråk". Som tur var kunde många av principerna  återåteranvändas
             från Morseprojektet. Dock så krävdes några modikationer. Bland annat eftersom det som illustrerar mellanslag och ny bokstav varierar i stränglängd och teckensammansättning eftersom användaren själv anger
             en siffra för respektive strängsammansättning. Det stora genomslaget i det här projektet var när Vilhelm löste problemet med hur programmet ska kunna identifiera vad som är en ny bokstav med hjälp av
             följande javascript rader:
-            <br> <br>
+            <br>
             var breakPoint = [];
 
             for (var j = 0; j < haxToText.length; j++) {
@@ -94,7 +92,7 @@
             }
             }
             }
-            <br>
+           
             <br>
             När programmet till slut fungerade som det skulle var tårarna inte långt borta.
         </p>
@@ -110,10 +108,9 @@
         <div class="choiceButton"><a href="#morseContainer"><button id=showTranslateMorse class="button">Morse</button></a></div>
         <div class="choiceButton"><a href="#haxContainer"><button id="showTranslateHax" class="button">Hax</button></a></div>
     </div>
+
 </div>
 </header>
-
-
 <section>
 
 <div id="morseContainer" class="panels">
@@ -182,8 +179,8 @@
 
 
     <div id="morseOutPutContainer">
-        <p id="userText" class="Content"></p>
-        <p id="translatedMorse" class="Content"></p>
+        <p id="userText" class="Content translatedText"></p>
+        <p id="translatedMorse" class="Content translatedText"></p>
         <p id="userMorse"></p>
         <p id="translatedText"></p>
     </div>
@@ -280,8 +277,8 @@
     <p id="key2"></p>
 
     <div id="haxOutPutContainer">
-        <p id="outPutHax" class="Content"></p>
-        <p id="outPutText" class="Content"></p>
+        <p id="outPutHax" class="Content translatedText"></p>
+        <p id="outPutText" class="Content translatedText"></p>
     </div>
 </div>
 </section>

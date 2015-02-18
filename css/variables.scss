@@ -7,7 +7,7 @@ $brightText: #f3efef;
 $red: #16A085;
 $green: #e75b4c; // hej
 $orange: #2d3f4d; // hej
-$menuButtonBackground: rgba(0, 0, 0, 0.250);
+$menuButtonBackground: rgb(37,41,44);
 
 
 
@@ -28,18 +28,7 @@ $portfolioItemWidth: 458px;
  // margin: 40px;
 }
 
-/*%hovertransition
-{
-  -webkit-transition: All 0.2s ease;
-  -moz-transition: All 0.5s ease;
-  -o-transition: All 0.5s ease;
-  -ms-transition: All 0.5s ease;
-  transition: All 0.3s ease;
-  // -webkit-transition-timing-function: linear; // Safari and Chrome
-  //transition-timing-function: linear;
-  cursor: pointer;
-}
-*/
+
 %outerShadow
 {
   -moz-box-shadow:     0 0 20px $darkText;

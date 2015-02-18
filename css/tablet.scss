@@ -89,7 +89,15 @@
     display: none;
   }
 
-
+  .map-content
+  {
+    display:block;
+  }
+  #map-canvas {
+    padding-top: 20px;
+    width: 100%;
+    height: 500px;
+  }
 
 
 

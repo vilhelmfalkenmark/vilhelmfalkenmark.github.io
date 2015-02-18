@@ -35,10 +35,7 @@ body
   max-width: 100%;
 }
 
-.map-content
-{
-  background-color: grey;
-}
+
 
 .secondHeader
 {
@@ -193,12 +190,13 @@ h1
 
 #mobileMenuWrapper:hover .mobilemenulistItem {
   visibility: visible;
-  // position: absolute;
 }
 
 #headerMobileNavigation
 {
 display: none;
+position: absolute;
+width: 100%;
 }
 
 
@@ -207,6 +205,7 @@ display: none;
 {
   color: white;
   margin: 6px;
+  padding: 20px;
 }
 .mobilemenulistItem a:hover
 {
@@ -319,7 +318,6 @@ Portfolio!
 
 .portfolioItemBackground // The image of macbooks, Iphones, etc.
 {
-  margin: 20px;
   top: 0;
   background: url(../images/macbook.png) no-repeat center;
   -webkit-background-size: cover;
@@ -587,7 +585,6 @@ My Services!
 }
 
 
-
 /*
 
 Google Maps
@@ -595,7 +592,7 @@ Google Maps
 
 .map-content
 {
-  display:none;
+  display:block;
 }
 
 

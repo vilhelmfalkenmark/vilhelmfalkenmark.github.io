@@ -35,7 +35,10 @@
   #aboutUs, #aboutTheProject {
     width: 100%;
     padding-top: 40px;
-    padding-bottom: 0; } }
+    padding-bottom: 20px; }
+
+  .translatedText {
+    max-width: 80%; } }
 @media (min-width: 1px) and (max-width: 500px) {
   #header, #morseContainer, #haxContainer {
     padding: 0px;
@@ -65,7 +68,7 @@
   #aboutUs, #aboutTheProject {
     margin-left: 5%;
     width: 90%;
-    padding-top: 40px; }
+    padding-top: 25px; }
 
   .userInput {
     width: 300px; } }
@@ -74,7 +77,10 @@
     visibility: hidden; }
 
   #aboutTheProjectList {
-    display: none; } }
+    display: none; }
+
+  .translatedText {
+    max-width: 85%; } }
 @media (min-width: 1001px) {
   #header {
     position: fixed;

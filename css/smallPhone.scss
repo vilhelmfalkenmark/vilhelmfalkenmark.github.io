@@ -4,12 +4,14 @@
   #headerMobileNavigation {
 
     background-color: $menuButtonBackground;
+    z-index: 1;
   }
 
   .mobilemenulistItem
   {
     display: inline-block;
     padding: 20px; // hej
+    text-align: center;
   }
 
   .mobilemenulistItem a {
@@ -32,6 +34,11 @@
   //* Background on mobile devices */
   #header{
     background: url(../images/citybackground.jpg) no-repeat scroll center center;
+  }
+  .portfolioItemBackground // The image of macbooks, Iphones, etc.
+  {
+    margin-top: 10px;
+    margin-bottom: 15px;
   }
 
 
@@ -79,6 +86,17 @@
   {
     font-size: 65px;
   }
+
+  .map-content
+  {
+    display:block;
+  }
+  #map-canvas {
+    padding-top: 20px;
+    width: 90%;
+    height: 400px;
+    margin: 5%;
+  }
 }
 @media (min-width: 1px) and (max-width: 600px) {
   $computerWidth: 600px;
@@ -88,6 +106,8 @@
   {
     height: $computerHeight/1.9;
     width: $computerWidth/1.9;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .portfolio-content // Wrapper of the portfolio Stuff
@@ -111,8 +131,6 @@
     text-align: center;
   }
 
-  /* $portfolioItemHeight: 286px;
-   $portfolioItemWidth: 458px;*/
 
   #codeGenerator // The image of the code generator!
   {
@@ -155,7 +173,6 @@
     padding-top: 10px;
     display: block;
   }
-
 
 
   .portfolioLayer // The dark that appears when you hover over the computer!
