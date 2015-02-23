@@ -1,0 +1,27 @@
+$whiteColor: #eaeae0;
+$greyColor: #787878;
+$blackColor: #333333;
+//$redColor: #D64541;
+
+$redColor: #3EA795;
+$blueColor: #326881;
+
+//$blueColor: #2e8ecb;
+//$blueColor: #14453f;  //215650
+
+$circleSize: 350px;
+$mainContentHeight: 700px;
+$secondContentHeight: 640px;
+
+%hovertransition
+{
+  -webkit-transition: All 0.2s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.3s ease;
+  // -webkit-transition-timing-function: linear; //  Safari and Chrome
+  //transition-timing-function: linear;
+  cursor: pointer;
+}
+
