@@ -1,0 +1,58 @@
+
+@media (min-width: 800px)
+{
+
+  #homeIcon {
+    display: block;
+  }
+  .menu-toggle-btn {
+    display: none;
+  }
+  #top-desktop-menu
+  {
+    display: block;
+  }
+  #top-mobile-menu-wrapper
+  {
+    display: none;
+  }
+  #header
+  {
+    width: 70%; // hej
+
+  }
+  #h1
+  {
+    font-size: 40px;
+  }
+  #phoneNavContainer
+  {
+    display: none;
+  }
+  .map-content
+  {
+    padding-top: 110px;
+    // position: absolute;
+  }
+  #map-canvas {
+    margin-top: 5px;
+    width: 100%;
+    height: 640px;
+    //height: 100%;
+  }
+
+  #header-box
+  {
+    padding-top: 200px;
+  }
+
+  .space
+  {
+    width: 500px; // hej
+  }
+  #member1, #member2, #member3
+  {
+    width: 300px;
+  }
+
+}

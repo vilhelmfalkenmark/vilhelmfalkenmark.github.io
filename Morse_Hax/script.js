@@ -199,6 +199,8 @@ function convertLetterNumber(){
     breakPointToString = haxBreakPoint.toString();
     }
 }
+//convertLetterNumber()
+//convertSpaceNumber()
 
 function convertSpaceNumber(){
     var randomNewSpace = document.getElementById("randomNewSpace").value;
@@ -230,8 +232,10 @@ function convertSpaceNumber(){
 
 function createHaxCode() {
 
-    var warning= document.getElementById("warning");
+    convertLetterNumber();
+    convertSpaceNumber();
 
+    var warning= document.getElementById("warning");
     var randomNewLetter = document.getElementById("randomNewLetter").value;
     var randomNewSpace = document.getElementById("randomNewSpace").value;
     var textInput = document.getElementById("textToHax");
@@ -293,6 +297,9 @@ function createHaxCode() {
 }
 
 function translateHaxCode() {
+
+    convertLetterNumber();
+    convertSpaceNumber();
 
     var warning = document.getElementById("warning");
     var randomNewLetter = document.getElementById("randomNewLetter").value;

@@ -36,59 +36,63 @@ a:visited
   height: auto;
   min-height: $mainContentHeight;
 
-  /* Set up positioning */
-//  position: fixed;
   //top: 0;
   left: 0;
-  display: table
-
- // Hej
-//  padding-top: 0px;
-  /* Set rules to fill background */
-  /*height: 800px;
- // min-height: 1500px;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  ;*/
+  //display: table
 
 }
 #menu-container
  {
+
+   padding: 1px;
    width: 100%;
    position: fixed;
    background-color: $blueColor;
    display: block;
-  overflow: auto;
-  z-index: 1; // Ser till att den alltid ligger över allt annat
+   overflow: auto;
+   z-index: 1; // Ser till att den alltid ligger över allt annat
  }
 .menu-left
 {
-  //vertical-align: top;
 
   display: inline-block;
-  width: 14%;
   font-size: 60px;
   color: white;
+  padding: 1px;
 }
 .menu-right
 {
- //vertical-align: top;
+  padding: 1px;
   display: inline-block;
-  width: 84%;
+}
+#phoneNavContainer {
+ // display: none;
 }
 
 
-#top-menu li
+
+.topIcon
 {
+  margin: 20px;
+  color: $whiteColor; // Hej
+}
+#top-desktop-menu
+{
+  padding: 1px;
+
+}
+#top-desktop-menu li
+{
+
   display: inline-block;
-  margin-left: 50px;
-  margin-right: 50px;
+ // margin-top: 20px;
+  text-align: center;
+  //margin-left: 70px;
+  margin-left: 120px; // hej
+ // padding-left: 30px;
 }
 
-#top-menu li a
+#top-desktop-menu li a
 {
   text-decoration: none;
  // color: darken($whiteColor,55%);
@@ -97,7 +101,7 @@ a:visited
   @extend %hovertransition;
 }
 
-#top-menu li a:hover
+#top-desktop-menu li a:hover
 {
   @extend %hovertransition;
   line-height: 10px;
@@ -107,47 +111,108 @@ a:visited
 }
 
 
-.textContainer
+#top-mobile-menu-wrapper
 {
-  height: $secondContentHeight;
+  position: relative;
+//  padding: 1px;
+background-color: $blueColor;
+}
+
+
+
+#top-mobile-menu
+{
+  width: 100%;
+  position: relative;
+
+  padding: 0px;
+//  height: 400px;
+
+}
+
+
+#top-mobile-menu li
+{
+  display: inline-block;
+  text-align: center !important;
+  margin-top:40px;
+
+}
+
+#top-mobile-menu li a
+{
+  text-decoration: none;
+  // color: darken($whiteColor,55%);
+  color: $whiteColor;
+  font-size: 36px;
+  @extend %hovertransition;
+}
+
+#top-mobile-menu li a:hover
+{
+  @extend %hovertransition;
+  color: darken($whiteColor,55%);
+}
+
+
+
+
+
+
+
+
+
+.aboutUs, .textContainer // Hej
+{
+  z-index: 1;
+  min-height: $secondContentHeight*1.2;
+  height: auto;
   width: 80%;
- // min-width: 200px;
   background-color: rgba(234,234,224,0.9);
   margin: 0 auto;
   text-align: center;
   padding-top: 100px;
   color: $blackColor;
 }
-.textContainer li
+
+#header-box
 {
-  color: $blackColor;
-
-  list-style: none;
-  font-size: 20px;
-  padding-top: 4px;
-}
-
-#header-box {
-  display: table-cell;
-  vertical-align: middle;
+margin: 0 auto;
 }
 .circle
 {
- // border: 3px solid $blueColor;
-  text-align: center;
+  background: url(../images/profil.jpg) center;
   margin: 0 auto;
-  background-color: rgba(209, 209, 209, 0.80);
   height: $circleSize;
   width:  $circleSize;
- border-radius:  $circleSize/2;
+  border-radius:  $circleSize/2; // Hej
   vertical-align: middle;
+ // margin-top: 30px;
 }
+.space
+{
+  margin: 0 auto;
+  height: 40px;
+  border-bottom: 2px solid white;
+}
+#header
+{
+  top: 40%;
+  padding-top: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+.category-header
+{
+  padding-top: 70px;
+}
+
+
 #h1
 {
-  //font-size: 106px;
-  color: $blueColor;
-  position: relative;
-  top: 40%;
+  color: white;
+  text-align: center;
+  top: 30%;
 }
 .circle p
 {
@@ -155,45 +220,70 @@ a:visited
   position: relative;
   top: 45%;
 }
-
-.map-content
+#memberContainer
 {
-padding-top: 80px;
-// position: absolute;
-
-
-
-
-}
-#map-canvas {
-  margin-top: 5px;
+  padding-top: 20px;
+  height: auto;
   width: 100%;
-  height: 640px;
-  //height: 100%;
+//  background-color: green;
+  margin: 0 auto;
+  display: inline-block;
+  bottom: 20px;
 }
+#member1, #member2, #member3
+{
+  display: inline-block;
+ // width: 300px;
+  height: 190px;
+  cursor: pointer;
+}
+#member1
+{
+  background: url(../images/privatamunhalsansmall.png) no-repeat  center center;
+ // background-size: cover;
+}
+#member2
+{
+  background: url(../images/sverigestandlakarforbund.png) no-repeat  center center;
+ // background-size: cover;
+
+}
+#member3
+{
+  background: url(../images/privattandlakarnaSmall.png) no-repeat  center center;
+ // background-size: cover;
+
+}
+
+
+
+
 
 //
 .footer
 {
-  width: 100%;
+display: inline-block; // hej
+width: 100%;
   color: black;
   //position: fixed;
   background-color: $whiteColor;
  // display: block;
   //vertical-align: bottom;
 }
-.footer .adress,.phone,.mail, .mail a
+.adress,.phone, .openHours, .mail,
 {
+  text-align: center;
   display: inline-block;
   height: 200px;
-  width: 33%;
+  width: 310px; // hej je
   vertical-align: top;
   color: $blackColor;
 }
-/*.mail a
+.mail a
 {
-  color: $redColor;
-}*/
+  color: $blackColor;
+  text-align: center;
+}
 
 
 .icons

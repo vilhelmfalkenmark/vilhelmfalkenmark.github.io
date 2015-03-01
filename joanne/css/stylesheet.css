@@ -1,4 +1,111 @@
-#top-menu li a, #top-menu li a:hover {
+@media (min-width: 1px) and (max-width: 799px) {
+  #homeIcon {
+    display: none; }
+
+  #menu-container {
+    height: auto; }
+
+  #top-desktop-menu {
+    display: none; }
+
+  #top-mobile-menu {
+    display: none; }
+
+  #header {
+    width: 95%; }
+
+  #h1 {
+    font-size: 24px; }
+
+  #phoneNavContainer {
+    display: block; }
+
+  .menu-toggle-btn {
+    display: block;
+    padding-top: 40px;
+    padding-left: 40px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px; }
+    .menu-toggle-btn span {
+      background: white;
+      display: block;
+      width: 40px;
+      height: 4px;
+      border-radius: 1px;
+      margin-bottom: 6px;
+      -webkit-transition: all 0.5s linear;
+      transition: all 0.3s linear; }
+    .menu-toggle-btn.open span:nth-child(1), .menu-toggle-btn.open span:nth-child(3) {
+      transform: translate(0px, 13px) rotate(-45deg) scalex(1.3);
+      -webkit-transform: translate(0px, 13px) rotate(-45deg) scalex(1.3);
+      -ms-transform: translate(0px, 13px) rotate(-45deg) scalex(1.3);
+      -o-transform: translate(0px, 13px) rotate(-45deg) scalex(1.3);
+      margin: 0; }
+    .menu-toggle-btn.open span:nth-child(2) {
+      height: 0;
+      margin: 0; }
+    .menu-toggle-btn.open span:nth-child(3) {
+      transform: translate(0px, 9px) rotate(45deg) scalex(1.3);
+      -webkit-transform: translate(0px, 9px) rotate(45deg) scalex(1.3);
+      -ms-transform: translate(0px, 9px) rotate(45deg) scalex(1.3);
+      -o-transform: translate(0px, 9px) rotate(45deg) scalex(1.3); }
+
+  .map-content {
+    padding-top: 100px; }
+
+  #map-canvas {
+    margin: 0 auto;
+    width: 95%;
+    height: 400px; }
+
+  #header-box {
+    padding-top: 130px; }
+
+  .space {
+    width: 300px; }
+
+  #member1, #member2, #member3 {
+    width: 200px; } }
+@media (min-width: 800px) {
+  #homeIcon {
+    display: block; }
+
+  .menu-toggle-btn {
+    display: none; }
+
+  #top-desktop-menu {
+    display: block; }
+
+  #top-mobile-menu-wrapper {
+    display: none; }
+
+  #header {
+    width: 70%; }
+
+  #h1 {
+    font-size: 40px; }
+
+  #phoneNavContainer {
+    display: none; }
+
+  .map-content {
+    padding-top: 110px; }
+
+  #map-canvas {
+    margin-top: 5px;
+    width: 100%;
+    height: 640px; }
+
+  #header-box {
+    padding-top: 200px; }
+
+  .space {
+    width: 500px; }
+
+  #member1, #member2, #member3 {
+    width: 300px; } }
+#top-desktop-menu li a, #top-desktop-menu li a:hover, #top-mobile-menu li a, #top-mobile-menu li a:hover {
   -webkit-transition: All 0.2s ease;
   -moz-transition: All 0.5s ease;
   -o-transition: All 0.5s ease;
@@ -31,11 +138,10 @@ a:visited {
   /* Set up proportionate scaling */
   height: auto;
   min-height: 700px;
-  /* Set up positioning */
-  left: 0;
-  display: table; }
+  left: 0; }
 
 #menu-container {
+  padding: 1px;
   width: 100%;
   position: fixed;
   background-color: #326881;
@@ -45,32 +151,63 @@ a:visited {
 
 .menu-left {
   display: inline-block;
-  width: 14%;
   font-size: 60px;
-  color: white; }
+  color: white;
+  padding: 1px; }
 
 .menu-right {
-  display: inline-block;
-  width: 84%; }
+  padding: 1px;
+  display: inline-block; }
 
-#top-menu li {
-  display: inline-block;
-  margin-left: 50px;
-  margin-right: 50px; }
+.topIcon {
+  margin: 20px;
+  color: #eaeae0; }
 
-#top-menu li a {
+#top-desktop-menu {
+  padding: 1px; }
+
+#top-desktop-menu li {
+  display: inline-block;
+  text-align: center;
+  margin-left: 120px; }
+
+#top-desktop-menu li a {
   text-decoration: none;
   color: #eaeae0;
   font-size: 18px; }
 
-#top-menu li a:hover {
+#top-desktop-menu li a:hover {
   line-height: 10px;
   text-decoration: underline;
   cursor: pointer;
   color: #6a6a48; }
 
-.textContainer {
-  height: 640px;
+#top-mobile-menu-wrapper {
+  position: relative;
+  background-color: #326881; }
+
+#top-mobile-menu {
+  width: 100%;
+  position: relative;
+  padding: 0px; }
+
+#top-mobile-menu li {
+  display: inline-block;
+  text-align: center !important;
+  margin-top: 40px; }
+
+#top-mobile-menu li a {
+  text-decoration: none;
+  color: #eaeae0;
+  font-size: 36px; }
+
+#top-mobile-menu li a:hover {
+  color: #6a6a48; }
+
+.aboutUs, .textContainer {
+  z-index: 1;
+  min-height: 768px;
+  height: auto;
   width: 80%;
   background-color: rgba(234, 234, 224, 0.9);
   margin: 0 auto;
@@ -78,59 +215,81 @@ a:visited {
   padding-top: 100px;
   color: #333333; }
 
-.textContainer li {
-  color: #333333;
-  list-style: none;
-  font-size: 20px;
-  padding-top: 4px; }
-
 #header-box {
-  display: table-cell;
-  vertical-align: middle; }
+  margin: 0 auto; }
 
 .circle {
-  text-align: center;
+  background: url(../images/profil.jpg) center;
   margin: 0 auto;
-  background-color: rgba(209, 209, 209, 0.8);
-  height: 350px;
-  width: 350px;
-  border-radius: 175px;
+  height: 270px;
+  width: 270px;
+  border-radius: 135px;
   vertical-align: middle; }
 
+.space {
+  margin: 0 auto;
+  height: 40px;
+  border-bottom: 2px solid white; }
+
+#header {
+  top: 40%;
+  padding-top: 20px;
+  margin: 0 auto;
+  text-align: center; }
+
+.category-header {
+  padding-top: 70px; }
+
 #h1 {
-  color: #326881;
-  position: relative;
-  top: 40%; }
+  color: white;
+  text-align: center;
+  top: 30%; }
 
 .circle p {
   color: #326881;
   position: relative;
   top: 45%; }
 
-.map-content {
-  padding-top: 80px; }
-
-#map-canvas {
-  margin-top: 5px;
+#memberContainer {
+  padding-top: 20px;
+  height: auto;
   width: 100%;
-  height: 640px; }
+  margin: 0 auto;
+  display: inline-block;
+  bottom: 20px; }
+
+#member1, #member2, #member3 {
+  display: inline-block;
+  height: 190px;
+  cursor: pointer; }
+
+#member1 {
+  background: url(../images/privatamunhalsansmall.png) no-repeat center center; }
+
+#member2 {
+  background: url(../images/sverigestandlakarforbund.png) no-repeat center center; }
+
+#member3 {
+  background: url(../images/privattandlakarnaSmall.png) no-repeat center center; }
 
 .footer {
+  display: inline-block;
   width: 100%;
   color: black;
   background-color: #eaeae0; }
 
-.footer .adress, .phone, .mail, .mail a {
+.adress, .phone, .openHours, .mail {
+  text-align: center;
   display: inline-block;
   height: 200px;
-  width: 33%;
+  width: 310px;
   vertical-align: top;
   color: #333333; }
 
-/*.mail a
-{
-  color: $redColor;
-}*/
+.mail a {
+  color: #333333;
+  text-align: center; }
+
 .icons {
   margin: 20px;
   font-size: 60px;
