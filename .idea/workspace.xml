@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79fe1cea-f59a-40f6-b332-b2296f1ec630" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/joanne/om-oss.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/joanne/om-mig.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/joanne/behandlingar.html" afterPath="$PROJECT_DIR$/joanne/behandlingar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/joanne/hitta-hit.html" afterPath="$PROJECT_DIR$/joanne/hitta-hit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/joanne/index.html" afterPath="$PROJECT_DIR$/joanne/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/joanne/css/main.scss" afterPath="$PROJECT_DIR$/joanne/css/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Morse_Hax/morse-hax.html" afterPath="$PROJECT_DIR$/Morse_Hax/morse-hax.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Morse_Hax/script.js" afterPath="$PROJECT_DIR$/Morse_Hax/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/joanne/css/stylesheet.css.map" afterPath="$PROJECT_DIR$/joanne/css/stylesheet.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/joanne/css/stylesheet.css" afterPath="$PROJECT_DIR$/joanne/css/stylesheet.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/joanne/css/stylesheet.scss" afterPath="$PROJECT_DIR$/joanne/css/stylesheet.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/joanne/css/variables.scss" afterPath="$PROJECT_DIR$/joanne/css/variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/joanne/behandlingar.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vilhelmfalkenmark.github.io.iws" />
@@ -37,21 +26,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="morse-hax.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Morse_Hax/morse-hax.html">
+      <file leaf-file-name="hitta-hit.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/joanne/hitta-hit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.492574" vertical-offset="0" max-vertical-offset="4455">
-              <caret line="242" column="13" selection-start-line="242" selection-start-column="13" selection-end-line="242" selection-end-column="13" />
+            <state vertical-scroll-proportion="-3.5833333" vertical-offset="649" max-vertical-offset="2265">
+              <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Morse_Hax/script.js">
+      <file leaf-file-name="behandlingar.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/joanne/behandlingar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2688" max-vertical-offset="6270">
-              <caret line="302" column="0" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.43848965" vertical-offset="0" max-vertical-offset="1695">
+              <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/joanne/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-25.0" vertical-offset="0" max-vertical-offset="1605">
+              <caret line="40" column="81" selection-start-line="40" selection-start-column="81" selection-end-line="40" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -111,19 +110,20 @@
         <option value="$PROJECT_DIR$/joanne/css/desktop.scss" />
         <option value="$PROJECT_DIR$/joanne/css/phone.scss" />
         <option value="$PROJECT_DIR$/joanne/css/main.scss" />
-        <option value="$PROJECT_DIR$/joanne/behandlingar.html" />
         <option value="$PROJECT_DIR$/joanne/css/variables.scss" />
         <option value="$PROJECT_DIR$/joanne/hitta-hit.html" />
         <option value="$PROJECT_DIR$/joanne/index.html" />
         <option value="$PROJECT_DIR$/joanne/om-oss.html" />
         <option value="$PROJECT_DIR$/Morse_Hax/script.js" />
         <option value="$PROJECT_DIR$/Morse_Hax/morse-hax.html" />
+        <option value="$PROJECT_DIR$/joanne/js/behandlingar.html" />
+        <option value="$PROJECT_DIR$/joanne/behandlingar.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="511" />
-    <option name="y" value="40" />
+    <option name="x" value="286" />
+    <option name="y" value="47" />
     <option name="width" value="1748" />
     <option name="height" value="944" />
   </component>
@@ -181,7 +181,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Morse_Hax" />
+              <option name="myItemId" value="joanne" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -256,7 +256,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="511" y="40" width="1748" height="944" extended-state="0" />
+    <frame x="286" y="47" width="1748" height="944" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -616,26 +616,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/joanne/hitta-hit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-46.083332" vertical-offset="649" max-vertical-offset="2265">
-          <caret line="117" column="31" selection-start-line="117" selection-start-column="31" selection-end-line="117" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/joanne/om-oss.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.725944" vertical-offset="424" max-vertical-offset="1845">
           <caret line="68" column="111" selection-start-line="68" selection-start-column="111" selection-end-line="68" selection-end-column="111" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/joanne/behandlingar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7856273" vertical-offset="720" max-vertical-offset="1695">
-          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -648,14 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/joanne/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73081607" vertical-offset="0" max-vertical-offset="1605">
-          <caret line="40" column="81" selection-start-line="40" selection-start-column="81" selection-end-line="40" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Morse_Hax/hax_morse.jQuery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9230769" vertical-offset="0" max-vertical-offset="1215">
@@ -664,18 +640,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Morse_Hax/morse-hax.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33415842" vertical-offset="0" max-vertical-offset="4455">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Morse_Hax/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4368" max-vertical-offset="6270">
+        <state vertical-scroll-proportion="2.1778846" vertical-offset="2688" max-vertical-offset="6270">
           <caret line="302" column="0" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Morse_Hax/morse-hax.html">
+    <entry file="file://$PROJECT_DIR$/joanne/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.492574" vertical-offset="0" max-vertical-offset="4455">
-          <caret line="242" column="13" selection-start-line="242" selection-start-column="13" selection-end-line="242" selection-end-column="13" />
+        <state vertical-scroll-proportion="-25.0" vertical-offset="0" max-vertical-offset="1605">
+          <caret line="40" column="81" selection-start-line="40" selection-start-column="81" selection-end-line="40" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/joanne/hitta-hit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.5833333" vertical-offset="649" max-vertical-offset="2265">
+          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/joanne/behandlingar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43848965" vertical-offset="0" max-vertical-offset="1695">
+          <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
           <folding />
         </state>
       </provider>
