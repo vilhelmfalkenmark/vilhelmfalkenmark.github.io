@@ -156,7 +156,48 @@ background-color: $blueColor;
 
 
 
+.menu-toggle-btn{
+  display: block;
+  padding-top: 40px;
+  padding-left: 40px;
 
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+
+  span{
+    background: white;
+    display: block;
+    width: 40px;
+    height: 4px;
+    border-radius: 1px;
+    margin-bottom: 6px;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.3s linear;
+  }
+  &.open{
+    span{
+      &:nth-child(1),
+      &:nth-child(3){
+        transform: translate(0px, 13px) rotate(-45deg) scalex(1.3);
+        -webkit-transform:translate(0px, 13px) rotate(-45deg) scalex(1.3);
+        -ms-transform:translate(0px, 13px) rotate(-45deg) scalex(1.3);
+        -o-transform:translate(0px, 13px) rotate(-45deg) scalex(1.3);
+        margin: 0;
+      }
+      &:nth-child(2){
+        height: 0;
+        margin: 0;
+      }
+      &:nth-child(3){
+        transform: translate(0px, 9px) rotate(45deg) scalex(1.3);
+        -webkit-transform:translate(0px, 9px) rotate(45deg) scalex(1.3);
+        -ms-transform:translate(0px, 9px) rotate(45deg) scalex(1.3);
+        -o-transform:translate(0px, 9px) rotate(45deg) scalex(1.3);
+      }
+    }
+  }
+}
 
 
 
@@ -167,7 +208,6 @@ background-color: $blueColor;
   z-index: 1;
   min-height: $secondContentHeight*1.2;
   height: auto;
-  width: 80%;
   background-color: rgba(234,234,224,0.9);
   margin: 0 auto;
   text-align: center;
@@ -183,22 +223,22 @@ margin: 0 auto;
 {
   background: url(../images/profil.jpg) center;
   margin: 0 auto;
-  height: $circleSize;
+ /* height: $circleSize;
   width:  $circleSize;
-  border-radius:  $circleSize/2; // Hej
+  border-radius:  $circleSize/2;*/
   vertical-align: middle;
  // margin-top: 30px;
 }
 .space
 {
   margin: 0 auto;
-  height: 40px;
+  height: 30px;
   border-bottom: 2px solid white;
 }
 #header
 {
   top: 40%;
-  padding-top: 20px;
+  padding-top: 5px;
   margin: 0 auto;
   text-align: center;
 }

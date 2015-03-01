@@ -1,4 +1,4 @@
-@media (min-width: 1px) and (max-width: 374px)
+@media (min-width: 375px) and (max-width: 799px)
 {
   @import "variables.scss";
 
@@ -7,7 +7,7 @@
   }
 
   #menu-container {
-  height: auto;
+    height: auto;
   }
 
   #top-desktop-menu
@@ -16,7 +16,7 @@
   }
   #top-mobile-menu
   {
-  display: none;
+    display: none;
   }
   #header
   {
@@ -32,20 +32,23 @@
   #phoneNavContainer
   {
     display: block;
-   // height: 200px;
+    // height: 200px;
     //padding: 1px;
   }
 
 
+
+
+
   .circle
   {
-    height: $smallCircleSize; // ja
-    width:  $smallCircleSize;
-    border-radius:  $smallCircleSize/2;
+    height: $circleSize; // ja
+    width:  $circleSize;
+    border-radius:  $circleSize/2;
   }
   .aboutUs, .textContainer // Hej
  {
-    width: 100%; // hej
+    width: 95%; // hej
   }
 
 
@@ -56,14 +59,14 @@
   #map-canvas {
     margin: 0 auto;
     //margin-top: 5px;
-    width: 90%;
-    height: 240px;
+    width: 95%;
+    height: 400px;
     //height: 100%;
   }
 
   #header-box
   {
-    padding-top: 120px;
+    padding-top: 200px;
   }
 
   .space
@@ -73,8 +76,7 @@
 
   #member1, #member2, #member3
   {
-     width: 200px;
+    width: 200px;
   }
-
 
 }

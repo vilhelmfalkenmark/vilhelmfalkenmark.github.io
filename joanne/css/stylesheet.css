@@ -1,4 +1,12 @@
-@media (min-width: 1px) and (max-width: 799px) {
+@media (min-width: 1px) and (max-width: 374px) {
+  #top-desktop-menu li a, #top-desktop-menu li a:hover, #top-mobile-menu li a, #top-mobile-menu li a:hover {
+    -webkit-transition: All 0.2s ease;
+    -moz-transition: All 0.5s ease;
+    -o-transition: All 0.5s ease;
+    -ms-transition: All 0.5s ease;
+    transition: All 0.3s ease;
+    cursor: pointer; }
+
   #homeIcon {
     display: none; }
 
@@ -20,39 +28,70 @@
   #phoneNavContainer {
     display: block; }
 
-  .menu-toggle-btn {
-    display: block;
-    padding-top: 40px;
-    padding-left: 40px;
-    cursor: pointer;
-    width: 40px;
-    height: 40px; }
-    .menu-toggle-btn span {
-      background: white;
-      display: block;
-      width: 40px;
-      height: 4px;
-      border-radius: 1px;
-      margin-bottom: 6px;
-      -webkit-transition: all 0.5s linear;
-      transition: all 0.3s linear; }
-    .menu-toggle-btn.open span:nth-child(1), .menu-toggle-btn.open span:nth-child(3) {
-      transform: translate(0px, 13px) rotate(-45deg) scalex(1.3);
-      -webkit-transform: translate(0px, 13px) rotate(-45deg) scalex(1.3);
-      -ms-transform: translate(0px, 13px) rotate(-45deg) scalex(1.3);
-      -o-transform: translate(0px, 13px) rotate(-45deg) scalex(1.3);
-      margin: 0; }
-    .menu-toggle-btn.open span:nth-child(2) {
-      height: 0;
-      margin: 0; }
-    .menu-toggle-btn.open span:nth-child(3) {
-      transform: translate(0px, 9px) rotate(45deg) scalex(1.3);
-      -webkit-transform: translate(0px, 9px) rotate(45deg) scalex(1.3);
-      -ms-transform: translate(0px, 9px) rotate(45deg) scalex(1.3);
-      -o-transform: translate(0px, 9px) rotate(45deg) scalex(1.3); }
+  .circle {
+    height: 230px;
+    width: 230px;
+    border-radius: 115px; }
+
+  .aboutUs, .textContainer {
+    width: 100%; }
 
   .map-content {
-    padding-top: 100px; }
+    padding-top: 120px; }
+
+  #map-canvas {
+    margin: 0 auto;
+    width: 90%;
+    height: 240px; }
+
+  #header-box {
+    padding-top: 120px; }
+
+  .space {
+    width: 300px; }
+
+  #member1, #member2, #member3 {
+    width: 200px; } }
+@media (min-width: 375px) and (max-width: 799px) {
+  #top-desktop-menu li a, #top-desktop-menu li a:hover, #top-mobile-menu li a, #top-mobile-menu li a:hover {
+    -webkit-transition: All 0.2s ease;
+    -moz-transition: All 0.5s ease;
+    -o-transition: All 0.5s ease;
+    -ms-transition: All 0.5s ease;
+    transition: All 0.3s ease;
+    cursor: pointer; }
+
+  #homeIcon {
+    display: none; }
+
+  #menu-container {
+    height: auto; }
+
+  #top-desktop-menu {
+    display: none; }
+
+  #top-mobile-menu {
+    display: none; }
+
+  #header {
+    width: 95%; }
+
+  #h1 {
+    font-size: 24px; }
+
+  #phoneNavContainer {
+    display: block; }
+
+  .circle {
+    height: 270px;
+    width: 270px;
+    border-radius: 135px; }
+
+  .aboutUs, .textContainer {
+    width: 95%; }
+
+  .map-content {
+    padding-top: 120px; }
 
   #map-canvas {
     margin: 0 auto;
@@ -60,14 +99,22 @@
     height: 400px; }
 
   #header-box {
-    padding-top: 130px; }
+    padding-top: 200px; }
 
   .space {
     width: 300px; }
 
   #member1, #member2, #member3 {
     width: 200px; } }
-@media (min-width: 800px) {
+@media (min-width: 800px) and (max-width: 1024px) {
+  #top-desktop-menu li a, #top-desktop-menu li a:hover, #top-mobile-menu li a, #top-mobile-menu li a:hover {
+    -webkit-transition: All 0.2s ease;
+    -moz-transition: All 0.5s ease;
+    -o-transition: All 0.5s ease;
+    -ms-transition: All 0.5s ease;
+    transition: All 0.3s ease;
+    cursor: pointer; }
+
   #homeIcon {
     display: block; }
 
@@ -86,16 +133,78 @@
   #h1 {
     font-size: 40px; }
 
+  .aboutUs, .textContainer {
+    width: 80%; }
+
   #phoneNavContainer {
     display: none; }
 
   .map-content {
-    padding-top: 110px; }
+    padding-top: 140px; }
 
   #map-canvas {
-    margin-top: 5px;
+    margin: 0 auto;
+    width: 90%;
+    height: 500px; }
+
+  .circle {
+    height: 270px;
+    width: 270px;
+    border-radius: 135px; }
+
+  #header-box {
+    padding-top: 200px; }
+
+  .space {
+    width: 500px; }
+
+  #member1, #member2, #member3 {
+    width: 300px; } }
+@media (min-width: 1025px) {
+  #top-desktop-menu li a, #top-desktop-menu li a:hover, #top-mobile-menu li a, #top-mobile-menu li a:hover {
+    -webkit-transition: All 0.2s ease;
+    -moz-transition: All 0.5s ease;
+    -o-transition: All 0.5s ease;
+    -ms-transition: All 0.5s ease;
+    transition: All 0.3s ease;
+    cursor: pointer; }
+
+  #homeIcon {
+    display: block; }
+
+  .menu-toggle-btn {
+    display: none; }
+
+  #top-desktop-menu {
+    display: block; }
+
+  #top-mobile-menu-wrapper {
+    display: none; }
+
+  #header {
+    width: 70%; }
+
+  #h1 {
+    font-size: 40px; }
+
+  .aboutUs, .textContainer {
+    width: 80%; }
+
+  #phoneNavContainer {
+    display: none; }
+
+  .map-content {
+    padding-top: 120px; }
+
+  #map-canvas {
+    margin: 0 auto;
     width: 100%;
     height: 640px; }
+
+  .circle {
+    height: 270px;
+    width: 270px;
+    border-radius: 135px; }
 
   #header-box {
     padding-top: 200px; }
@@ -204,11 +313,41 @@ a:visited {
 #top-mobile-menu li a:hover {
   color: #6a6a48; }
 
+.menu-toggle-btn {
+  display: block;
+  padding-top: 40px;
+  padding-left: 40px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px; }
+  .menu-toggle-btn span {
+    background: white;
+    display: block;
+    width: 40px;
+    height: 4px;
+    border-radius: 1px;
+    margin-bottom: 6px;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.3s linear; }
+  .menu-toggle-btn.open span:nth-child(1), .menu-toggle-btn.open span:nth-child(3) {
+    transform: translate(0px, 13px) rotate(-45deg) scalex(1.3);
+    -webkit-transform: translate(0px, 13px) rotate(-45deg) scalex(1.3);
+    -ms-transform: translate(0px, 13px) rotate(-45deg) scalex(1.3);
+    -o-transform: translate(0px, 13px) rotate(-45deg) scalex(1.3);
+    margin: 0; }
+  .menu-toggle-btn.open span:nth-child(2) {
+    height: 0;
+    margin: 0; }
+  .menu-toggle-btn.open span:nth-child(3) {
+    transform: translate(0px, 9px) rotate(45deg) scalex(1.3);
+    -webkit-transform: translate(0px, 9px) rotate(45deg) scalex(1.3);
+    -ms-transform: translate(0px, 9px) rotate(45deg) scalex(1.3);
+    -o-transform: translate(0px, 9px) rotate(45deg) scalex(1.3); }
+
 .aboutUs, .textContainer {
   z-index: 1;
   min-height: 768px;
   height: auto;
-  width: 80%;
   background-color: rgba(234, 234, 224, 0.9);
   margin: 0 auto;
   text-align: center;
@@ -221,19 +360,19 @@ a:visited {
 .circle {
   background: url(../images/profil.jpg) center;
   margin: 0 auto;
-  height: 270px;
-  width: 270px;
-  border-radius: 135px;
+  /* height: $circleSize;
+   width:  $circleSize;
+   border-radius:  $circleSize/2;*/
   vertical-align: middle; }
 
 .space {
   margin: 0 auto;
-  height: 40px;
+  height: 30px;
   border-bottom: 2px solid white; }
 
 #header {
   top: 40%;
-  padding-top: 20px;
+  padding-top: 5px;
   margin: 0 auto;
   text-align: center; }
 
