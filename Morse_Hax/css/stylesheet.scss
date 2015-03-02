@@ -317,35 +317,43 @@ display: inline-block;
 
 #morseContainer:before
 {
-  content: " ";
+  content: " "; // Upp
   display:block;
-  // position: relative;
+  position: relative;
   width: 100%;
-  bottom:-30px;
+  bottom:30px;
   height:30px;
-  background: linear-gradient(-45deg, transparent 75%,  $redColor 75%) 0 50%,
-  linear-gradient( 45deg, transparent 75%, $redColor 75%) 0 50%;
+  margin: 0 auto;  // outline:1px solid red;
+  background: linear-gradient(45deg, transparent 75%, $morseColor 75%) 0 50%,
+  linear-gradient(-45deg, transparent 75%, $morseColor 75%) 0 50%;
   background-repeat: repeat-x;
   background-size:30px 30px, 30px 30px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
-
-
 
   #haxContainer:before
 {
-      content: " ";
-      display:block;
-     // position: relative;
-      width: 100%;
-      bottom:-30px;
-      height:30px;
-      background: linear-gradient(-45deg, transparent 75%,  $morseColor 75%) 0 50%,
-      linear-gradient( 45deg, transparent 75%, $morseColor 75%) 0 50%;
-      background-repeat: repeat-x;
-      background-size:30px 30px, 30px 30px;
+    content: " "; // Upp
+    display:block;
+    position: relative;
+    width: 100%;
+    bottom:30px;
+    height:30px;
+    margin: 0 auto;  // outline:1px solid red;
+    background: linear-gradient(45deg, transparent 75%, $haxColor 75%) 0 50%,
+    linear-gradient(-45deg, transparent 75%, $haxColor 75%) 0 50%;
+    background-repeat: repeat-x;
+    background-size:30px 30px, 30px 30px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
-
-
 
   .howDoesItWork
   {

@@ -325,22 +325,36 @@ ul li {
 #morseContainer:before {
   content: " ";
   display: block;
+  position: relative;
   width: 100%;
-  bottom: -30px;
+  bottom: 30px;
   height: 30px;
-  background: linear-gradient(-45deg, transparent 75%, #e75b4c 75%) 0 50%, linear-gradient(45deg, transparent 75%, #e75b4c 75%) 0 50%;
+  margin: 0 auto;
+  background: linear-gradient(45deg, transparent 75%, #22313F 75%) 0 50%, linear-gradient(-45deg, transparent 75%, #22313F 75%) 0 50%;
   background-repeat: repeat-x;
-  background-size: 30px 30px, 30px 30px; }
+  background-size: 30px 30px, 30px 30px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
 
 #haxContainer:before {
   content: " ";
   display: block;
+  position: relative;
   width: 100%;
-  bottom: -30px;
+  bottom: 30px;
   height: 30px;
-  background: linear-gradient(-45deg, transparent 75%, #22313F 75%) 0 50%, linear-gradient(45deg, transparent 75%, #22313F 75%) 0 50%;
+  margin: 0 auto;
+  background: linear-gradient(45deg, transparent 75%, #4DAF7C 75%) 0 50%, linear-gradient(-45deg, transparent 75%, #4DAF7C 75%) 0 50%;
   background-repeat: repeat-x;
-  background-size: 30px 30px, 30px 30px; }
+  background-size: 30px 30px, 30px 30px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
 
 .howDoesItWork:hover {
   text-decoration: underline;
