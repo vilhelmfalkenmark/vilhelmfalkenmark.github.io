@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS Bin</title>
+    <script type="text/javascript" src="http://connect.soundcloud.com/sdk.js"></script>
+    <script src="script.js"></script>
+    <!--<script src="soundcloudAPI.js"></script>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'></head>
+
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="container">
+    <div id="upper">
+
+     <div id="logo">
+    <iframe allowtransparency="true" scrolling="no" frameborder="no"
+            src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fthevil&color=orange_white&size=64"
+            style="width: 64px; height: 64px;"></iframe>
+     </div>
+
+    <h1>Ville leker med Soundclouds API</h1>
+    <!--min = 30 max = 180-->
+
+
+
+    <input type="text" id="myTrack" placeholder="Sök spår, artist, genre etc.">
+<br>
+        <input type="number" min = 1 max = 50 id="numberofTracks" placeholder="Antal träffar (Obligatoriskt)">
+        <br>
+        <input type="number" id="myBPM" placeholder="BPM (Valfritt)">
+<br>
+
+
+
+    <div class="outerButton"><div id="searchButton" class="button"><div>SÖK</div></div></div>
+    <div id="error">Inget sökresultat</div>
+    <div id="error2">Du måste ange hur många träffar du vill ha</div>
+    <div id="error3"></div>
+
+
+    </div>
+    <div id="targetContainer"></div>
+</div>
+</body>
+</html>
