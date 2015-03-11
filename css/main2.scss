@@ -186,7 +186,7 @@ h2
 */
 
 #header{
-   background: url(../images/citybackground.jpg) no-repeat fixed center center;
+   background: url(../images/citybackground.jpg) no-repeat fixed center center;// hej hej
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -196,11 +196,12 @@ h2
   /* Set rules to fill background */
   height: 1000px;
   width: 100%;
-  top: 0;
-  left: 0;
+ // top: 0;
+  /*left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 0;*/
 }
+
 h1
 {
   font-family: 'Stalemate', cursive !important;

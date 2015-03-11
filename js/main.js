@@ -23,7 +23,7 @@ $(document).ready(function() {
     });
 
 
-    $(window).scroll(function() {
+    /*$(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
         if (scroll >= $('#header').height())
@@ -35,7 +35,7 @@ $(document).ready(function() {
             $(".menulistItem").css({"display":"inline-block"});
 
         }
-    });
+    });*/
 
 
  $(".menu-toggle-btn").click(function() {
