@@ -1,4 +1,4 @@
-#tabContainer .purpleTriangle, .greyTriangle, .addPicture, #gallery, .scroll, #pictureSearchText, #pictureScroll, #pictureScroll div, #searchTagContainer, #socialContainer, #tagHeader, #innerSocialContainer div, #addressContainer div, .list, #footer li {
+#pictureScroll div, #innerSocialContainer div, #addressContainer div, #footer li {
   display: inline-block;
   *display: inline; }
 
@@ -11,30 +11,36 @@ body {
   height: 1000px; }
 
 #logoType {
-  margin-top: 45px;
-  margin-left: 3px; }
+  margin-top: 25px;
+  margin-left: 0px;
+  margin-bottom: 35px; }
 
 #topLine {
-  margin-top: 35px;
+  margin-top: 15px;
   width: 100%;
   height: 5px;
-  background-color: #95c1e0; }
+  background-color: #95c1e0;
+  margin-bottom: 20px; }
 
 h1 {
   font-size: 40px;
-  font-weight: 100 !important; }
+  font-weight: 100 !important;
+  margin-bottom: 50px; }
 
 #tabContainer .purpleTriangle, .greyTriangle {
+  float: left;
   margin-top: -25px;
   font-size: 12px;
   width: 125px;
   height: 26px; }
 
 .purpleTriangle {
-  background-color: #b365a7; }
+  background-color: #b365a7;
+  margin-right: 4px; }
 
 .greyTriangle {
-  background-color: #b9b9b9; }
+  background-color: #b9b9b9;
+  margin-right: 4px; }
 
 .triangeText {
   color: white;
@@ -43,8 +49,8 @@ h1 {
   font-size: 11px; }
 
 .addPicture {
-  margin-top: -34px;
-  margin-left: 360px;
+  margin-top: -44px;
+  margin-left: 745px;
   height: 35px;
   width: 205px;
   background-color: #b365a7;
@@ -72,10 +78,11 @@ h1 {
   height: 345px; }
 
 #gallery, .scroll {
-  height: 100%; }
+  height: 100%;
+  float: left; }
 
 #gallery {
-  margin: 0 0px 0 1px;
+  margin: 0 1px 0 1px;
   width: 900px; }
 
 .scroll {
@@ -97,10 +104,11 @@ h1 {
   height: 50px; }
 
 #pictureSearchText, #pictureScroll {
+  float: left;
   height: 30px; }
 
 #pictureSearchText {
-  margin-left: 50px; }
+  margin-left: 30px; }
 
 #pictureSearchText div {
   float: left;
@@ -121,7 +129,7 @@ h1 {
 #pictureScroll {
   margin-top: 5px;
   position: absolute;
-  margin-left: 590px; }
+  margin-left: 812px; }
 
 #pictureScroll div {
   font-size: 10px; }
@@ -149,6 +157,9 @@ h1 {
   width: 925px;
   height: 60px; }
 
+#searchTagContainer, #socialContainer, #tagHeader {
+  float: left; }
+
 #tagHeader {
   text-align: center;
   font-size: 12px;
@@ -164,7 +175,8 @@ h1 {
 
 #searchTagContainer div {
   display: inline-block;
-  margin: 2px 5px 3px 5px; }
+  margin: 2px 5px 3px 5px;
+  float: left; }
 
 .tags a {
   color: #b365a7;
@@ -197,12 +209,12 @@ h1 {
   background-color: #0159a1; }
 
 #agriaText {
-  width: 150px;
   color: white;
   font-size: 14px;
-  margin: 5px 12px; }
+  margin-left: 15px; }
 
 #adress {
+  margin-left: 15px;
   width: 770px; }
 
 #adress span {
@@ -213,6 +225,7 @@ h1 {
   width: 100%; }
 
 .list {
+  float: left;
   width: 100px;
   vertical-align: top;
   height: 110px;
@@ -235,7 +248,8 @@ h1 {
 #bottomLine {
   height: 33px;
   width: 100%;
-  border-bottom: 2px solid #0159a1; }
+  border-bottom: 2px solid #0159a1;
+  clear: both; }
 
 #bottomLine select {
   font-size: 8px;
@@ -251,6 +265,7 @@ h1 {
   margin-top: 5px; }
 
 #footer li {
+  list-style-type: none;
   margin: 0 5px 0 5px;
   text-align: left;
   font-size: 10px;

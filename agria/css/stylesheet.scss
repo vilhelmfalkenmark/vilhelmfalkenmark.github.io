@@ -12,29 +12,31 @@ body
 }
 #logoType
 {
-  margin-top: 45px;
-  margin-left: 3px;
+  margin-top: 25px;
+  margin-left: 0px;
+  margin-bottom: 35px;
 }
 #topLine
 {
-margin-top: 35px;
+margin-top: 15px;
 width: 100%;
 height: 5px;
 background-color: rgb(149,193,224);
+margin-bottom: 20px;
 }
 
 h1
 {
   font-size: 40px;
   font-weight: 100 !important;
+  margin-bottom: 50px;
 }
-
 #tabContainer .purpleTriangle, .greyTriangle
 {
   //position: absolute;
-  @extend %inline;
+  //@extend %inline;
 
-  //  float: left;
+  float: left;
   margin-top: -25px;
   font-size: 12px;
   width: 125px;
@@ -43,10 +45,12 @@ h1
 .purpleTriangle {
 
   background-color: $purpleColor;
+  margin-right: 4px;
 }
 .greyTriangle {
 
     background-color: $greyColor;
+  margin-right: 4px;
 
 }
 .triangeText
@@ -59,9 +63,9 @@ h1
 }
 .addPicture
 {
-  @extend %inline;
-  margin-top: -34px; // Hej
-  margin-left: 360px;
+  //@extend %inline;
+  margin-top: -44px; // Hej
+  margin-left: 745px;
   height: 35px;
   width: 205px;
   background-color: $purpleColor;
@@ -100,16 +104,16 @@ h1
 {
   //display: inline-block; // Funkar inte i IE7
   height: 100%;
- // float: left;
+  float: left;
 
-  @extend %inline;
+ // @extend %inline;
 
 //  margin: 0 1px 0 1px;
 }
 #gallery
 {
  // background-color: red;
-  margin: 0 0px 0 1px;
+  margin: 0 1px 0 1px;
   width: 900px;
  // vertical-align: top;
 }
@@ -139,16 +143,15 @@ h1
 }
 #pictureSearchText, #pictureScroll
 {
-  @extend %inline;
-height: 30px;
+
+  float: left;
+  height: 30px;
 }
 #pictureSearchText
 {
- margin-left: 50px;
+ margin-left: 30px;
   //float: left;
 }
-
-
 #pictureSearchText div
 {
   //display: inline-block; Hej
@@ -176,7 +179,7 @@ height: 30px;
 {
   margin-top: 5px;
   position: absolute;
-  margin-left: 590px; // Hej
+  margin-left: 812px; // Hej
 //  background-color: red;
 }
 #pictureScroll div
@@ -215,7 +218,8 @@ height: 30px;
 }
 #searchTagContainer, #socialContainer,#tagHeader
 {
-  @extend %inline;
+  //@extend %inline;
+  float: left;
 }
 #tagHeader
 {
@@ -240,6 +244,7 @@ height: 30px;
 {
   display: inline-block;
   margin: 2px 5px 3px 5px;
+  float: left;
 }
 .tags a
 {
@@ -286,17 +291,21 @@ text-decoration: underline;
 
 #addressContainer div
 {
+//float: left;
   @extend %inline;
+
 }
 #agriaText
 {
-  width: 150px;
+  //width: 150px;
   color: white;
   font-size: 14px;
-  margin: 5px 12px;
+  margin-left: 15px;
 }
 #adress
 {
+  margin-left: 15px;
+
   width: 770px;
 }
 #adress span
@@ -311,7 +320,9 @@ font-size: 10px;
 }
 .list
 {
-  @extend %inline;
+//  @extend %inline;
+
+float: left;
 width: 100px;
 vertical-align:  top;
 height: 110px;
@@ -341,6 +352,8 @@ list-style-type:none;
   height: 33px;
   width: 100%;
   border-bottom: 2px solid $blueColor;
+  clear: both;
+
 }
 #bottomLine select
 {
@@ -361,8 +374,11 @@ margin: 0 auto;
 }
 #footer li
 {
+
+  list-style-type: none;
   margin: 0 5px 0 5px;
   text-align: left;
+ // float: left;
   @extend %inline;
   font-size: 10px;
   color: $greyColor;
