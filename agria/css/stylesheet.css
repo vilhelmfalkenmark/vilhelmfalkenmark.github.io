@@ -1,0 +1,265 @@
+body {
+  font-family: "Arial", sans-serif; }
+
+#container {
+  width: 950px;
+  margin: 0 auto;
+  height: 1000px; }
+
+#logoType {
+  margin-top: 45px;
+  margin-left: 3px; }
+
+#topLine {
+  margin-top: 35px;
+  width: 100%;
+  height: 5px;
+  background-color: #95c1e0; }
+
+h1 {
+  font-size: 40px;
+  font-weight: 100 !important; }
+
+#tabContainer .purpleTriangle, .greyTriangle {
+  display: inline-block;
+  margin-top: -12px;
+  font-size: 12px;
+  width: 125px;
+  height: 26px; }
+
+.purpleTriangle {
+  background-color: #b365a7; }
+
+.greyTriangle {
+  background-color: #b9b9b9; }
+
+.triangeText {
+  color: white;
+  font-weight: 100 !important;
+  text-align: center;
+  font-size: 11px; }
+
+.addPicture {
+  display: inline-block;
+  margin-top: -24px;
+  margin-left: 362px;
+  height: 35px;
+  width: 205px;
+  background-color: #b365a7;
+  border-radius: 4px;
+  position: absolute; }
+
+.addPicture p {
+  line-height: 7px;
+  color: white;
+  font-weight: lighter;
+  font-size: 14px;
+  text-align: center; }
+
+.addPicture span {
+  font-size: 24px; }
+
+.purpleLine {
+  width: 100%;
+  height: 4px;
+  background-color: #b365a7; }
+
+#pictureContainer {
+  margin-top: 12px;
+  width: 100%;
+  height: 345px; }
+
+#gallery, .scroll {
+  display: inline-block;
+  height: 100%; }
+
+#gallery {
+  margin: 0 0px 0 1px;
+  width: 900px;
+  vertical-align: top; }
+
+.scroll {
+  width: 20px;
+  height: 100%;
+  border-radius: 3px;
+  background-color: lightgray; }
+
+.galleryRow div {
+  display: inline-block;
+  height: 80px;
+  width: 120px;
+  background-color: #b9b9b9;
+  margin: 0px 2.5px 10px 2px; }
+
+#pictureSearchContainer {
+  margin-top: 10px;
+  height: 50px; }
+
+#pictureSearchText, #pictureScroll {
+  display: inline-block;
+  height: 30px; }
+
+#pictureSearchText {
+  margin-left: 30px; }
+
+#pictureSearchText div {
+  display: inline-block;
+  margin-top: 12px;
+  color: #b365a7; }
+
+#pictureSearchText div:first-child {
+  font-size: 20px;
+  font-weight: lighter; }
+
+#pictureSearchText div:last-child {
+  font-size: 12px !important;
+  margin-left: 5px; }
+
+#pictureScroll {
+  position: absolute;
+  margin-left: 605px; }
+
+#pictureScroll div {
+  display: inline-block;
+  font-size: 10px; }
+
+#pictureScroll div:nth-child(2) {
+  width: 80px;
+  height: 15px;
+  text-align: center;
+  line-height: 5px; }
+
+.arrow {
+  height: 15px;
+  width: 20px;
+  background-color: #b9b9b9; }
+
+#animalChoice {
+  width: 895px;
+  margin: -14px auto; }
+
+#animalChoice select:nth-child(2) {
+  width: 190px; }
+
+#tagAndSocialContainer {
+  margin: 15px 0 0 25px;
+  width: 925px;
+  height: 60px; }
+
+#searchTagContainer, #socialContainer, #tagHeader {
+  display: inline-block; }
+
+#tagHeader {
+  text-align: center;
+  font-size: 12px;
+  height: 60px;
+  width: 40px;
+  margin-top: 12px;
+  vertical-align: top; }
+
+#searchTagContainer {
+  margin-top: 10px;
+  width: 515px;
+  font-size: 12px; }
+
+#searchTagContainer div {
+  display: inline-block;
+  margin: 2px 5px 3px 5px; }
+
+.tags a {
+  color: #b365a7;
+  text-decoration: underline; }
+
+#socialContainer {
+  vertical-align: top;
+  width: 360px;
+  height: 100%; }
+
+#innerSocialContainer {
+  margin-top: 5px;
+  margin-left: 215px; }
+
+#innerSocialContainer div {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px; }
+
+.socialBox {
+  height: 15px;
+  width: 15px;
+  background-color: #ff6944;
+  color: white;
+  text-align: center; }
+
+#addressContainer {
+  margin: 2px 4px 0 auto;
+  width: 100%;
+  height: 30px;
+  background-color: #0159a1; }
+
+#addressContainer div {
+  display: inline-block; }
+
+#agriaText {
+  width: 150px;
+  color: white;
+  font-size: 14px;
+  margin: 5px 12px; }
+
+#adress {
+  width: 770px; }
+
+#adress span {
+  color: #b9b9b9;
+  font-size: 10px; }
+
+#listContainer {
+  width: 100%; }
+
+.list {
+  display: inline-block;
+  width: 100px;
+  vertical-align: top;
+  height: 110px;
+  margin: 0 1.60px 0 0; }
+
+.list ul {
+  margin: 0;
+  padding: 0; }
+
+.list ul li {
+  margin-top: 6px;
+  font-size: 10px;
+  list-style-type: none;
+  color: #b9b9b9; }
+
+.list ul li:first-child {
+  margin-top: 15px;
+  font: bold; }
+
+#bottomLine {
+  height: 33px;
+  width: 100%;
+  border-bottom: 2px solid #0159a1; }
+
+#bottomLine select {
+  font-size: 8px;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 870px; }
+
+#footer {
+  width: 590px;
+  margin: 0 auto; }
+
+#footer ul {
+  margin-top: 5px; }
+
+#footer li {
+  margin: 0 5px 0 5px;
+  text-align: left;
+  display: inline-block;
+  font-size: 10px;
+  color: #b9b9b9; }
+
+/*# sourceMappingURL=stylesheet.css.map */
