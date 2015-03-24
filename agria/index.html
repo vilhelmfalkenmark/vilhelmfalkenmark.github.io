@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Vilhelm Falkenmark - Agria Testet</title>
     <!--
-Utgå ifrÂn bilden bildgalleriet_test.psd och gör så korrekt css och html som möjligt.
+Utgå ifrån bilden bildgalleriet_test.psd och gör så korrekt css och html som möjligt.
 
 Resultatet ska vara så likt originalet som möjligt - pixel perfect i chrome, firefox och IE7/8/9
 
@@ -13,6 +13,21 @@ Resultatet ska vara så likt originalet som möjligt - pixel perfect i chrome, f
 * Hela sidan "content" får inte vara större än 950 px centrerat pÂ sidan.
 Kodat av Vilhelm Falkenmark.
  -->
+    <!--[if IE 7]>
+    <style type="text/css">
+        #pictureScroll {
+            margin: 5px 0 0 10px !important;
+        }
+        .triangeText {
+            line-height: 0px !important;
+        }
+        .addPicture p {
+            line-height: 0px !important;
+        }
+    </style>
+    <![endif]-->
+
+
 
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 </head>
