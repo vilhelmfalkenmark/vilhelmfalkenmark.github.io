@@ -42,11 +42,11 @@ h1 {
   background-color: #b9b9b9;
   margin-right: 4px; }
 
-.triangeText {
+.triangleText {
   color: white;
-  font-weight: 100 !important;
   text-align: center;
-  font-size: 11px; }
+  font-size: 11px;
+  line-height: 8px; }
 
 .addPicture {
   margin-top: -44px;
@@ -58,10 +58,9 @@ h1 {
   float: left; }
 
 .addPicture p {
+  line-height: 8px;
   color: white;
-  font-weight: lighter;
   font-size: 14px;
-  position: absolute;
   margin-left: 22px; }
 
 .addPicture span {
@@ -273,7 +272,7 @@ h1 {
   width: 100%;
   border-bottom: 2px solid #0159a1;
   display: block;
-  margin-top: 2px; }
+  margin-top: 12px; }
 
 #bottomLine select {
   font-size: 8px;

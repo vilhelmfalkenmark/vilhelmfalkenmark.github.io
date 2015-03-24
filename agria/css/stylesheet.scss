@@ -50,12 +50,13 @@ h1
   margin-right: 4px;
 
 }
-.triangeText
+.triangleText
 {
   color: white;
-  font-weight: 100 !important;
   text-align: center;
   font-size: 11px;
+  line-height: 8px;
+
 }
 .addPicture
 {
@@ -70,10 +71,9 @@ h1
 
 .addPicture p
 {
-  color: white;
-  font-weight: lighter;
+  line-height: 8px;
+    color: white;
   font-size: 14px;
-  position: absolute;
   margin-left: 22px;
 }
 
@@ -361,7 +361,7 @@ list-style-type:none;
   width: 100%;
   border-bottom: 2px solid $blueColor;
   display: block;
-  margin-top: 2px;
+  margin-top: 12px;
  // clear: both;
 }
 #bottomLine select
