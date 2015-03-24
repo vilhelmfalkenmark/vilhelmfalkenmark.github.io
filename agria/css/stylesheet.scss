@@ -33,9 +33,6 @@ h1
 }
 #tabContainer .purpleTriangle, .greyTriangle
 {
-  //position: absolute;
-  //@extend %inline;
-
   float: left;
   margin-top: -25px;
   font-size: 12px;
@@ -80,7 +77,9 @@ h1
   color: white;
   font-weight: lighter;
   font-size: 14px;
-  text-align: center;
+ // text-align: center;
+  position: absolute;
+  margin-left: 22px;
 }
 
 .addPicture span
@@ -100,27 +99,34 @@ h1
   width: 100%;
   height: 345px;
 }
-#gallery, .scroll
+.leftScroll
 {
-  //display: inline-block; // Funkar inte i IE7
   height: 100%;
   float: left;
+ // position: absolute;
 
- // @extend %inline;
+}
+.rightScroll
+{
+  height: 100%;
+  float: left;
+  margin-top: -345px;
+  margin-left: 5px;
+ // position: absolute;
 
-//  margin: 0 1px 0 1px;
 }
 #gallery
 {
- // background-color: red;
-  margin: 0 1px 0 1px;
+  height: 100%;
+//  float: left;
+  margin: 0 5px 0 25px;
   width: 900px;
- // vertical-align: top;
+  //clear: both;
 }
 .scroll
 {
   width: 20px;
-  height: 100%;
+  //height: 100px; // Hej
   border-radius: 3px;
   background-color: lighten($greyColor,10%);
 }
