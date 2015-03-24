@@ -53,10 +53,10 @@ h1
 .triangleText
 {
   color: white;
-  text-align: center;
+ // text-align: center;
   font-size: 11px;
-  line-height: 8px;
-
+  margin: 8px 0 4px 8px;
+  position: absolute;
 }
 .addPicture
 {
@@ -71,11 +71,19 @@ h1
 
 .addPicture p
 {
-  line-height: 8px;
-    color: white;
+ // line-height: 8px;
+   color: white;
   font-size: 14px;
-  margin-left: 22px;
+  //margin-left: 22px;
+  margin: 12px 0 0px 15px;
+  position: absolute;
 }
+.triangleText, .addPicture p
+{
+
+}
+
+
 
 .addPicture span
 {
