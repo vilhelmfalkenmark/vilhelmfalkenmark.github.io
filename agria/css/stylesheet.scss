@@ -49,7 +49,7 @@ h1
 }
 .greyTriangle {
 
-    background-color: $greyColor;
+  background-color: $greyColor;
   margin-right: 4px;
 
 }
@@ -71,7 +71,7 @@ h1
   background-color: $purpleColor;
 //  vertical-align: top;
   border-radius: 4px;
-  position: absolute;
+  float: left;
 }
 
 .addPicture p
@@ -267,13 +267,17 @@ text-decoration: underline;
 }
 #innerSocialContainer div
 {
-  @extend %inline;
+ // @extend %inline;
+
+  float: left;
   vertical-align: top;
   font-size: 14px;
 }
 
 .socialBox
 {
+  margin: 0 2px 0 2px;
+
   height: 15px;
   width: 15px;
   background-color: #ff6944;
@@ -327,6 +331,7 @@ width: 100px;
 vertical-align:  top;
 height: 110px;
 margin: 0 1.60px 0 0;
+
 }
 .list ul
 {
@@ -346,14 +351,21 @@ list-style-type:none;
  // font-size: 12px;
   font: bold;
 }
+.clear
+{
+  clear: both;
 
+}
 #bottomLine
 {
   height: 33px;
+  //height: 70px;
+ // background-color: red;
   width: 100%;
   border-bottom: 2px solid $blueColor;
-  clear: both;
-
+  display: block;
+  margin-top: 15px;
+ // clear: both;
 }
 #bottomLine select
 {

@@ -1,4 +1,4 @@
-#pictureScroll div, #innerSocialContainer div, #addressContainer div, #footer li {
+#pictureScroll div, #addressContainer div, #footer li {
   display: inline-block;
   *display: inline; }
 
@@ -55,7 +55,7 @@ h1 {
   width: 205px;
   background-color: #b365a7;
   border-radius: 4px;
-  position: absolute; }
+  float: left; }
 
 .addPicture p {
   line-height: 7px;
@@ -192,10 +192,12 @@ h1 {
   margin-left: 215px; }
 
 #innerSocialContainer div {
+  float: left;
   vertical-align: top;
   font-size: 14px; }
 
 .socialBox {
+  margin: 0 2px 0 2px;
   height: 15px;
   width: 15px;
   background-color: #ff6944;
@@ -245,11 +247,15 @@ h1 {
   margin-top: 15px;
   font: bold; }
 
+.clear {
+  clear: both; }
+
 #bottomLine {
   height: 33px;
   width: 100%;
   border-bottom: 2px solid #0159a1;
-  clear: both; }
+  display: block;
+  margin-top: 15px; }
 
 #bottomLine select {
   font-size: 8px;
