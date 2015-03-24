@@ -105,7 +105,6 @@ h1 {
   margin: 0px 4px 10px 4px; }
 
 #pictureSearchContainer {
-  margin-top: 10px;
   width: 100%;
   height: 50px; }
 
@@ -133,10 +132,7 @@ h1 {
   margin-left: 5px; }
 
 #pictureScroll {
-  margin-top: 5px;
-  position: absolute;
-  margin-left: 812px;
-  float: left; }
+  float: right; }
 
 #pictureScroll div {
   font-size: 10px; }
