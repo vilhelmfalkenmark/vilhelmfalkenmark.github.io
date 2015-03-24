@@ -31,8 +31,11 @@ h1
 
 #tabContainer .purpleTriangle, .greyTriangle
 {
-  display: inline-block;
-  margin-top: -12px;
+  //position: absolute;
+  @extend %inline;
+
+  //  float: left;
+  margin-top: -25px;
   font-size: 12px;
   width: 125px;
   height: 26px;
@@ -56,9 +59,9 @@ h1
 }
 .addPicture
 {
-  display: inline-block;
-  margin-top: -24px; // Hej
-  margin-left: 362px;
+  @extend %inline;
+  margin-top: -34px; // Hej
+  margin-left: 360px;
   height: 35px;
   width: 205px;
   background-color: $purpleColor;
@@ -82,6 +85,7 @@ h1
 }
 .purpleLine
 {
+//  margin-top: 2px;
   width: 100%;
   height: 4px;
   background-color: $purpleColor;
@@ -94,15 +98,20 @@ h1
 }
 #gallery, .scroll
 {
-  display: inline-block;
+  //display: inline-block; // Funkar inte i IE7
   height: 100%;
+ // float: left;
+
+  @extend %inline;
+
+//  margin: 0 1px 0 1px;
 }
 #gallery
 {
  // background-color: red;
   margin: 0 0px 0 1px;
   width: 900px;
-  vertical-align: top;
+ // vertical-align: top;
 }
 .scroll
 {
@@ -113,33 +122,44 @@ h1
 }
 .galleryRow div
 {
-  display: inline-block;
+//  display: inline-block;
+  float: left;
   height: 80px;
   width: 120px;
   background-color: $greyColor;
-  margin:  0px 2.5px 10px 2px;
+  margin:  0px 4px 10px 4px;
 }
 
 #pictureSearchContainer
 {
+  //background-color: red;
   margin-top: 10px;
-  //background-color: green;
+  width: 100%;
   height: 50px;
 }
 #pictureSearchText, #pictureScroll
 {
-  display: inline-block;
-  height: 30px;
+  @extend %inline;
+height: 30px;
 }
 #pictureSearchText
 {
- margin-left: 30px;
+ margin-left: 50px;
+  //float: left;
 }
+
+
 #pictureSearchText div
 {
-  display: inline-block;
+  //display: inline-block; Hej
+  float: left;
   margin-top: 12px;
   color: $purpleColor;
+}
+#pictureSearchText div:last-child
+{
+  padding-top: 5px;
+
 }
 #pictureSearchText div:first-child
 {
@@ -154,20 +174,21 @@ h1
 
 #pictureScroll
 {
+  margin-top: 5px;
   position: absolute;
-  margin-left: 605px; // Hej
+  margin-left: 590px; // Hej
 //  background-color: red;
 }
 #pictureScroll div
 {
-  display: inline-block;
+  @extend %inline;
   font-size: 10px;
 }
 #pictureScroll div:nth-child(2) {
   width: 80px;
   height: 15px;
   text-align: center;
-line-height: 5px;
+  line-height: 5px;
 }
 .arrow
 {
@@ -194,15 +215,17 @@ line-height: 5px;
 }
 #searchTagContainer, #socialContainer,#tagHeader
 {
-  display: inline-block;
+  @extend %inline;
 }
 #tagHeader
 {
+ // position: absolute;
   text-align: center;
   font-size: 12px;
   height: 60px;
   width: 40px;
   margin-top: 12px;
+  //margin-right: 12px;
   vertical-align: top;
 }
 #searchTagContainer
@@ -239,7 +262,7 @@ text-decoration: underline;
 }
 #innerSocialContainer div
 {
-  display: inline-block;
+  @extend %inline;
   vertical-align: top;
   font-size: 14px;
 }
@@ -263,7 +286,7 @@ text-decoration: underline;
 
 #addressContainer div
 {
-  display: inline-block;
+  @extend %inline;
 }
 #agriaText
 {
@@ -288,7 +311,7 @@ font-size: 10px;
 }
 .list
 {
-display: inline-block;
+  @extend %inline;
 width: 100px;
 vertical-align:  top;
 height: 110px;
@@ -340,7 +363,7 @@ margin: 0 auto;
 {
   margin: 0 5px 0 5px;
   text-align: left;
-  display: inline-block;
+  @extend %inline;
   font-size: 10px;
   color: $greyColor;
 }

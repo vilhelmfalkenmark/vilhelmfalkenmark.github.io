@@ -1,3 +1,9 @@
 $purpleColor: rgb(179, 101, 167);
 $greyColor: rgb(185,185,185);
 $blueColor: rgb(1,89,161);
+
+%inline
+{
+  display: inline-block;
+  *display: inline;
+}
