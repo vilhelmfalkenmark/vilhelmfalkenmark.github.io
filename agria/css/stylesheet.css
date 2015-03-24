@@ -11,9 +11,9 @@ body {
   height: 1000px; }
 
 #logoType {
-  margin-top: 25px;
-  margin-left: 0px;
-  margin-bottom: 35px; }
+  margin-top: 28px;
+  margin-left: 3px;
+  margin-bottom: 32px; }
 
 #topLine {
   margin-top: 15px;
@@ -46,8 +46,7 @@ h1 {
   color: white;
   font-weight: 100 !important;
   text-align: center;
-  font-size: 11px;
-  line-height: 6px; }
+  font-size: 11px; }
 
 .addPicture {
   margin-top: -44px;
@@ -59,7 +58,6 @@ h1 {
   float: left; }
 
 .addPicture p {
-  line-height: 8px;
   color: white;
   font-weight: lighter;
   font-size: 14px;
@@ -104,7 +102,7 @@ h1 {
   height: 80px;
   width: 120px;
   background-color: #b9b9b9;
-  margin: 0px 4px 10px 4px; }
+  margin: 0px 4px 8px 4px; }
 
 #pictureSearchContainer {
   width: 100%;
@@ -206,9 +204,23 @@ h1 {
   margin: 0 2px 0 2px;
   height: 15px;
   width: 15px;
-  background-color: #ff6944;
   color: white;
   text-align: center; }
+
+.Plus {
+  background-color: #b55230; }
+
+.G {
+  background-color: #ff6944; }
+
+.F {
+  background-color: #4750ff; }
+
+.T {
+  background-color: #00a3ff; }
+
+.L {
+  background-color: #0e03ff; }
 
 #addressContainer {
   margin: 2px 4px 0 auto;
@@ -261,7 +273,7 @@ h1 {
   width: 100%;
   border-bottom: 2px solid #0159a1;
   display: block;
-  margin-top: 15px; }
+  margin-top: 2px; }
 
 #bottomLine select {
   font-size: 8px;

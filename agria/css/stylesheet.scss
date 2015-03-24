@@ -12,9 +12,9 @@ body
 }
 #logoType
 {
-  margin-top: 25px;
-  margin-left: 0px;
-  margin-bottom: 35px;
+  margin-top: 28px;
+  margin-left: 3px;
+  margin-bottom: 32px;
 }
 #topLine
 {
@@ -56,30 +56,23 @@ h1
   font-weight: 100 !important;
   text-align: center;
   font-size: 11px;
- // margin-top: 38px;
-  line-height: 6px;
-
 }
 .addPicture
 {
-  //@extend %inline;
   margin-top: -44px; // Hej
   margin-left: 745px;
   height: 35px;
   width: 205px;
   background-color: $purpleColor;
-//  vertical-align: top;
   border-radius: 4px;
   float: left;
 }
 
 .addPicture p
 {
-  line-height: 8px;
   color: white;
   font-weight: lighter;
   font-size: 14px;
- // text-align: center;
   position: absolute;
   margin-left: 22px;
 }
@@ -105,7 +98,6 @@ h1
 {
   height: 100%;
   float: left;
- // position: absolute;
 
 }
 .rightScroll
@@ -122,12 +114,10 @@ h1
 //  float: left;
   margin: 0 5px 0 25px;
   width: 900px;
-  //clear: both;
 }
 .scroll
 {
   width: 20px;
-  //height: 100px; // Hej
   border-radius: 3px;
   background-color: lighten($greyColor,10%);
 }
@@ -137,7 +127,7 @@ h1
   height: 80px;
   width: 120px;
   background-color: $greyColor;
-  margin:  0px 4px 10px 4px;
+  margin:  0px 4px 8px 4px;
 }
 
 #pictureSearchContainer
@@ -174,15 +164,13 @@ h1
 }
 #pictureSearchText div:last-child
 {
-  font-size: 12px !important; //hej
+  font-size: 12px !important;
   margin-left: 5px;
 }
 
 #pictureScroll
 {
- // margin-top: -15px;
- // position: absolute;
- // margin-left: 812px; // Hej
+
   margin: 0 3px 0 0;
   float: right; // hej
 }
@@ -272,12 +260,32 @@ text-decoration: underline;
 .socialBox
 {
   margin: 0 2px 0 2px;
-
   height: 15px;
   width: 15px;
-  background-color: #ff6944;
   color: white;
   text-align: center;
+}
+.Plus
+{
+  background-color: #b55230;
+
+}
+
+.G
+{
+  background-color: #ff6944;
+}
+.F
+{
+  background-color: #4750ff;
+}
+.T
+{
+  background-color: #00a3ff;
+}
+.L
+{
+  background-color: #0e03ff;
 }
 
 #addressContainer
@@ -290,13 +298,11 @@ text-decoration: underline;
 
 #addressContainer div
 {
-//float: left;
   @extend %inline;
 
 }
 #agriaText
 {
-  //width: 150px;
   color: white;
   font-size: 14px;
   margin-left: 15px;
@@ -319,7 +325,6 @@ font-size: 10px;
 }
 .list
 {
-//  @extend %inline;
 
 float: left;
 width: 100px;
@@ -343,7 +348,6 @@ list-style-type:none;
 .list ul li:first-child
 {
   margin-top: 15px;
- // font-size: 12px;
   font: bold;
 }
 .clear
@@ -354,12 +358,10 @@ list-style-type:none;
 #bottomLine
 {
   height: 33px;
-  //height: 70px;
- // background-color: red;
   width: 100%;
   border-bottom: 2px solid $blueColor;
   display: block;
-  margin-top: 15px;
+  margin-top: 2px;
  // clear: both;
 }
 #bottomLine select
@@ -367,7 +369,7 @@ list-style-type:none;
   font-size: 8px;
   position: absolute;
   margin-top: 15px;
-  margin-left: 870px; // Hej 5
+  margin-left: 870px;
 }
 #footer
 {
@@ -381,12 +383,10 @@ margin: 0 auto;
 }
 #footer li
 {
-
+  @extend %inline;
   list-style-type: none;
   margin: 0 5px 0 5px;
   text-align: left;
- // float: left;
-  @extend %inline;
   font-size: 10px;
   color: $greyColor;
 }
