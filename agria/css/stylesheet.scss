@@ -73,7 +73,7 @@ h1
 
 .addPicture p
 {
-  line-height: 7px;
+  //line-height: 7px;
   color: white;
   font-weight: lighter;
   font-size: 14px;
@@ -112,7 +112,6 @@ h1
   float: left;
   margin-top: -345px;
   margin-left: 5px;
- // position: absolute;
 
 }
 #gallery
@@ -132,7 +131,6 @@ h1
 }
 .galleryRow div
 {
-//  display: inline-block;
   float: left;
   height: 80px;
   width: 120px;
@@ -142,7 +140,6 @@ h1
 
 #pictureSearchContainer
 {
-  //background-color: red;
   margin-top: 10px;
   width: 100%;
   height: 50px;
@@ -156,11 +153,9 @@ h1
 #pictureSearchText
 {
  margin-left: 30px;
-  //float: left;
 }
 #pictureSearchText div
 {
-  //display: inline-block; Hej
   float: left;
   margin-top: 12px;
   color: $purpleColor;
@@ -186,7 +181,7 @@ h1
   margin-top: 5px;
   position: absolute;
   margin-left: 812px; // Hej
-//  background-color: red;
+  float: left;
 }
 #pictureScroll div
 {
@@ -207,7 +202,6 @@ h1
 }
 #animalChoice
 {
-//  margin-top: -10px;
   width: 895px;
   margin: -14px auto;
 }
@@ -224,26 +218,21 @@ h1
 }
 #searchTagContainer, #socialContainer,#tagHeader
 {
-  //@extend %inline;
   float: left;
 }
 #tagHeader
 {
- // position: absolute;
   text-align: center;
   font-size: 12px;
   height: 60px;
   width: 40px;
   margin-top: 12px;
-  //margin-right: 12px;
   vertical-align: top;
 }
 #searchTagContainer
 {
   margin-top: 10px;
- // height: 100%;
   width: 515px;
-  //background-color: green; // Hej
   font-size: 12px;
 }
 #searchTagContainer div
@@ -262,18 +251,15 @@ text-decoration: underline;
   vertical-align: top;
   width: 360px;
   height: 100%;
-  //background-color: red;
 }
 
 #innerSocialContainer
 {
   margin-top: 5px;
- // background-color: green;
   margin-left: 215px;
 }
 #innerSocialContainer div
 {
- // @extend %inline;
 
   float: left;
   vertical-align: top;
