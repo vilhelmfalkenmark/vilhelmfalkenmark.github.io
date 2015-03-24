@@ -134,6 +134,7 @@ h1 {
   margin-left: 5px; }
 
 #pictureScroll {
+  margin: 0 3px 0 0;
   float: right; }
 
 #pictureScroll div {
