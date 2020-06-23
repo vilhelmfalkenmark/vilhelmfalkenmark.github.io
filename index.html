@@ -3,87 +3,135 @@
 HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except for normalize.css and jquery!
 -->
 <html>
-<head lang="en">
-    <link rel="icon" href="images/villePortrait.ico" type="image/icon">
+  <head lang="en">
+    <link rel="icon" href="images/villePortrait.ico" type="image/icon" />
     <title>Vilhelm Falkenmark</title>
-    <meta http-equiv="refresh" content="1;url=http://vilhelmfalkenmark.se/">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Vilhelm Falkenmark frilansande Front End utvecklare stockholm, Freelancing Front End developer Stockholm">
-    <meta name="keywords" content="Vilhelm Falkenmark,HTML,CSS,JavaScript,Front End Utvecklare, Front End Developer, Stockholm">
-    <meta name="author" content="Vilhelm Falkenmark">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Stalemate' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/icons/flaticon.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/stylesheet.css">
-</head>
-<body>
-<!--Start Google Analytics!-->
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Vilhelm Falkenmark frilansande Front End utvecklare stockholm, Freelancing Front End developer Stockholm"
+    />
+    <meta
+      name="keywords"
+      content="Vilhelm Falkenmark,HTML,CSS,JavaScript,Front End Utvecklare, Front End Developer, Stockholm"
+    />
+    <meta name="author" content="Vilhelm Falkenmark" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans:300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Stalemate"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/icons/flaticon.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+  </head>
+  <body>
+    <!--Start Google Analytics!-->
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+      );
 
-    ga('create', 'UA-49166471-2', 'auto');
-    ga('send', 'pageview');
-</script>
-<!--End Google Analytics!-->
-<div id="container">
+      ga("create", "UA-49166471-2", "auto");
+      ga("send", "pageview");
+    </script>
+    <!--End Google Analytics!-->
+    <div id="container">
+      <header>
+        <div id="header">
+          <div id="mobileMenuWrapper">
+            <div class="menu-toggle-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
 
-<header>
-<div id="header">
-<div id="mobileMenuWrapper">
-    <div class="menu-toggle-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+            <nav>
+              <ol id="headerMobileNavigation">
+                <li class="mobilemenulistItem"><a href="#about">About</a></li>
+                <br />
+                <li class="mobilemenulistItem">
+                  <a href="#myServicesTarget">My Services</a>
+                </li>
+                <br />
+                <li class="mobilemenulistItem">
+                  <a href="#portfolio">Portfolio</a>
+                </li>
+                <br />
+                <li class="mobilemenulistItem">
+                  <a href="#contact">Contact</a>
+                </li>
+              </ol>
+            </nav>
+          </div>
+          <div id="portrait"></div>
+          <div id="desktopMenuWrapper">
+            <nav>
+              <ol id="headerNavigation">
+                <li class="menulistItem"><a href="#about">About</a></li>
+                <li class="menulistItem">
+                  <a href="#myServicesTarget">My Services</a>
+                </li>
+                <li class="menulistItem"><a href="#portfolio">Portfolio</a></li>
+                <li class="menulistItem"><a href="#contact">Contact</a></li>
+              </ol>
+            </nav>
+          </div>
 
-    <nav>
-        <ol id="headerMobileNavigation">
-            <li class= "mobilemenulistItem"><a href="#about">About</a></li>
-            <br>
-            <li class= "mobilemenulistItem"><a href="#myServicesTarget">My Services</a></li>
-            <br>
-            <li class= "mobilemenulistItem"><a href="#portfolio">Portfolio</a></li>
-            <br>
-            <li class= "mobilemenulistItem"><a href="#contact">Contact</a></li>
-        </ol>
-    </nav>
-</div>
-<div id="portrait"></div>
-<div id="desktopMenuWrapper">
-    <nav>
-        <ol id="headerNavigation">
-            <li class="menulistItem"><a href="#about">About</a></li>
-            <li class="menulistItem"><a href="#myServicesTarget">My Services</a></li>
-            <li class="menulistItem"><a href="#portfolio">Portfolio</a></li>
-            <li class="menulistItem"><a href="#contact">Contact</a></li>
-        </ol>
-    </nav>
-</div>
+          <div class="mobile-headerText">
+            <h1 class="mobile-tablet-Header">Vilhelm Falkenmark</h1>
+            <span class="tabletHeader">Tablet Version</span>
+            <span class="mobileHeader">Mobil Version</span>
+            <div id="tablet-mobile-presentation">
+              <h2>Front-End Developer</h2>
+              <p>
+                Based in Stockholm, Sweden with a passion for design,
+                user-availability and simplicity.
+              </p>
+            </div>
+          </div>
 
-<div class="mobile-headerText">
-    <h1 class="mobile-tablet-Header">Vilhelm Falkenmark</h1>
-    <span class="tabletHeader">Tablet Version</span>
-    <span class="mobileHeader">Mobil Version</span>
-    <div id="tablet-mobile-presentation">
-        <h2>Front-End Developer</h2>
-        <p>Based in Stockholm, Sweden with a passion for design, user-availability and simplicity.</p>
-    </div>
-</div>
-
-<div id="desktopHeader">
-<svg version="1.1"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-	 x="0px" y="0px" width="1000.5px" height="145.6px" viewBox="0 0 320.5 59.6" enable-background="new 0 0 320.5 59.6"
-	 xml:space="preserve">
-<defs>
-</defs>
-<g>
-	<path fill="#FFFFFF" d="M47.4,9.1c0.1-0.4,0.3-1,0.4-1.6C48,6.9,48,6.2,48,5.4c0-1-0.3-1.8-0.9-2.4c-0.6-0.6-1.5-0.9-2.7-0.9
+          <div id="desktopHeader">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+              x="0px"
+              y="0px"
+              width="1000.5px"
+              height="145.6px"
+              viewBox="0 0 320.5 59.6"
+              enable-background="new 0 0 320.5 59.6"
+              xml:space="preserve"
+            >
+              <defs></defs>
+              <g>
+                <path
+                  fill="#FFFFFF"
+                  d="M47.4,9.1c0.1-0.4,0.3-1,0.4-1.6C48,6.9,48,6.2,48,5.4c0-1-0.3-1.8-0.9-2.4c-0.6-0.6-1.5-0.9-2.7-0.9
 		c-2,0-3.8,0.5-5.5,1.5s-3.2,2.4-4.7,4.2c-1.4,1.8-2.7,3.9-3.9,6.3c-1.2,2.4-2.2,5-3.2,7.8c-1,2.8-1.8,5.7-2.6,8.7c-0.8,3-1.4,6-2,9
 		c-0.6,3-1.1,5.9-1.5,8.8c-0.4,2.9-0.8,5.5-1.1,7.9c0,0.2,0,0.4-0.1,0.6c0,0.2-0.1,0.5-0.1,0.8c-0.1,0.3-0.2,0.5-0.4,0.8
 		c-0.2,0.3-0.4,0.5-0.8,0.6c-0.9,0.5-1.3,0.4-1.4-0.1c-0.2-1.5-0.3-3.3-0.5-5.3c-0.2-2-0.4-4-0.7-6.2c-0.3-2.1-0.6-4.3-1-6.5
@@ -94,16 +142,22 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 		c0.4,2.1,0.7,4.1,0.9,6c0.3,1.9,0.5,3.7,0.7,5.3c0.2,1.6,0.4,2.9,0.5,3.9c0.4-2.4,0.8-5.1,1.3-7.9c0.5-2.8,1-5.8,1.7-8.8
 		c0.6-3,1.3-6,2.1-9c0.8-3,1.7-5.9,2.7-8.7c1-2.8,2.1-5.4,3.3-7.8c1.2-2.4,2.6-4.5,4-6.3c1.5-1.8,3.1-3.2,4.8-4.2
 		c1.7-1,3.6-1.5,5.7-1.5c0.6,0,1.2,0.1,1.8,0.3c0.6,0.2,1.1,0.5,1.5,0.8C48.4,1.5,48.7,2,49,2.5c0.3,0.6,0.4,1.2,0.4,2
-		c0,0.5-0.1,1-0.2,1.5c-0.2,0.5-0.3,1-0.5,1.4c-0.2,0.4-0.4,0.8-0.6,1.1c-0.2,0.3-0.3,0.5-0.4,0.7L47.4,9.1z"/>
-	<path fill="#FFFFFF" d="M31.6,41.1c0.2,0,0.4,0.1,0.5,0.2s0.3,0.2,0.5,0.3c0.1,0.1,0.2,0.2,0.3,0.4c0.1,0.1,0.1,0.2,0.1,0.2
+		c0,0.5-0.1,1-0.2,1.5c-0.2,0.5-0.3,1-0.5,1.4c-0.2,0.4-0.4,0.8-0.6,1.1c-0.2,0.3-0.3,0.5-0.4,0.7L47.4,9.1z"
+                />
+                <path
+                  fill="#FFFFFF"
+                  d="M31.6,41.1c0.2,0,0.4,0.1,0.5,0.2s0.3,0.2,0.5,0.3c0.1,0.1,0.2,0.2,0.3,0.4c0.1,0.1,0.1,0.2,0.1,0.2
 		c0,0,0,0.1-0.1,0.4c-0.1,0.2-0.1,0.6-0.2,1.1c-0.1,0.5-0.2,1.2-0.2,2c-0.1,0.8-0.1,1.9-0.1,3.1c0,1.7,0.2,2.8,0.6,3.5
 		c0.4,0.7,0.9,1,1.5,1c0.6,0,1.2-0.2,1.7-0.5c0.6-0.4,1.1-0.8,1.6-1.4c0.5-0.6,1-1.2,1.5-1.9c0.5-0.7,0.9-1.4,1.2-2.2l0.2,0.1
 		c-0.1,0.2-0.2,0.6-0.4,1.1c-0.2,0.5-0.4,1-0.7,1.6s-0.6,1.1-1,1.7s-0.8,1.1-1.3,1.6c-0.5,0.5-1.1,0.9-1.7,1.2s-1.2,0.5-2,0.5
 		c-0.5,0-0.9-0.1-1.4-0.3c-0.4-0.2-0.8-0.5-1.1-1c-0.3-0.5-0.6-1.2-0.7-2.1c-0.2-0.9-0.3-2-0.3-3.4c0-0.7,0-1.5,0.1-2.3
 		c0.1-0.8,0.1-1.6,0.2-2.3c0.1-0.7,0.2-1.3,0.4-1.8C31.2,41.3,31.4,41.1,31.6,41.1z M32.4,32.4c0.6,0,1,0.2,1.3,0.6
 		c0.3,0.4,0.4,0.9,0.4,1.5c0,0.7-0.2,1.2-0.6,1.6c-0.4,0.4-0.8,0.6-1.4,0.6c-0.4,0-0.8-0.2-1.2-0.5c-0.4-0.3-0.6-0.8-0.6-1.5
-		c0-0.8,0.2-1.3,0.6-1.7C31.4,32.6,31.9,32.4,32.4,32.4z"/>
-	<path fill="#FFFFFF" d="M52.5,48.1c0,0.2-0.2,0.6-0.5,1.3c-0.3,0.7-0.8,1.5-1.3,2.3c-0.6,0.8-1.2,1.5-2,2.2c-0.8,0.6-1.6,1-2.6,1
+		c0-0.8,0.2-1.3,0.6-1.7C31.4,32.6,31.9,32.4,32.4,32.4z"
+                />
+                <path
+                  fill="#FFFFFF"
+                  d="M52.5,48.1c0,0.2-0.2,0.6-0.5,1.3c-0.3,0.7-0.8,1.5-1.3,2.3c-0.6,0.8-1.2,1.5-2,2.2c-0.8,0.6-1.6,1-2.6,1
 		c-1.2,0-2.4-0.5-3.4-1.4c-1-0.9-1.9-2.3-2.6-4c-0.7-1.7-1.3-3.9-1.7-6.3c-0.4-2.5-0.6-5.3-0.6-8.3c0-1.7,0.1-3.5,0.2-5.3
 		c0.1-1.9,0.3-3.7,0.6-5.5c0.3-1.8,0.6-3.5,1-5.2c0.4-1.6,0.8-3.1,1.4-4.3c0.5-1.2,1.2-2.2,1.9-3c0.7-0.7,1.5-1.1,2.4-1.1
 		c1.3,0,2.2,0.8,2.8,2.4c0.6,1.6,0.9,4,0.9,7.3c0,1.9-0.1,4.1-0.4,6.5c-0.3,2.4-0.8,4.8-1.4,7.3c-0.9,3.1-1.8,5.8-2.8,8
@@ -112,8 +166,11 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 		c0,1,0,2,0.1,3.2c0.1,1.1,0.1,2.3,0.3,3.5c0.1,1.2,0.3,2.3,0.4,3.5c0.2,1.2,0.4,2.3,0.7,3.4c0.5-1,1.1-2.4,1.7-4s1.3-3.4,1.9-5.5
 		c0.6-2,1.1-4.2,1.6-6.6c0.4-2.4,0.7-4.8,0.7-7.3c0-1.6-0.1-3.1-0.2-4.4c-0.1-1.3-0.3-2.5-0.6-3.4c-0.3-0.9-0.6-1.7-1-2.2
 		s-0.8-0.8-1.4-0.8c-0.5,0-0.9,0.3-1.3,1c-0.4,0.7-0.8,1.6-1.1,2.7s-0.6,2.4-0.8,3.9c-0.2,1.5-0.4,2.9-0.6,4.5
-		c-0.2,1.5-0.3,3-0.3,4.5C40.1,29.7,40.1,31,40.1,32.2z"/>
-	<path fill="#FFFFFF" d="M51.9,50.4c0-0.6,0-1.6,0.1-3s0.2-3.1,0.2-5.2c0.1-2.1,0.2-4.6,0.2-7.4s0.1-6,0.1-9.5c0-1.7,0-3.4,0-4.9
+		c-0.2,1.5-0.3,3-0.3,4.5C40.1,29.7,40.1,31,40.1,32.2z"
+                />
+                <path
+                  fill="#FFFFFF"
+                  d="M51.9,50.4c0-0.6,0-1.6,0.1-3s0.2-3.1,0.2-5.2c0.1-2.1,0.2-4.6,0.2-7.4s0.1-6,0.1-9.5c0-1.7,0-3.4,0-4.9
 		c0-1.6,0-3-0.1-4.2c0-1.2,0-2.2-0.1-3c0-0.8,0-1.2,0-1.2c0-0.2,0-0.4,0.1-0.5c0.1-0.1,0.2-0.3,0.4-0.4c0.1-0.1,0.3-0.2,0.5-0.3
 		c0.2-0.1,0.4-0.2,0.6-0.2c0.3,0,0.5,0.1,0.6,0.2c0.1,0.1,0.3,0.3,0.3,0.7c0.1,0.3,0.1,0.9,0.2,1.6c0,0.8,0.1,1.8,0.1,3.2
 		c0,1.3,0,3.1,0,5.2c0,2,0,4-0.1,6.1c-0.1,2.1-0.2,4.2-0.3,6.2c-0.1,2-0.3,4-0.4,5.9c-0.2,1.9-0.3,3.6-0.4,5.1
@@ -126,8 +183,11 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 		c0-0.7-0.1-1.4-0.1-2.1s-0.1-1.4-0.2-2c-0.1-0.6-0.2-1.1-0.3-1.5s-0.3-0.6-0.6-0.6c-0.2,0-0.4,0.2-0.7,0.7c-0.3,0.5-0.5,1-0.8,1.7
 		c-0.2,0.6-0.5,1.3-0.7,1.9c-0.2,0.6-0.4,1.1-0.5,1.5c-0.1,0.3-0.2,0.8-0.4,1.4c-0.2,0.7-0.4,1.3-0.7,2c-0.3,0.7-0.5,1.3-0.8,1.8
 		c-0.3,0.5-0.6,0.8-0.9,0.8c-0.3,0-0.5-0.2-0.7-0.5c-0.2-0.3-0.3-0.7-0.4-1.2c-0.1-0.5-0.1-0.9-0.2-1.4
-		C51.9,51.1,51.9,50.7,51.9,50.4z"/>
-	<path fill="#FFFFFF" d="M76.9,38.4c0.3,0.1,0.5,0.3,0.5,0.6c0,0.1,0,0.2-0.1,0.4c-0.1,0.2-0.1,0.3-0.2,0.5
+		C51.9,51.1,51.9,50.7,51.9,50.4z"
+                />
+                <path
+                  fill="#FFFFFF"
+                  d="M76.9,38.4c0.3,0.1,0.5,0.3,0.5,0.6c0,0.1,0,0.2-0.1,0.4c-0.1,0.2-0.1,0.3-0.2,0.5
 		c-0.1,0.2-0.2,0.3-0.3,0.4c-0.1,0.1-0.2,0.2-0.2,0.2c-0.1,0-0.3,0-0.4-0.1c-0.2-0.1-0.4-0.2-0.7-0.3c-0.3-0.1-0.7-0.2-1.2-0.3
 		c-0.5-0.1-1.1-0.1-1.9-0.1c-1.1,0-2.1,0.2-2.8,0.6c-0.8,0.4-1.1,1-1.1,1.8c0,0.5,0.2,1,0.7,1.4c0.5,0.4,1,0.7,1.6,0.9
 		c0.6,0.2,1.3,0.4,1.9,0.5c0.6,0.1,1.1,0.1,1.5,0.1c0.3,0,0.4,0,0.5,0.1c0.1,0.1,0.1,0.2,0.1,0.2c0,0.2-0.1,0.3-0.2,0.3
@@ -137,8 +197,11 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 		c-1.2,0.4-2.5,0.6-4,0.6c-0.9,0-1.8-0.1-2.5-0.3s-1.4-0.5-2-0.9c-0.6-0.4-1-0.9-1.3-1.5c-0.3-0.6-0.5-1.3-0.5-2
 		c0-0.9,0.2-1.6,0.6-2.2c0.4-0.6,0.9-1.2,1.4-1.6c0.5-0.4,1-0.7,1.5-0.9c0.5-0.2,0.9-0.4,1.1-0.5c-0.7-0.1-1.4-0.3-1.9-0.6
 		c-0.5-0.3-0.9-0.6-1.3-1.1c-0.4-0.5-0.6-1.1-0.6-1.9c0-0.7,0.2-1.4,0.5-2s0.8-1.1,1.4-1.5c0.6-0.4,1.3-0.7,2.1-0.9
-		c0.8-0.2,1.6-0.3,2.5-0.3c0.5,0,1,0,1.6,0.1S76.3,38.2,76.9,38.4z"/>
-	<path fill="#FFFFFF" d="M95.6,48.1c0,0.2-0.2,0.6-0.5,1.3c-0.3,0.7-0.8,1.5-1.3,2.3c-0.6,0.8-1.2,1.5-2,2.2c-0.8,0.6-1.6,1-2.6,1
+		c0.8-0.2,1.6-0.3,2.5-0.3c0.5,0,1,0,1.6,0.1S76.3,38.2,76.9,38.4z"
+                />
+                <path
+                  fill="#FFFFFF"
+                  d="M95.6,48.1c0,0.2-0.2,0.6-0.5,1.3c-0.3,0.7-0.8,1.5-1.3,2.3c-0.6,0.8-1.2,1.5-2,2.2c-0.8,0.6-1.6,1-2.6,1
 		c-1.2,0-2.4-0.5-3.4-1.4c-1-0.9-1.9-2.3-2.6-4c-0.7-1.7-1.3-3.9-1.7-6.3c-0.4-2.5-0.6-5.3-0.6-8.3c0-1.7,0.1-3.5,0.2-5.3
 		c0.1-1.9,0.3-3.7,0.6-5.5c0.3-1.8,0.6-3.5,1-5.2c0.4-1.6,0.8-3.1,1.4-4.3c0.5-1.2,1.2-2.2,1.9-3c0.7-0.7,1.5-1.1,2.4-1.1
 		c1.3,0,2.2,0.8,2.8,2.4c0.6,1.6,0.9,4,0.9,7.3c0,1.9-0.1,4.1-0.4,6.5c-0.3,2.4-0.8,4.8-1.4,7.3c-0.9,3.1-1.8,5.8-2.8,8
@@ -147,8 +210,11 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 		c0,1,0,2,0.1,3.2c0.1,1.1,0.1,2.3,0.3,3.5c0.1,1.2,0.3,2.3,0.4,3.5c0.2,1.2,0.4,2.3,0.7,3.4c0.5-1,1.1-2.4,1.7-4s1.3-3.4,1.9-5.5
 		c0.6-2,1.1-4.2,1.6-6.6c0.4-2.4,0.7-4.8,0.7-7.3c0-1.6-0.1-3.1-0.2-4.4c-0.1-1.3-0.3-2.5-0.6-3.4c-0.3-0.9-0.6-1.7-1-2.2
 		s-0.8-0.8-1.4-0.8c-0.5,0-0.9,0.3-1.3,1c-0.4,0.7-0.8,1.6-1.1,2.7s-0.6,2.4-0.8,3.9c-0.2,1.5-0.4,2.9-0.6,4.5
-		c-0.2,1.5-0.3,3-0.3,4.5C83.1,29.7,83.1,31,83.1,32.2z"/>
-	<path fill="#FFFFFF" d="M95.3,37.7c0.1-0.1,0.3-0.2,0.5-0.2c0.4,0,0.8,0.2,1,0.6c0.2,0.4,0.4,1.2,0.4,2.4c0,0.4,0,0.8,0,1.5
+		c-0.2,1.5-0.3,3-0.3,4.5C83.1,29.7,83.1,31,83.1,32.2z"
+                />
+                <path
+                  fill="#FFFFFF"
+                  d="M95.3,37.7c0.1-0.1,0.3-0.2,0.5-0.2c0.4,0,0.8,0.2,1,0.6c0.2,0.4,0.4,1.2,0.4,2.4c0,0.4,0,0.8,0,1.5
 		c0,0.6,0,1.3,0,2c0,0.7,0,1.5,0,2.3s0,1.5,0,2.2c0,0.7,0,1.2,0,1.7c0,0.5,0,0.8,0,0.9c0,0.5,0.1,0.8,0.2,0.8c0.1,0,0.2-0.1,0.4-0.4
 		c0.2-0.3,0.3-0.7,0.5-1.1c0.2-0.5,0.4-1,0.7-1.6c0.2-0.6,0.5-1.2,0.7-1.7c0.4-0.9,0.8-1.8,1.1-2.6c0.3-0.8,0.7-1.5,1-2.1
 		s0.7-1.1,1-1.4c0.4-0.3,0.8-0.5,1.3-0.5c0.7,0,1.2,0.3,1.5,0.9c0.3,0.6,0.5,1.6,0.5,3.1c0,0.6,0,1.2,0,2.1c0,0.8,0,1.6,0,2.3
@@ -165,8 +231,11 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 		s-0.5,1.2-0.8,1.7c-0.2,0.5-0.4,0.8-0.5,1c-0.3,0.4-0.6,0.7-0.8,0.8c-0.2,0.1-0.5,0.2-0.7,0.2c-0.1,0-0.2,0-0.4-0.1
 		c-0.1-0.1-0.3-0.2-0.4-0.3c-0.1-0.2-0.2-0.4-0.3-0.7c-0.1-0.3-0.1-0.7-0.1-1.1v-12c0-0.5-0.1-0.8-0.2-1s-0.3-0.3-0.5-0.3
 		c-0.2,0-0.3-0.1-0.5-0.1s-0.2-0.1-0.2-0.2c0-0.1,0.1-0.2,0.3-0.4c0.2-0.1,0.4-0.2,0.6-0.4s0.4-0.2,0.6-0.3
-		C95.2,37.8,95.3,37.7,95.3,37.7z"/>
-	<path fill="#FFFFFF" d="M159.6,42c0.1,0,0.5,0,1,0c0.6,0,1.2,0,1.8,0.1s1.2,0.1,1.7,0.2c0.5,0.1,0.8,0.3,0.8,0.4
+		C95.2,37.8,95.3,37.7,95.3,37.7z"
+                />
+                <path
+                  fill="#FFFFFF"
+                  d="M159.6,42c0.1,0,0.5,0,1,0c0.6,0,1.2,0,1.8,0.1s1.2,0.1,1.7,0.2c0.5,0.1,0.8,0.3,0.8,0.4
 		c0,0.6-0.3,0.9-0.8,0.9c-1,0-1.9-0.1-2.7-0.1s-1.7,0-2.5,0c0,0.1-0.1,0.2-0.1,0.4c-0.4,1.7-0.8,3.4-1.2,5c-0.4,1.7-1,3.1-1.7,4.4
 		c-0.7,1.3-1.6,2.3-2.7,3.1c-1.1,0.8-2.4,1.2-4,1.2c-1.2,0-2.2-0.2-3.1-0.7c-0.9-0.5-1.7-1-2.3-1.7c-0.7-0.7-1.2-1.4-1.6-2.2
 		c-0.4-0.8-0.8-1.5-1-2.2l0.5-0.2c0.4,1,0.9,1.9,1.4,2.5c0.5,0.7,1,1.2,1.5,1.6c0.5,0.4,1.1,0.7,1.7,0.9c0.6,0.2,1.2,0.3,1.7,0.3
@@ -182,8 +251,11 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 		c0.8-0.4,1.7-0.6,2.7-0.6c1.3,0,2.3,0.3,2.8,0.8c0.5,0.5,0.8,1.1,0.8,1.8c0,0.8-0.3,1.6-0.9,2.4s-1.5,1.5-2.5,2.2s-2.4,1.2-3.9,1.7
 		s-3.2,0.7-4.9,0.8c-0.8,1.9-1.4,3.9-2,6.2c-0.6,2.3-1.1,4.7-1.6,7.2c-0.5,2.5-0.9,5-1.4,7.5c-0.4,2.5-0.9,4.9-1.3,7.2H159.6z
 		 M173.1,6.1c-1.5,0-2.8,0.5-3.9,1.6s-2.1,2.5-3,4.3c2-0.1,3.6-0.3,4.8-0.7c1.2-0.3,2.2-0.7,2.9-1.2c0.7-0.4,1.2-0.9,1.4-1.4
-		c0.2-0.5,0.4-0.9,0.4-1.2c0-0.5-0.2-0.8-0.7-1.1S173.9,6.1,173.1,6.1z"/>
-	<path fill="#FFFFFF" d="M180.7,43.6c-0.2,0-0.4-0.1-0.6-0.4s-0.4-0.5-0.7-0.8s-0.6-0.5-1.1-0.8s-1-0.4-1.7-0.4
+		c0.2-0.5,0.4-0.9,0.4-1.2c0-0.5-0.2-0.8-0.7-1.1S173.9,6.1,173.1,6.1z"
+                />
+                <path
+                  fill="#FFFFFF"
+                  d="M180.7,43.6c-0.2,0-0.4-0.1-0.6-0.4s-0.4-0.5-0.7-0.8s-0.6-0.5-1.1-0.8s-1-0.4-1.7-0.4
 		c-1,0-1.9,0.3-2.7,0.8c-0.8,0.5-1.6,1.1-2.2,1.9c-0.6,0.8-1.1,1.6-1.4,2.5c-0.3,0.9-0.5,1.8-0.5,2.5c0,1.2,0.3,2.3,0.9,3.1
 		c0.6,0.8,1.5,1.2,2.5,1.2c0.8,0,1.5-0.2,2.2-0.5s1.1-0.7,1.6-1.2c-0.1-0.6-0.2-1.4-0.2-2.4c0-1,0.1-1.8,0.2-2.5s0.3-1.1,0.6-1.5
 		s0.5-0.6,0.7-0.7c0.2-0.1,0.4-0.2,0.6-0.2c0.2,0,0.4,0.1,0.7,0.4c0.2,0.3,0.4,0.7,0.4,1.4c0,0.8-0.1,1.7-0.4,2.6
@@ -193,8 +265,11 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 		s-0.9-0.7-1.2-1.1c-0.3-0.5-0.6-1-0.8-1.7s-0.3-1.3-0.3-2c0-1.2,0.3-2.4,0.8-3.6s1.2-2.3,2.1-3.2c0.9-1,1.9-1.7,3-2.3
 		s2.3-0.9,3.6-0.9c0.9,0,1.7,0.1,2.3,0.3c0.6,0.2,1.1,0.4,1.5,0.7c0.4,0.3,0.6,0.5,0.8,0.8s0.2,0.5,0.2,0.7c0,0.3-0.2,0.6-0.5,0.7
 		C181.3,43.5,181,43.6,180.7,43.6z M177.8,48.2c0,0.8,0.1,1.4,0.2,2c0.4-0.7,0.6-1.3,0.8-2c0.2-0.7,0.2-1.3,0.2-1.8
-		c0-0.6-0.1-0.9-0.3-0.9s-0.4,0.3-0.6,0.8C177.8,46.9,177.8,47.5,177.8,48.2z"/>
-	<path fill="#FFFFFF" d="M199.9,48.1c0,0.2-0.2,0.6-0.5,1.3c-0.3,0.7-0.8,1.5-1.3,2.3s-1.2,1.5-2,2.2c-0.8,0.6-1.6,1-2.6,1
+		c0-0.6-0.1-0.9-0.3-0.9s-0.4,0.3-0.6,0.8C177.8,46.9,177.8,47.5,177.8,48.2z"
+                />
+                <path
+                  fill="#FFFFFF"
+                  d="M199.9,48.1c0,0.2-0.2,0.6-0.5,1.3c-0.3,0.7-0.8,1.5-1.3,2.3s-1.2,1.5-2,2.2c-0.8,0.6-1.6,1-2.6,1
 		c-1.2,0-2.4-0.5-3.4-1.4s-1.9-2.3-2.6-4c-0.7-1.7-1.3-3.9-1.7-6.3c-0.4-2.5-0.6-5.3-0.6-8.3c0-1.7,0.1-3.5,0.2-5.3s0.3-3.7,0.6-5.5
 		c0.3-1.8,0.6-3.5,1-5.2c0.4-1.6,0.8-3.1,1.4-4.3c0.5-1.2,1.2-2.2,1.9-3s1.5-1.1,2.4-1.1c1.3,0,2.2,0.8,2.8,2.4
 		c0.6,1.6,0.9,4,0.9,7.3c0,1.9-0.1,4.1-0.4,6.5c-0.3,2.4-0.8,4.8-1.4,7.3c-0.9,3.1-1.8,5.8-2.8,8s-1.8,4-2.5,5.3
@@ -202,8 +277,11 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 		s0.9-1.1,1.2-1.7c0.4-0.6,0.6-1.1,0.8-1.4L199.9,48.1z M187.5,32.2c0,1,0,2,0.1,3.2c0.1,1.1,0.1,2.3,0.3,3.5
 		c0.1,1.2,0.3,2.3,0.4,3.5c0.2,1.2,0.4,2.3,0.7,3.4c0.5-1,1.1-2.4,1.7-4s1.3-3.4,1.9-5.5c0.6-2,1.1-4.2,1.6-6.6
 		c0.4-2.4,0.7-4.8,0.7-7.3c0-1.6-0.1-3.1-0.2-4.4c-0.1-1.3-0.3-2.5-0.6-3.4s-0.6-1.7-1-2.2s-0.8-0.8-1.4-0.8c-0.5,0-0.9,0.3-1.3,1
-		c-0.4,0.7-0.8,1.6-1.1,2.7s-0.6,2.4-0.8,3.9c-0.2,1.5-0.4,2.9-0.6,4.5c-0.2,1.5-0.3,3-0.3,4.5C187.5,29.7,187.5,31,187.5,32.2z"/>
-	<path fill="#FFFFFF" d="M199.2,54.9c-0.1,0-0.2-0.1-0.3-0.2c-0.1-0.1-0.2-0.3-0.2-0.5c0-0.3,0.1-0.6,0.2-0.9
+		c-0.4,0.7-0.8,1.6-1.1,2.7s-0.6,2.4-0.8,3.9c-0.2,1.5-0.4,2.9-0.6,4.5c-0.2,1.5-0.3,3-0.3,4.5C187.5,29.7,187.5,31,187.5,32.2z"
+                />
+                <path
+                  fill="#FFFFFF"
+                  d="M199.2,54.9c-0.1,0-0.2-0.1-0.3-0.2c-0.1-0.1-0.2-0.3-0.2-0.5c0-0.3,0.1-0.6,0.2-0.9
 		c0.2-0.3,0.4-0.7,0.6-1.1v-3.8c0-0.7,0-1.9-0.1-3.8c-0.1-1.9-0.1-4.5-0.1-7.8c0-1.8,0.1-3.6,0.2-5.6c0.1-1.9,0.4-3.8,0.7-5.7
 		c0.3-1.9,0.7-3.6,1.1-5.3c0.5-1.7,1-3.1,1.7-4.4c0.7-1.3,1.4-2.2,2.3-3s1.8-1.1,2.9-1.1c0.4,0,0.8,0.1,1.3,0.4
 		c0.4,0.3,0.8,0.7,1.1,1.2c0.3,0.5,0.6,1.2,0.8,2c0.2,0.8,0.3,1.8,0.3,2.9c0,1.9-0.2,3.8-0.6,5.7c-0.4,1.9-0.9,3.9-1.5,5.7
@@ -220,8 +298,11 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 		S199.5,54.9,199.2,54.9z M201.6,36.7c0,0.7,0,1.4,0,2.1c0,0.7,0,1.4,0.1,2.2c0,0.7,0,1.4,0.1,2.1c0,0.7,0,1.2,0,1.8
 		c0.6-1.2,1.4-2.7,2.3-4.5c0.9-1.9,1.8-3.9,2.7-6.1c0.9-2.2,1.6-4.6,2.2-7c0.6-2.4,0.9-4.8,0.9-7.1c0-0.8,0-1.6-0.1-2.4
 		c-0.1-0.8-0.2-1.4-0.4-2s-0.5-1-0.9-1.4c-0.4-0.3-0.9-0.5-1.5-0.5c-0.7,0-1.2,0.3-1.8,0.9c-0.5,0.6-1,1.4-1.4,2.5
-		c-0.4,1.1-0.7,2.3-1,3.8c-0.3,1.5-0.5,3-0.7,4.7c-0.2,1.7-0.3,3.5-0.4,5.4C201.6,32.9,201.6,34.8,201.6,36.7z"/>
-	<path fill="#FFFFFF" d="M225.6,38.4c0.3,0.1,0.5,0.3,0.5,0.6c0,0.1,0,0.2-0.1,0.4c-0.1,0.2-0.1,0.3-0.2,0.5
+		c-0.4,1.1-0.7,2.3-1,3.8c-0.3,1.5-0.5,3-0.7,4.7c-0.2,1.7-0.3,3.5-0.4,5.4C201.6,32.9,201.6,34.8,201.6,36.7z"
+                />
+                <path
+                  fill="#FFFFFF"
+                  d="M225.6,38.4c0.3,0.1,0.5,0.3,0.5,0.6c0,0.1,0,0.2-0.1,0.4c-0.1,0.2-0.1,0.3-0.2,0.5
 		c-0.1,0.2-0.2,0.3-0.3,0.4s-0.2,0.2-0.2,0.2c-0.1,0-0.3,0-0.4-0.1c-0.2-0.1-0.4-0.2-0.7-0.3s-0.7-0.2-1.2-0.3
 		c-0.5-0.1-1.1-0.1-1.9-0.1c-1.1,0-2.1,0.2-2.8,0.6s-1.1,1-1.1,1.8c0,0.5,0.2,1,0.7,1.4c0.5,0.4,1,0.7,1.6,0.9s1.3,0.4,1.9,0.5
 		c0.6,0.1,1.1,0.1,1.5,0.1c0.3,0,0.4,0,0.5,0.1c0.1,0.1,0.1,0.2,0.1,0.2c0,0.2-0.1,0.3-0.2,0.3s-0.3,0.1-0.6,0.2
@@ -230,8 +311,11 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 		c-0.4,1.1-0.9,2.2-1.5,3.2s-1.4,1.8-2.2,2.5c-0.9,0.7-1.9,1.3-3.1,1.7s-2.5,0.6-4,0.6c-0.9,0-1.8-0.1-2.5-0.3s-1.4-0.5-2-0.9
 		c-0.6-0.4-1-0.9-1.3-1.5c-0.3-0.6-0.5-1.3-0.5-2c0-0.9,0.2-1.6,0.6-2.2s0.9-1.2,1.4-1.6c0.5-0.4,1-0.7,1.5-0.9
 		c0.5-0.2,0.9-0.4,1.1-0.5c-0.7-0.1-1.4-0.3-1.9-0.6c-0.5-0.3-0.9-0.6-1.3-1.1s-0.6-1.1-0.6-1.9c0-0.7,0.2-1.4,0.5-2
-		s0.8-1.1,1.4-1.5c0.6-0.4,1.3-0.7,2.1-0.9c0.8-0.2,1.6-0.3,2.5-0.3c0.5,0,1,0,1.6,0.1S225.1,38.2,225.6,38.4z"/>
-	<path fill="#FFFFFF" d="M233.2,40c0.1,0,0.2,0.1,0.3,0.3c0.1,0.2,0.1,0.4,0.2,0.7c0,0.3,0.1,0.5,0.1,0.8c0,0.3,0,0.6,0,0.8
+		s0.8-1.1,1.4-1.5c0.6-0.4,1.3-0.7,2.1-0.9c0.8-0.2,1.6-0.3,2.5-0.3c0.5,0,1,0,1.6,0.1S225.1,38.2,225.6,38.4z"
+                />
+                <path
+                  fill="#FFFFFF"
+                  d="M233.2,40c0.1,0,0.2,0.1,0.3,0.3c0.1,0.2,0.1,0.4,0.2,0.7c0,0.3,0.1,0.5,0.1,0.8c0,0.3,0,0.6,0,0.8
 		c0,0.6,0,1.2-0.1,1.9c0,0.6-0.1,1.3-0.1,1.9s-0.1,1.1-0.1,1.7c0,0.5,0,0.9,0,1.2c0,0.6,0,1.1,0.1,1.5c0,0.4,0.2,0.5,0.4,0.5
 		c0.1,0,0.3-0.2,0.5-0.5c0.2-0.3,0.4-0.7,0.6-1.1c0.2-0.4,0.4-0.9,0.7-1.4s0.4-0.9,0.6-1.3c0.2-0.5,0.5-1,0.8-1.6s0.6-1.2,0.9-1.7
 		s0.7-1,1-1.3s0.7-0.5,1.1-0.5c0.3,0,0.5,0.1,0.7,0.2s0.4,0.3,0.5,0.5c0.1,0.2,0.3,0.5,0.3,0.7s0.1,0.5,0.2,0.7
@@ -242,8 +326,11 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 		c-0.2,0.6-0.5,1.1-0.6,1.4c-0.5,1.1-0.9,2-1.3,2.7s-0.7,1.4-1.1,2c-0.1,0.2-0.2,0.3-0.4,0.5c-0.1,0.1-0.3,0.2-0.5,0.2
 		c-0.3,0-0.5-0.2-0.7-0.7c-0.2-0.5-0.3-1-0.4-1.6c-0.1-0.6-0.1-1.2-0.2-1.8c0-0.6,0-1.1,0-1.4c0-0.4,0-0.8,0-1.4
 		c0-0.5,0-1.1,0.1-1.6c0-0.5,0-1,0.1-1.4s0-0.7,0-0.8s0-0.3,0-0.6s0-0.5,0-0.7s0-0.5,0-0.7c0-0.2,0-0.3,0-0.4c0-0.2,0.1-0.3,0.2-0.5
-		c0.1-0.1,0.2-0.2,0.3-0.3s0.3-0.2,0.6-0.4S233,40,233.2,40z"/>
-	<path fill="#FFFFFF" d="M248,37.7c0.1-0.1,0.3-0.2,0.5-0.2c0.4,0,0.8,0.2,1,0.6s0.4,1.2,0.4,2.4c0,0.4,0,0.8,0,1.5c0,0.6,0,1.3,0,2
+		c0.1-0.1,0.2-0.2,0.3-0.3s0.3-0.2,0.6-0.4S233,40,233.2,40z"
+                />
+                <path
+                  fill="#FFFFFF"
+                  d="M248,37.7c0.1-0.1,0.3-0.2,0.5-0.2c0.4,0,0.8,0.2,1,0.6s0.4,1.2,0.4,2.4c0,0.4,0,0.8,0,1.5c0,0.6,0,1.3,0,2
 		s0,1.5,0,2.3s0,1.5,0,2.2s0,1.2,0,1.7c0,0.5,0,0.8,0,0.9c0,0.5,0.1,0.8,0.2,0.8c0.1,0,0.2-0.1,0.4-0.4c0.2-0.3,0.3-0.7,0.5-1.1
 		c0.2-0.5,0.4-1,0.7-1.6c0.2-0.6,0.5-1.2,0.7-1.7c0.4-0.9,0.8-1.8,1.1-2.6s0.7-1.5,1-2.1s0.7-1.1,1-1.4c0.4-0.3,0.8-0.5,1.3-0.5
 		c0.7,0,1.2,0.3,1.5,0.9c0.3,0.6,0.5,1.6,0.5,3.1c0,0.6,0,1.2,0,2.1s0,1.6,0,2.3c0,0.8,0,1.4,0,2c0,0.6,0,0.9,0,1
@@ -258,8 +345,11 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 		c-0.3,0.7-0.6,1.3-0.9,2.1c-0.3,0.7-0.6,1.4-0.9,2s-0.5,1.2-0.8,1.7c-0.2,0.5-0.4,0.8-0.5,1c-0.3,0.4-0.6,0.7-0.8,0.8
 		c-0.2,0.1-0.5,0.2-0.7,0.2c-0.1,0-0.2,0-0.4-0.1c-0.1-0.1-0.3-0.2-0.4-0.3c-0.1-0.2-0.2-0.4-0.3-0.7c-0.1-0.3-0.1-0.7-0.1-1.1v-12
 		c0-0.5-0.1-0.8-0.2-1s-0.3-0.3-0.5-0.3c-0.2,0-0.3-0.1-0.5-0.1s-0.2-0.1-0.2-0.2c0-0.1,0.1-0.2,0.3-0.4c0.2-0.1,0.4-0.2,0.6-0.4
-		s0.4-0.2,0.6-0.3C247.8,37.8,247.9,37.7,248,37.7z"/>
-	<path fill="#FFFFFF" d="M283.6,43.6c-0.2,0-0.4-0.1-0.6-0.4s-0.4-0.5-0.7-0.8s-0.6-0.5-1.1-0.8s-1-0.4-1.7-0.4
+		s0.4-0.2,0.6-0.3C247.8,37.8,247.9,37.7,248,37.7z"
+                />
+                <path
+                  fill="#FFFFFF"
+                  d="M283.6,43.6c-0.2,0-0.4-0.1-0.6-0.4s-0.4-0.5-0.7-0.8s-0.6-0.5-1.1-0.8s-1-0.4-1.7-0.4
 		c-1,0-1.9,0.3-2.7,0.8c-0.8,0.5-1.6,1.1-2.2,1.9c-0.6,0.8-1.1,1.6-1.4,2.5c-0.3,0.9-0.5,1.8-0.5,2.5c0,1.2,0.3,2.3,0.9,3.1
 		c0.6,0.8,1.5,1.2,2.5,1.2c0.8,0,1.5-0.2,2.2-0.5s1.1-0.7,1.6-1.2c-0.1-0.6-0.2-1.4-0.2-2.4c0-1,0.1-1.8,0.2-2.5s0.3-1.1,0.6-1.5
 		s0.5-0.6,0.7-0.7c0.2-0.1,0.4-0.2,0.6-0.2c0.2,0,0.4,0.1,0.7,0.4c0.2,0.3,0.4,0.7,0.4,1.4c0,0.8-0.1,1.7-0.4,2.6
@@ -269,8 +359,11 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 		s-0.9-0.7-1.2-1.1c-0.3-0.5-0.6-1-0.8-1.7s-0.3-1.3-0.3-2c0-1.2,0.3-2.4,0.8-3.6s1.2-2.3,2.1-3.2c0.9-1,1.9-1.7,3-2.3
 		s2.3-0.9,3.6-0.9c0.9,0,1.7,0.1,2.3,0.3c0.6,0.2,1.1,0.4,1.5,0.7c0.4,0.3,0.6,0.5,0.8,0.8s0.2,0.5,0.2,0.7c0,0.3-0.2,0.6-0.5,0.7
 		C284.2,43.5,283.9,43.6,283.6,43.6z M280.6,48.2c0,0.8,0.1,1.4,0.2,2c0.4-0.7,0.6-1.3,0.8-2c0.2-0.7,0.2-1.3,0.2-1.8
-		c0-0.6-0.1-0.9-0.3-0.9s-0.4,0.3-0.6,0.8C280.7,46.9,280.6,47.5,280.6,48.2z"/>
-	<path fill="#FFFFFF" d="M296.4,40.9c0.6,0,1.1,0.1,1.4,0.4s0.6,0.5,0.8,0.9c0.2,0.3,0.3,0.7,0.3,1s0.1,0.6,0.1,0.9
+		c0-0.6-0.1-0.9-0.3-0.9s-0.4,0.3-0.6,0.8C280.7,46.9,280.6,47.5,280.6,48.2z"
+                />
+                <path
+                  fill="#FFFFFF"
+                  d="M296.4,40.9c0.6,0,1.1,0.1,1.4,0.4s0.6,0.5,0.8,0.9c0.2,0.3,0.3,0.7,0.3,1s0.1,0.6,0.1,0.9
 		c0,0.3,0,0.7-0.1,1.3c-0.1,0.6-0.1,1.2-0.2,1.9c-0.1,0.7-0.1,1.3-0.2,1.8s-0.1,0.9-0.1,1.1c0,0.5,0,0.9,0.1,1.3s0.2,0.7,0.4,1
 		c0.2,0.3,0.4,0.5,0.8,0.7c0.3,0.2,0.8,0.2,1.3,0.2c1,0,2-0.5,3.1-1.5s2.1-2.3,3-4.1l0.2,0.1c-0.3,0.9-0.7,1.8-1.2,2.7
 		c-0.5,0.9-1.2,1.7-1.9,2.5c-0.7,0.8-1.5,1.4-2.2,1.8c-0.8,0.5-1.6,0.7-2.3,0.7c-0.6,0-1.1-0.1-1.5-0.4c-0.4-0.3-0.7-0.6-0.9-1
@@ -281,8 +374,11 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 		c0.3-0.7,0.5-1.5,0.8-2.4c0.2-0.9,0.4-2,0.4-3.1c-1.1-0.6-1.7-1.8-1.7-3.4c0-0.4,0.1-0.8,0.3-1.1c0.2-0.3,0.4-0.5,0.8-0.5
 		c0.5,0,0.9,0.3,1.1,0.9s0.4,1.4,0.4,2.4c0.2,0,0.3,0.1,0.5,0.1c0.2,0,0.3,0,0.5,0c0.6,0,1.2,0,1.7-0.1S295.9,40.9,296.4,40.9z
 		 M291.1,40c0,0.1,0,0.2,0.1,0.3C291.2,40.2,291.2,40.1,291.1,40c0.1-0.2,0.1-0.3,0-0.4c0-0.1,0-0.2,0-0.2c-0.1,0-0.1,0-0.2,0.1
-		S290.9,39.8,291.1,40z"/>
-	<path fill="#FFFFFF" d="M306.5,54.9c-0.1,0-0.2-0.1-0.3-0.2c-0.1-0.1-0.2-0.3-0.2-0.5c0-0.3,0.1-0.6,0.2-0.9
+		S290.9,39.8,291.1,40z"
+                />
+                <path
+                  fill="#FFFFFF"
+                  d="M306.5,54.9c-0.1,0-0.2-0.1-0.3-0.2c-0.1-0.1-0.2-0.3-0.2-0.5c0-0.3,0.1-0.6,0.2-0.9
 		c0.2-0.3,0.4-0.7,0.6-1.1v-3.8c0-0.7,0-1.9-0.1-3.8c-0.1-1.9-0.1-4.5-0.1-7.8c0-1.8,0.1-3.6,0.2-5.6c0.1-1.9,0.4-3.8,0.7-5.7
 		c0.3-1.9,0.7-3.6,1.1-5.3c0.5-1.7,1-3.1,1.7-4.4c0.7-1.3,1.4-2.2,2.3-3s1.8-1.1,2.9-1.1c0.4,0,0.8,0.1,1.3,0.4
 		c0.4,0.3,0.8,0.7,1.1,1.2c0.3,0.5,0.6,1.2,0.8,2c0.2,0.8,0.3,1.8,0.3,2.9c0,1.9-0.2,3.8-0.6,5.7c-0.4,1.9-0.9,3.9-1.5,5.7
@@ -299,326 +395,531 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
 		S306.9,54.9,306.5,54.9z M308.9,36.7c0,0.7,0,1.4,0,2.1c0,0.7,0,1.4,0.1,2.2c0,0.7,0,1.4,0.1,2.1c0,0.7,0,1.2,0,1.8
 		c0.6-1.2,1.4-2.7,2.3-4.5c0.9-1.9,1.8-3.9,2.7-6.1c0.9-2.2,1.6-4.6,2.2-7c0.6-2.4,0.9-4.8,0.9-7.1c0-0.8,0-1.6-0.1-2.4
 		c-0.1-0.8-0.2-1.4-0.4-2s-0.5-1-0.9-1.4c-0.4-0.3-0.9-0.5-1.5-0.5c-0.7,0-1.2,0.3-1.8,0.9c-0.5,0.6-1,1.4-1.4,2.5
-		c-0.4,1.1-0.7,2.3-1,3.8c-0.3,1.5-0.5,3-0.7,4.7c-0.2,1.7-0.3,3.5-0.4,5.4C308.9,32.9,308.9,34.8,308.9,36.7z"/>
-</g>
-</svg>
-<h2>Front-End Developer</h2>
-<p>Based in Stockholm, Sweden with a passion for design, user-availability and simplicity.</p>
-</div>
-</div>
-</header>
-<main>
-    <section>
-        <div class="arrowHole"></div>
-        <div class="stripedContent">
-        <div class="content">
-            <h2 id="about" class="secondHeader">About Vilhelm Falkenmark</h2>
-            <a href="#target"><div class="round red" id="lifeStoryButton"><span>My Life Story</span></div></a>
-            <a href="#target"><div class="round green" id="skillsButton"><span>Skills & Resume</span></div></a>
-            <a href="#target"><div class="round orange" id="randomButton"><span>Random Stuff</span></div></a>
-            <div id="target">
+		c-0.4,1.1-0.7,2.3-1,3.8c-0.3,1.5-0.5,3-0.7,4.7c-0.2,1.7-0.3,3.5-0.4,5.4C308.9,32.9,308.9,34.8,308.9,36.7z"
+                />
+              </g>
+            </svg>
+            <h2>Front-End Developer</h2>
+            <p>
+              Based in Stockholm, Sweden with a passion for design,
+              user-availability and simplicity.
+            </p>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section>
+          <div class="arrowHole"></div>
+          <div class="stripedContent">
+            <div class="content">
+              <h2 id="about" class="secondHeader">About Vilhelm Falkenmark</h2>
+              <a href="#target"
+                ><div class="round red" id="lifeStoryButton">
+                  <span>My Life Story</span>
+                </div></a
+              >
+              <a href="#target"
+                ><div class="round green" id="skillsButton">
+                  <span>Skills & Resume</span>
+                </div></a
+              >
+              <a href="#target"
+                ><div class="round orange" id="randomButton">
+                  <span>Random Stuff</span>
+                </div></a
+              >
+              <div id="target">
                 <div id="lifeStoryContent" class="hide">
-                    <h2 id="lifeStory">My name is Vilhelm Falkenmark and I am currently 28 years old</h2>
-                    <p>I was born In Stockholm, Sweden on the 22nd of june 1986 as the second-eldest sibling among four.
+                  <h2 id="lifeStory">
+                    My name is Vilhelm Falkenmark and I am currently 28 years
+                    old
+                  </h2>
+                  <p>
+                    I was born In Stockholm, Sweden on the 22nd of june 1986 as
+                    the second-eldest sibling among four.
 
-                        <br><br> When I was a kid I was obsessed with Lego, Turtles and Batman. When I turned 10 I discovered Kiss (the band) and my life changed forever to come.
-                        I started playing guitar when I was 13 and it has been my main hobby since then. During my youth I spent my free-time playing in various bands and music projects.
-                        <br><br>
-                        After I finished high-school I went to Australia for 6 months with one of my best friends to "discover myself" and "find out what I really want to do with my life". I did
-                        not really achieve that. Instead I applied for an education in Business and Economics. I moved to Uppsala when I turned 20 and studied there for 4 years and 6 months abroad in Maastricht, The Netherlands.
-                        I took my Degree of Masters in Business and Economics in January 2011.
-                        <br><br>
-                        After my graduation I started working for a small E-commerce as a web-administator and in their customer-service. After 1.5 years I grew restless and wanted to do something else (as many in generation Y do).
-                        I started working for another company in the corporate group as a content manager. This was my first contact with "programming". If you can call extremely basic HTML-coding "programming". I worked there for another 1.5 years
-                        until I decided to work part-time and study a course in basic programming in my spare-time.
-                        <br><br>
-                        After I "graduated" the course I was sure what I wanted to be when I grew up, A feeling I unfortunately never felt during my time in Uppsala. I applied in the last minute for the
-                        2-year long education in Front-End Development at Nackademins Yrkeshögskola and got in. I will graduate in june 2016.
-                    </p>
+                    <br /><br />
+                    When I was a kid I was obsessed with Lego, Turtles and
+                    Batman. When I turned 10 I discovered Kiss (the band) and my
+                    life changed forever to come. I started playing guitar when
+                    I was 13 and it has been my main hobby since then. During my
+                    youth I spent my free-time playing in various bands and
+                    music projects. <br /><br />
+                    After I finished high-school I went to Australia for 6
+                    months with one of my best friends to "discover myself" and
+                    "find out what I really want to do with my life". I did not
+                    really achieve that. Instead I applied for an education in
+                    Business and Economics. I moved to Uppsala when I turned 20
+                    and studied there for 4 years and 6 months abroad in
+                    Maastricht, The Netherlands. I took my Degree of Masters in
+                    Business and Economics in January 2011.
+                    <br /><br />
+                    After my graduation I started working for a small E-commerce
+                    as a web-administator and in their customer-service. After
+                    1.5 years I grew restless and wanted to do something else
+                    (as many in generation Y do). I started working for another
+                    company in the corporate group as a content manager. This
+                    was my first contact with "programming". If you can call
+                    extremely basic HTML-coding "programming". I worked there
+                    for another 1.5 years until I decided to work part-time and
+                    study a course in basic programming in my spare-time.
+                    <br /><br />
+                    After I "graduated" the course I was sure what I wanted to
+                    be when I grew up, A feeling I unfortunately never felt
+                    during my time in Uppsala. I applied in the last minute for
+                    the 2-year long education in Front-End Development at
+                    Nackademins Yrkeshögskola and got in. I will graduate in
+                    june 2016.
+                  </p>
                 </div>
                 <div id="skillsAndResumeContent" class="hide">
-                    <h2>Education</h2>
-                    <ul>
-                        <li>3-year High-School Degree from Norra Reals Gymnasium. Graduation 2005.</li>
-                        <li>4.5-year Degree of Masters in Business and Economics from Uppsala University. Graduation 2011.</li>
-                        <li>I am Currently Attending Nackademins Yrkeshögskola in the 2-year long education in Front-End Development. Graduation 2016.</li>
-                    </ul>
-                    <h2>Skills</h2>
-                    <ul>
-                        <li><h3>Strong Skills in</h3>
-                            <ul>
-                                <li>HTML5, CSS3 and Javascript (Front-End Programming). I work or try to catch with all the modern techiques and framworks such as Node.js, Angular.js, Sass, jQuery & Bootstrap to name a few.</li>
-                                <li>Various Graphical software such as Adobe Photoshop, After Effects and Illustrator</li>
-                                <li>CMS-Systems, Wordpress and Joomla</li>
-                                <li>Microsoft Office Package, Especially Excel.</li>
-                                <li>E-Commerce</li>
-                            </ul>
+                  <h2>Education</h2>
+                  <ul>
+                    <li>
+                      3-year High-School Degree from Norra Reals Gymnasium.
+                      Graduation 2005.
+                    </li>
+                    <li>
+                      4.5-year Degree of Masters in Business and Economics from
+                      Uppsala University. Graduation 2011.
+                    </li>
+                    <li>
+                      I am Currently Attending Nackademins Yrkeshögskola in the
+                      2-year long education in Front-End Development. Graduation
+                      2016.
+                    </li>
+                  </ul>
+                  <h2>Skills</h2>
+                  <ul>
+                    <li>
+                      <h3>Strong Skills in</h3>
+                      <ul>
+                        <li>
+                          HTML5, CSS3 and Javascript (Front-End Programming). I
+                          work or try to catch with all the modern techiques and
+                          framworks such as Node.js, Angular.js, Sass, jQuery &
+                          Bootstrap to name a few.
                         </li>
-                        <li><h3>Experience in</h3>
-                            <ul>
-                                <li>PHP, Ruby and C#</li>
-                                <li>Search Engine Optimization</li>
-                                <li>Various Business software, Mamut Visma, Specter, Askås, Fortnox.</li>
-                            </ul>
+                        <li>
+                          Various Graphical software such as Adobe Photoshop,
+                          After Effects and Illustrator
                         </li>
-                    </ul>
-                    <h2>Previous Employment</h2>
-                    <ul>
-                        <li>Retail and Brands Logistics during the summers of 2005, 2006, 2007 and 2008.</li>
-                        <li>EF language courses as a course leader on Malta during the summer of 2009.</li>
-                        <li><h3>Internet Retail Holding</h3>
-                            <ul>
-                                <li>February 2011-august 2012. Drytrend.com as a web adminstrator, sales representative and customer service (small company = high variation in work tasks)</li>
-                                <li>September 2012-september 2013. Content Manager on Thehome.se</li>
-                                <li>September 2013-june 2014. Purchase manager for the interior part of the corporate group</li>
-                            </ul>
+                        <li>CMS-Systems, Wordpress and Joomla</li>
+                        <li>Microsoft Office Package, Especially Excel.</li>
+                        <li>E-Commerce</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h3>Experience in</h3>
+                      <ul>
+                        <li>PHP, Ruby and C#</li>
+                        <li>Search Engine Optimization</li>
+                        <li>
+                          Various Business software, Mamut Visma, Specter,
+                          Askås, Fortnox.
                         </li>
-                    </ul>
+                      </ul>
+                    </li>
+                  </ul>
+                  <h2>Previous Employment</h2>
+                  <ul>
+                    <li>
+                      Retail and Brands Logistics during the summers of 2005,
+                      2006, 2007 and 2008.
+                    </li>
+                    <li>
+                      EF language courses as a course leader on Malta during the
+                      summer of 2009.
+                    </li>
+                    <li>
+                      <h3>Internet Retail Holding</h3>
+                      <ul>
+                        <li>
+                          February 2011-august 2012. Drytrend.com as a web
+                          adminstrator, sales representative and customer
+                          service (small company = high variation in work tasks)
+                        </li>
+                        <li>
+                          September 2012-september 2013. Content Manager on
+                          Thehome.se
+                        </li>
+                        <li>
+                          September 2013-june 2014. Purchase manager for the
+                          interior part of the corporate group
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
                 <div id="randomStuffContent" class="hide">
-                    <h3>The Playlist that has been on repeat during the development of this site</h3>
-                    <iframe src="https://embed.spotify.com/?uri=spotify:user:vilhelmfalkenmark:playlist:6odBOt412rWQUjeQdk4CmF" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+                  <h3>
+                    The Playlist that has been on repeat during the development
+                    of this site
+                  </h3>
+                  <iframe
+                    src="https://embed.spotify.com/?uri=spotify:user:vilhelmfalkenmark:playlist:6odBOt412rWQUjeQdk4CmF"
+                    width="300"
+                    height="380"
+                    frameborder="0"
+                    allowtransparency="true"
+                  ></iframe>
 
-                    <h3>The Five Best Movies of all time (That I can come to think of right now)</h3>
-                    <ul>
-                        <li>Coherence</li>
-                        <li>Batman Dark Knight</li>
-                        <li>Rise of the Footsoldier</li>
-                        <li>The Fantastic Mr Fox</li>
-                        <li>Back to the Future 2</li>
-                    </ul>
+                  <h3>
+                    The Five Best Movies of all time (That I can come to think
+                    of right now)
+                  </h3>
+                  <ul>
+                    <li>Coherence</li>
+                    <li>Batman Dark Knight</li>
+                    <li>Rise of the Footsoldier</li>
+                    <li>The Fantastic Mr Fox</li>
+                    <li>Back to the Future 2</li>
+                  </ul>
 
-                    <h3>The Five Best Bands/Music-Acts</h3>
-                    <ul>
-                        <li>Rage Against the Machine</li>
-                        <li>Red Hot Chili Peppers 90s Era</li>
-                        <li>War on Drugs</li>
-                        <li>The Clash</li>
-                        <li>Jimi Hendrix</li>
-                    </ul>
+                  <h3>The Five Best Bands/Music-Acts</h3>
+                  <ul>
+                    <li>Rage Against the Machine</li>
+                    <li>Red Hot Chili Peppers 90s Era</li>
+                    <li>War on Drugs</li>
+                    <li>The Clash</li>
+                    <li>Jimi Hendrix</li>
+                  </ul>
 
-                    <h3>The Five Best Albums</h3>
-                    <ul>
-                        <li>Rage Against the Machine self titled</li>
-                        <li>Blood Sugar Sex Magik - Red Hot Chili Peppers</li>
-                        <li>Lost in The Dream - War on Drugs</li>
-                        <li>Definetley Maybe - Oasis</li>
-                        <li>Destroy Rock n Roll - Mylo</li>
-                    </ul>
-                    <h3>The Five Best Tv-Shows</h3>
-                    <ul>
-                        <li>The Office (American version)</li>
-                        <li>Band of Brothers</li>
-                        <li>Game of Thrones</li>
-                        <li>Oz</li>
-                        <li>South Park</li>
-                    </ul>
-                    <h3>My Five Best Free-time activities (Except coding Front-End Stuff)</h3>
-                    <ul>
-                        <li>Spending time with my girlfriend Johanna whom I love over everything else. </li>
-                        <li>Playing Guitar</li>
-                        <li>Riding my way to expensive bike which I really could not afford but bought anyway and as a result spent three months on my knees financially</li>
-                        <li>Cooking</li>
-                        <li>Eating what I just cooked or what someone else has cooked for me</li>
-                    </ul>
+                  <h3>The Five Best Albums</h3>
+                  <ul>
+                    <li>Rage Against the Machine self titled</li>
+                    <li>Blood Sugar Sex Magik - Red Hot Chili Peppers</li>
+                    <li>Lost in The Dream - War on Drugs</li>
+                    <li>Definetley Maybe - Oasis</li>
+                    <li>Destroy Rock n Roll - Mylo</li>
+                  </ul>
+                  <h3>The Five Best Tv-Shows</h3>
+                  <ul>
+                    <li>The Office (American version)</li>
+                    <li>Band of Brothers</li>
+                    <li>Game of Thrones</li>
+                    <li>Oz</li>
+                    <li>South Park</li>
+                  </ul>
+                  <h3>
+                    My Five Best Free-time activities (Except coding Front-End
+                    Stuff)
+                  </h3>
+                  <ul>
+                    <li>
+                      Spending time with my girlfriend Johanna whom I love over
+                      everything else.
+                    </li>
+                    <li>Playing Guitar</li>
+                    <li>
+                      Riding my way to expensive bike which I really could not
+                      afford but bought anyway and as a result spent three
+                      months on my knees financially
+                    </li>
+                    <li>Cooking</li>
+                    <li>
+                      Eating what I just cooked or what someone else has cooked
+                      for me
+                    </li>
+                  </ul>
                 </div>
+              </div>
+
+              <a href="#about"
+                ><i class="darkArrow arrows flaticon-up125"></i
+              ></a>
             </div>
+          </div>
+        </section>
 
-            <a href="#about"><i class="darkArrow arrows flaticon-up125"></i></a>
-        </div>
-
-        </div>
-    </section>
-
-    <section>
-        <div id="myServicesBackground">
+        <section>
+          <div id="myServicesBackground">
             <div class="content">
-                <div id="myServices">
-                    <div id="myServicesInner">
-                        <div id="myServicesTarget"></div>
+              <div id="myServices">
+                <div id="myServicesInner">
+                  <div id="myServicesTarget"></div>
 
-                        <h2 class="secondHeader">My Services</h2>
+                  <h2 class="secondHeader">My Services</h2>
 
-                        <h2>Front-End Development</h2>
-                    <p>I can code Front-End Stuff all day everyday. My strongest skills are HTML5, CSS3 and JavaScript. I make shiny, user-friendly and easy managable websites!</p>
+                  <h2>Front-End Development</h2>
+                  <p>
+                    I can code Front-End Stuff all day everyday. My strongest
+                    skills are HTML5, CSS3 and JavaScript. I make shiny,
+                    user-friendly and easy managable websites!
+                  </p>
 
-                    <h3>Content Management System Set up</h3>
-                    <p>I have experience from working with Joomla and have worked professionally with WordPress.
-                        I also have experience working in within E-commerce with various business and cms-systems. For example Visma Mamut, Specter, Askås Internetbutik</p>
-                    <h3>Graphical Layout</h3>
-                    <p>I have a passion for esthetics and can sit for hours to get every detail just right. Some say I´m hysterical and should seek help for my obsessive
-                        attention to details. I do most of my graphical work in Adobe Photoshop & Illustrator.</p>
-                    <p><strong>Please send me an email or call me if you want to discuss your project!</strong></p>
-                    <div id="contactMe-Services"><span><a href="#contact">My contact Info</a></span></div>
-                    </div>
-                    <a href="#header" id="myServicesArrow"><i class="brightArrow arrows flaticon-up125"></i></a>
-
+                  <h3>Content Management System Set up</h3>
+                  <p>
+                    I have experience from working with Joomla and have worked
+                    professionally with WordPress. I also have experience
+                    working in within E-commerce with various business and
+                    cms-systems. For example Visma Mamut, Specter, Askås
+                    Internetbutik
+                  </p>
+                  <h3>Graphical Layout</h3>
+                  <p>
+                    I have a passion for esthetics and can sit for hours to get
+                    every detail just right. Some say I´m hysterical and should
+                    seek help for my obsessive attention to details. I do most
+                    of my graphical work in Adobe Photoshop & Illustrator.
+                  </p>
+                  <p>
+                    <strong
+                      >Please send me an email or call me if you want to discuss
+                      your project!</strong
+                    >
+                  </p>
+                  <div id="contactMe-Services">
+                    <span><a href="#contact">My contact Info</a></span>
+                  </div>
                 </div>
+                <a href="#header" id="myServicesArrow"
+                  ><i class="brightArrow arrows flaticon-up125"></i
+                ></a>
+              </div>
             </div>
-        </div>
-    </section>
-    <section>
+          </div>
+        </section>
+        <section>
+          <div class="arrowHole"></div>
+
+          <div class="stripedContent">
+            <div class="portfolio-content">
+              <h2 id="portfolio" class="secondHeader">Portfolio</h2>
+
+              <div class="portfolioRow">
+                <div class="portfolioItemText">
+                  <!--<div class="portfolioItem">-->
+                  <span
+                    >This is the Morse Hax Project<br /><br />A Front-End
+                    software written in Javascript that I developed with my
+                    classmate<br />
+                    Fredrik Löfgren. We wanted to find out exactly how hard it
+                    was to translate text to Morse-Code. In all our excitement
+                    we created our own cryptation language with key-input
+                    validation.
+                  </span>
+                </div>
+                <div class="portfolioItemBackground">
+                  <div class="portfolioItem">
+                    <div id="morseHax">
+                      <a
+                        href="http://vilhelmfalkenmark.github.io/Morse_Hax/morse-hax.html"
+                        target="_blank"
+                      >
+                        <div class="portfolioLayer">
+                          <span class="innerPortfolioText"
+                            >This is the Morse Hax Project<br /><br />
+                            A Front-End software written in Javascript that I
+                            developed with my classmate Fredrik Löfgren.
+                          </span>
+                          <span class="innerPortfolioTextShort"
+                            >Click here to view the Morse Hax project in a new
+                            window</span
+                          >
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="portfolioRow">
+                <div class="portfolioItemBackground">
+                  <div class="portfolioItem">
+                    <div id="codeGenerator">
+                      <a
+                        href="http://vilhelmfalkenmark.github.io/Rabattkodsgenerator/index.html"
+                        target="_blank"
+                      >
+                        <div class="portfolioLayer">
+                          <span class="innerPortfolioText"
+                            >This is the Code Generator Project<br /><br />
+                            A website/service which generates large batches of
+                            discount codes for campaigns. übersafe passwords for
+                            your wifi network or just safe passwords in
+                            general!</span
+                          >
+                          <span class="innerPortfolioTextShort"
+                            >Click here to view the Code Generator project in a
+                            new window</span
+                          >
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolioItemText">
+                  <!--<div class="portfolioItem">-->
+                  <span
+                    >This is the Code Generator Project<br /><br />
+                    A website/service which generates large batches of discount
+                    codes for campaigns, übersafe passwords for your wifi
+                    network or just great passwords in general. I got the idea
+                    when a former colleague complained about what a hassle it
+                    was to manually write x number of codes in the same format.
+                    For example every code would only be allowed to contain
+                    lowercase letters and numbers and every code should start
+                    with DR_ for validation.</span
+                  >
+                </div>
+              </div>
+
+              <div class="portfolioRow">
+                <div class="portfolioItemText">
+                  <!--<div class="portfolioItem">-->
+                  <span
+                    >This is the Johanna Point and Click Survivalgame<br /><br />A
+                    simple game that I designed in a homage to my lovely
+                    girlfriend. I wanted to practice Javascript but also nested
+                    HTML and Sass.
+                  </span>
+                </div>
+
+                <div class="portfolioItemBackground">
+                  <div class="portfolioItem">
+                    <div id="johannaGame">
+                      <a
+                        href="http://vilhelmfalkenmark.github.io/johannaSpelet/johannaGame.html"
+                        target="_blank"
+                      >
+                        <div class="portfolioLayer">
+                          <span class="innerPortfolioText"
+                            >This is the Johanna Point and Click Survivalgame<br /><br />A
+                            simple game that I designed mainly to practice
+                            Javascript but also to practice nested HTML and
+                            basic Sass.
+                          </span>
+                          <span class="innerPortfolioTextShort"
+                            >Click here to view the Johanna game in a new
+                            window</span
+                          >
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div id="thankYouBackground">
+            <div class="content">
+              <div id="thankYou"><span>Thank you!</span></div>
+            </div>
+            <a href="#header"
+              ><i class="brightArrow arrows flaticon-up125"></i
+            ></a>
+          </div>
+        </section>
+      </main>
+
+      <footer>
         <div class="arrowHole"></div>
 
         <div class="stripedContent">
-        <div class="portfolio-content">
-            <h2 id="portfolio" class="secondHeader">Portfolio</h2>
+          <div id="footer">
+            <div class="content"><h2 id="contact">Contact Me</h2></div>
 
-            <div class="portfolioRow">
-                <div class="portfolioItemText">
-                    <!--<div class="portfolioItem">-->
-                    <span>This is the Morse Hax Project<br><br>A Front-End software written in Javascript that I developed with my classmate<br> Fredrik Löfgren. We wanted to find out exactly how hard it was to translate
-                        text to Morse-Code. In all our excitement we created our own cryptation language with key-input validation.
-                            </span>
-                </div>
-                <div class="portfolioItemBackground">
-                    <div class="portfolioItem">
-                        <div id="morseHax"><a href="http://vilhelmfalkenmark.github.io/Morse_Hax/morse-hax.html" target="_blank">
-                            <div class="portfolioLayer"><span class="innerPortfolioText">This is the Morse Hax Project<br><br> A Front-End software written in Javascript that I developed with my classmate Fredrik Löfgren.
-
-                            </span>
-                                <span class="innerPortfolioTextShort">Click here to view the Morse Hax project in a new window</span>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-
-            <div class="portfolioRow">
-            <div class="portfolioItemBackground">
-                <div class="portfolioItem">
-                    <div id="codeGenerator"><a href="http://vilhelmfalkenmark.github.io/Rabattkodsgenerator/index.html" target="_blank">
-                        <div class="portfolioLayer"><span class="innerPortfolioText">This is the Code Generator Project<br><br> A website/service which generates
-                    large batches of discount codes for campaigns. übersafe passwords for your wifi network or just safe passwords in general!</span>
-                            <span class="innerPortfolioTextShort">Click here to view the Code Generator project in a new window</span>
-                        </div>
-                    </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolioItemText">
-                <!--<div class="portfolioItem">-->
-                    <span>This is the Code Generator Project<br><br> A website/service which generates
-                    large batches of discount codes for campaigns, übersafe passwords for your wifi network or just great passwords in general. I got the idea when a former colleague complained about what a hassle it was to manually write x number of codes
-                    in the same format. For example every code would only be allowed to contain lowercase letters and numbers and every code should start with DR_ for validation.</span>
-                </div>
-            </div>
-
-
-            <div class="portfolioRow">
-
-            <div class="portfolioItemText">
-                <!--<div class="portfolioItem">-->
-                <span>This is the Johanna Point and Click Survivalgame<br><br>A simple game that I designed in a homage to my lovely girlfriend. I wanted to practice Javascript but also
-                            nested HTML and Sass.
-                        </span>
-
-            </div>
-
-            <div class="portfolioItemBackground">
-                <div class="portfolioItem">
-
-                    <div id="johannaGame"><a href="http://vilhelmfalkenmark.github.io/johannaSpelet/johannaGame.html" target="_blank">
-                        <div class="portfolioLayer"><span class="innerPortfolioText">This is the Johanna Point and Click Survivalgame<br><br>A simple game that I designed mainly to practice Javascript but also
-                            to practice nested HTML and basic Sass.
-                        </span>
-                            <span class="innerPortfolioTextShort">Click here to view the Johanna game in a new window</span>
-                        </div>
-                    </a>
-                    </div>
-                </div>
-            </div>
-
-                </div>
-
-            </div>
-</div>
-
-
-
-
-
-    </section>
-    <section>
-        <div id="thankYouBackground">
-            <div class="content">
-                <div id="thankYou"><span>Thank you!</span></div>
-            </div>
-            <a href="#header"><i class="brightArrow arrows flaticon-up125"></i></a>
-        </div>
-    </section>
-</main>
-
-<footer>
-    <div class="arrowHole"></div>
-
-    <div class="stripedContent">
-    <div id="footer">
-
-        <div class="content"><h2 id="contact">Contact Me</h2></div>
-
-        <div class="footer-content">
-            <ul id="footerIcons">
-
-                <li><a href="https://github.com/vilhelmfalkenmark" target="_blank"><i class="flaticon-github7"></i></a></li>
-                <li><a href="https://www.facebook.com/ville.falkenmark" target="_blank"><i class="flaticon-facebook3"></i></a></li>
-                <li><a href="https://www.linkedin.com/hp/?dnr=imMPcqK9gJcQP8xvipIrB9S5l_wiHx3Mk5-f&trk=nav_responsive_tab_home" target="_blank"><i class="flaticon-linkedin1"></i></a></li>
-            </ul>
-            <ul id="footerList">
-                <li><a href="http://vilhelmfalkenmark.github.io/">vilhelmfalkenmark.github.com</a></li>
+            <div class="footer-content">
+              <ul id="footerIcons">
+                <li>
+                  <a href="https://github.com/vilhelmfalkenmark" target="_blank"
+                    ><i class="flaticon-github7"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/ville.falkenmark"
+                    target="_blank"
+                    ><i class="flaticon-facebook3"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/hp/?dnr=imMPcqK9gJcQP8xvipIrB9S5l_wiHx3Mk5-f&trk=nav_responsive_tab_home"
+                    target="_blank"
+                    ><i class="flaticon-linkedin1"></i
+                  ></a>
+                </li>
+              </ul>
+              <ul id="footerList">
+                <li>
+                  <a href="http://vilhelmfalkenmark.github.io/"
+                    >vilhelmfalkenmark.github.com</a
+                  >
+                </li>
                 <li>0705580198</li>
-                <li><a href="mailto:vilhelmfalkenmark@gmail.com?">vilhelmfalkenmark@gmail.com</a></li>
-            </ul>
+                <li>
+                  <a href="mailto:vilhelmfalkenmark@gmail.com?"
+                    >vilhelmfalkenmark@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="map-content">
+              <div id="map-canvas"></div>
+            </div>
+          </div>
         </div>
-        <div class="map-content">
-            <div id="map-canvas"></div>
-        </div>
+      </footer>
     </div>
-    </div>
-</footer>
-</div>
-<!--Start Google Maps-->
-<script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6_rInsv9YWvF9-lCvjAlvnNTrICDVv-c"></script>
-<script type="text/javascript">
-    function initialize() {
-        var myLatlng = new google.maps.LatLng(59.349063,18.064843);
+    <!--Start Google Maps-->
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6_rInsv9YWvF9-lCvjAlvnNTrICDVv-c"
+    ></script>
+    <script type="text/javascript">
+      function initialize() {
+        var myLatlng = new google.maps.LatLng(59.349063, 18.064843);
 
         var mapOptions = {
-            zoom: 12,
-            // zoomControl: false,
-            //scaleControl: false, // Plus och minus Tecknet som tillåter scrollning på kartan
-            mapTypeControl: false, // Switcha mellan satellit eller Vanlig karta
-            scrollwheel: false, // Det fula scrollhjulet
-            streetViewControl: false, // Den Gula streetview gubben
+          zoom: 12,
+          // zoomControl: false,
+          //scaleControl: false, // Plus och minus Tecknet som tillåter scrollning på kartan
+          mapTypeControl: false, // Switcha mellan satellit eller Vanlig karta
+          scrollwheel: false, // Det fula scrollhjulet
+          streetViewControl: false, // Den Gula streetview gubben
 
-            center: myLatlng,
+          center: myLatlng,
 
-            //
-            styles:  [ { "elementType": "labels.text", "stylers": [ { "visibility": "simplified" }, { "invert_lightness": true }, { "color": "#cc4739" } ] }
-                ,{ "featureType": "landscape", "stylers": [ { "color": "#fff" } ] },{ "featureType": "road", "stylers": [ { "color": "#b1b0b0" } ] }
-                ,{ "featureType": "water", "stylers": [ { "color": "#BDC3C7" } ] }
-                ,{ "featureType": "road", "elementType": "labels.text", "stylers": [ { "color": "#22313F" } ] }
-                ,{ "featureType": "poi", "stylers": [ { "visibility": "off" } ] }
-                ,{ "featureType": "transit", "stylers": [ { "visibility": "off" } ] } ]};
+          //
+          styles: [
+            {
+              elementType: "labels.text",
+              stylers: [
+                { visibility: "simplified" },
+                { invert_lightness: true },
+                { color: "#cc4739" },
+              ],
+            },
+            { featureType: "landscape", stylers: [{ color: "#fff" }] },
+            { featureType: "road", stylers: [{ color: "#b1b0b0" }] },
+            { featureType: "water", stylers: [{ color: "#BDC3C7" }] },
+            {
+              featureType: "road",
+              elementType: "labels.text",
+              stylers: [{ color: "#22313F" }],
+            },
+            { featureType: "poi", stylers: [{ visibility: "off" }] },
+            { featureType: "transit", stylers: [{ visibility: "off" }] },
+          ],
+        };
 
-        var map = new google.maps.Map(document.getElementById('map-canvas'),
-                mapOptions);
-
+        var map = new google.maps.Map(
+          document.getElementById("map-canvas"),
+          mapOptions
+        );
 
         var image = "images/myMarker.png";
         var myLatLng = new google.maps.LatLng(-33.890542, 151.274856);
         var marker = new google.maps.Marker({
-            position: myLatlng,
-            map: map,
-            icon: image
+          position: myLatlng,
+          map: map,
+          icon: image,
         });
-
 
         /*
          var marker = new google.maps.Marker({
@@ -627,13 +928,12 @@ HANDCODED IN STOCKHOLM, SWEDEN By Vilhelm Falkenmark. No frameworks used except 
          map: map,
          title: 'Hello World!'
          });*/
+      }
+      google.maps.event.addDomListener(window, "load", initialize);
+    </script>
+    <!--End Google Maps-->
 
-    }
-    google.maps.event.addDomListener(window, 'load', initialize);
-</script>
-<!--End Google Maps-->
-
-<script src="js/jquery-1.11.2.min.js"></script>
-<script src="js/main.js"></script>
-</body>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
